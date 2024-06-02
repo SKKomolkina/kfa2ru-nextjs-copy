@@ -1,0 +1,330 @@
+.container {
+  justify-content: space-between;
+  position: relative;
+}
+
+.imageBox {
+  width: min-content;
+  margin-top: 32px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  &:first-of-type {
+    margin-top: 60px;
+  }
+}
+
+.imageBoxFull {
+  width: 100%;
+}
+
+.image1 {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--color-black);
+  margin-bottom: 40px;
+}
+
+.image {
+  margin-bottom: 12px;
+}
+
+.image2 {
+  width: 280px;
+  height: 53px;
+}
+
+.image3 {
+  width: 203px;
+  height: 75px;
+}
+
+.image4 {
+  width: 68px;
+  height: 137px;
+}
+
+.image5 {
+  width: 163px;
+  height: 19.99px;
+}
+
+.image6 {
+  width: 82px;
+  height: 60px;
+}
+
+.last {
+  width: 100%;
+}
+
+.text {
+  font-size: 12px;
+}
+
+@media(min-width: 400px) {
+  .image1 {
+    margin-bottom: 60px;
+  }
+
+  .image {
+    margin-bottom: 12px;
+  }
+
+  .image2 {
+    composes: image;
+    width: 374px;
+    height: 69px;
+  }
+
+  .image3 {
+    composes: image;
+    width: 267px;
+    height: 99px;
+  }
+
+  .image4 {
+    composes: image;
+    width: 90px;
+    height: 181px;
+  }
+
+  .image5 {
+    composes: image;
+    width: 214px;
+    height: 26.01px;
+  }
+
+  .image6 {
+    composes: image;
+    width: 108px;
+    height: 78.86px;
+  }
+
+  //.last {
+  //  width: 100%;
+  //}
+
+  .text {
+    font-size: 16px;
+  }
+}
+
+@media(min-width: 640px) {
+  .container {
+    justify-content: flex-start;
+
+    & > .imageBox {
+      &:nth-of-type(3) {
+        margin-right: 21px;
+      }
+
+      &:nth-of-type(5) {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  .image1 {
+    margin-bottom: 32px;
+    width: 309px;
+    height: 113px;
+  }
+
+  .image {
+    margin-bottom: 12px;
+  }
+
+  .image2 {
+    composes: image;
+    width: 616px;
+    height: 114px;
+  }
+
+  .image3 {
+    composes: image;
+    width: 331px;
+    height: 122px;
+  }
+
+  .image4 {
+    composes: image;
+    width: 111px;
+    height: 224px;
+  }
+
+  .image5 {
+    composes: image;
+    width: 264px;
+    height: 33px;
+  }
+
+  .image6 {
+    composes: image;
+    width: 133px;
+    height: 97px;
+  }
+
+  .last {
+    width: auto;
+    //width: 133px;
+    //height: 117px;
+
+    position: absolute;
+    right: 0;
+    bottom: 127px;
+
+    margin: 0;
+  }
+
+  .text {
+    font-size: 10px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .container {
+    & > .imageBox {
+      &:nth-of-type(3) {
+        margin-right: 28px;
+      }
+
+      &:nth-of-type(5) {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  .image1 {
+    margin-bottom: 0;
+    width: 390px;
+    height: 143px;
+  }
+
+  .image {
+    margin-bottom: 12px;
+  }
+
+  .image2 {
+    composes: image;
+    width: 780px;
+    height: 145px;
+  }
+
+  .image3 {
+    composes: image;
+    width: 419px;
+    height: 155px;
+  }
+
+  .image4 {
+    composes: image;
+    width: 142px;
+    height: 284px;
+  }
+
+  .image5 {
+    composes: image;
+    width: 335px;
+    height: 41px;
+  }
+
+  .image6 {
+    composes: image;
+    width: 168px;
+    height: 124px;
+  }
+
+  .last {
+    //width: 101px;
+    //height: 74px;
+
+    position: absolute;
+    right: 0;
+    bottom: 160px;
+
+    margin: 0;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}
+
+@media(min-width: 1400px) {
+  .container {
+    & > .imageBox {
+      &:nth-of-type(3) {
+        margin-right: 28px;
+      }
+
+      &:nth-of-type(5) {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  .image1 {
+    margin-bottom: 0;
+    width: 390px;
+    height: 143px;
+  }
+
+  .image {
+    margin-bottom: 12px;
+  }
+
+  .image2 {
+    composes: image;
+    width: 780px;
+    height: 145px;
+  }
+
+  .image3 {
+    composes: image;
+    width: 419px;
+    height: 155px;
+  }
+
+  .image4 {
+    composes: image;
+    width: 142px;
+    height: 284px;
+  }
+
+  .image5 {
+    composes: image;
+    width: 335px;
+    height: 41px;
+  }
+
+  .image6 {
+    composes: image;
+    width: 168px;
+    height: 124px;
+  }
+
+  .last {
+    //width: 101px;
+    //height: 74px;
+
+    position: absolute;
+    right: 0;
+    bottom: 160px;
+
+    margin: 0;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,162 @@
+.section {
+  //width: 1670px;
+  width: 1150px;
+  height: 992px;
+  margin-bottom: 120px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  margin: 0;
+  width: 760px;
+
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 90%;
+
+  background: linear-gradient(106.2deg, #EB48FE 0%, #83FEFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+  word-wrap: initial;
+  position: relative;
+  z-index: 1;
+
+  &:last-of-type {
+    width: 435px;
+    align-self: flex-end;
+  }
+}
+
+.ellipse {
+  position: absolute;
+  left: 260px;
+  top: 149px;
+
+  width: 630px;
+  height: 630px;
+
+  background: linear-gradient(106.2deg, #EB48FE 0%, #83FEFF 100%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.image {
+  position: absolute;
+  left: 125px;
+  top: 119px;
+
+  width: 1020px;
+  height: 682px;
+
+  z-index: 2;
+}
+
+@media (max-width: 1400px) {
+  .section {
+    //width: 1150px;
+    height: 842px;
+    margin-bottom: 0;
+  }
+
+  .title {
+    width: 565px;
+
+    font-size: 60px;
+
+    &:last-of-type {
+      width: 435px;
+    }
+  }
+
+  .ellipse {
+    left: 260px;
+    top: 99px;
+
+    width: 630px;
+    height: 630px;
+  }
+
+  .image {
+    width: 1020px;
+    height: 682px;
+
+    left: 65px;
+    top: 80px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section {
+    width: 602px;
+    height: 394px;
+  }
+
+  .title {
+    width: 372px;
+
+    font-size: 40px;
+
+    &:last-of-type {
+      width: 285px;
+    }
+  }
+
+  .ellipse {
+    left: 176px;
+    top: 64px;
+
+    width: 250px;
+    height: 250px;
+  }
+
+  .image {
+    width: 454px;
+    height: 304px;
+
+    left: 74px;
+    top: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    width: 280px;
+    height: 275px;
+  }
+
+  .title {
+    width: 226px;
+
+    font-size: 24px;
+
+    &:last-of-type {
+      width: 170px;
+    }
+  }
+
+  .ellipse {
+    left: 62px;
+    top: 60px;
+
+    width: 154px;
+    height: 154px;
+  }
+
+  .image {
+    width: 280px;
+    height: 187px;
+
+    left: 0;
+    top: 44px;
+  }
+}

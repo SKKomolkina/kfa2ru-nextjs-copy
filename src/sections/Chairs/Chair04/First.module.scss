@@ -1,0 +1,163 @@
+.section {
+  width: 100%;
+  margin-bottom: 100px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.textContainer {
+  width: 100%;
+  margin-bottom: 32px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.line {
+  width: 101px;
+  height: 4px;
+  margin-bottom: 32px;
+
+  background-color: var(--color-white);
+}
+
+.text {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+.image {
+  width: 350.999px;
+  height: 277.023px;
+  flex-shrink: 0;
+}
+
+@media(min-width: 400px) {
+  .section {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .textContainer {
+    margin-bottom: 32px;
+    width: 277px;
+  }
+
+  .line {
+    width: 101px;
+    height: 4px;
+    margin-bottom: 32px;
+  }
+
+  .text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .image {
+    width: 452.999px;
+    height: 357.525px;
+  }
+}
+
+@media(min-width: 640px) {
+  .section {
+    width: 100%;
+    margin-bottom: 100px;
+
+    flex-direction: row;
+  }
+
+  .textContainer {
+    margin-bottom: 0;
+    margin-top: 50px;
+    width: 277px;
+    flex-shrink: 0;
+  }
+
+  .line {
+    width: 101px;
+    height: 4px;
+    margin-bottom: 32px;
+  }
+
+  .text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .image {
+    width: 407.999px;
+    height: 322.008px;
+  }
+}
+
+//@media(min-width: 720px) {
+//  .section {
+//    width: 100%;
+//    margin-bottom: 100px;
+//  }
+//
+//  .textContainer {
+//    margin-top: 58px;
+//    width: 277px;
+//  }
+//
+//  .line {
+//    width: 101px;
+//    height: 4px;
+//    margin-bottom: 32px;
+//  }
+//
+//  .text {
+//    font-size: 12px;
+//    line-height: 16px;
+//  }
+//
+//  .image {
+//    width: 512.001px;
+//    height: 404.089px;
+//  }
+//}
+
+@media(min-width: 1200px) {
+  .section {
+    width: 100%;
+    margin-bottom: 200px;
+  }
+
+  .textContainer {
+    margin-top: 132px;
+    margin-right: 85px;
+    width: 435px;
+  }
+
+  .line {
+    width: 110px;
+    height: 8px;
+    margin-bottom: 32px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .image {
+    width: 630px;
+    height: 497.219px;
+  }
+}
+
+@media(min-width: 1400px) {
+  .section {
+    width: 1150px;
+    margin-bottom: 160px;
+  }
+}

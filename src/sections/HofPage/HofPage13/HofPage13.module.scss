@@ -1,0 +1,179 @@
+.section {
+  width: 1670px;
+  height: 1277px;
+  margin-top: 240px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.titleContainer {
+  width: 725px;
+  margin-top: 157px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+
+  & > p {
+    text-align: right;
+  }
+
+  & > p:last-child {
+    width: 685px;
+    margin-top: 24px;
+  }
+}
+
+.textAbsolute {
+  position: absolute;
+  top: 525px;
+  right: -216px;
+
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 320px;
+  line-height: 90%;
+  text-align: right;
+  color: rgba(216, 216, 216, 0.6);
+
+  z-index: 1;
+}
+
+.image {
+  position: absolute;
+  left: 130px;
+  top: 0;
+
+  z-index: 2;
+
+  width: 695px;
+  height: 1234px;
+}
+
+.ellipse {
+  position: absolute;
+  left: -341px;
+  bottom: 0;
+
+  width: 1166px;
+  height: 1157px;
+
+  border-radius: 50%;
+  background: linear-gradient(106.2deg, #EB48FE 0%, #83FEFF 100%);
+}
+
+@media (max-width: 1700px) {
+  .section {
+    width: 1150px;
+    height: 1054px;
+  }
+
+  .titleContainer {
+    width: 595px;
+    margin-top: 107px;
+
+    & > p:last-child {
+      width: 500px;
+    }
+  }
+
+  .textAbsolute {
+    top: 507px;
+
+    right: -232px;
+    font-size: 244px;
+  }
+
+  .image {
+    width: 500px;
+    height: 888px;
+
+    left: 0;
+  }
+
+  .ellipse {
+    left: -302px;
+
+    width: 955px;
+    height: 947px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section {
+    width: 602px;
+    height: 574px;
+    margin-top: 120px;
+  }
+
+  .titleContainer {
+    width: 250px;
+    margin-top: 31px;
+
+    & > p:last-child {
+      width: 234px;
+      margin-top: 12px;
+    }
+  }
+
+  .textAbsolute {
+    top: 262px;
+    right: -104px;
+
+    font-size: 124px;
+  }
+
+  .image {
+    width: 309px;
+    height: 548px;
+  }
+
+  .ellipse {
+    left: -137px;
+
+    width: 547px;
+    height: 543px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    width: 280px;
+    height: 514px;
+    margin-top: 100px;
+  }
+
+  .titleContainer {
+    margin-top: 0;
+
+    & > p:last-child {
+      margin-top: 8px;
+    }
+  }
+
+  .textAbsolute {
+    top: 297px;
+    right: -46px;
+    font-size: 56px;
+  }
+
+  .image {
+    width: 207px;
+    height: 368px;
+    top: 92px;
+  }
+
+  .ellipse {
+    left: -98px;
+
+    width: 354px;
+    height: 353px;
+  }
+}

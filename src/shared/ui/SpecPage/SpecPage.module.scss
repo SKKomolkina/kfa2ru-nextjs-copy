@@ -1,0 +1,600 @@
+.main {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+
+  color: var(--color-black);
+  position: relative;
+}
+
+.boxClassName {
+  background-color: transparent !important;
+}
+
+.itemsContainer {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-shrink: 0;
+
+  overflow-y: scroll;
+  cursor: pointer;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+.imageAcc {
+  width: 100%;
+  height: auto;
+}
+
+.itemsContainer::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.itemsContainerDrag {
+  composes: itemsContainer;
+  animation: drag .2s ease forwards;
+}
+
+.item {
+  width: 207px;
+  margin-right: 12px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.itemFull {
+  composes: item;
+  width: 100%;
+  margin-right: 0;
+
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+
+  & >div:nth-child(n+3) {
+    width: 45%;
+  }
+
+  & > div {
+    width: 100%;
+  }
+}
+
+//.itemFull:first-of-type {
+//  & > div:first-of-type {
+//    width: 100%;
+//  }
+//
+//  & >div:nth-of-type(2) {
+//    width: 100%;
+//  }
+//}
+
+.buttonContainer {
+  margin-bottom: 24px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-self: center;
+}
+
+.button {
+  padding: 8px 20px;
+  margin-left: 12px;
+
+  background: transparent;
+  border: 1px solid var(--color-black);
+  border-radius: 60px;
+  cursor: pointer;
+
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+}
+
+.buttonActive {
+  composes: button;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.box {
+  margin-bottom: 24px;
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  //bottom: 4px;
+  //overflow: hidden;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.boxCode {
+  composes: box;
+  min-height: 52px;
+}
+
+.boxSupply {
+  composes: box;
+  min-height: 62px;
+}
+
+.boxFull {
+  composes: box;
+  width: 100% !important;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.textTitle {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 300;
+
+  white-space: pre-line;
+}
+
+.colorButtonContainer {
+  margin-bottom: 12px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+
+  position: relative;
+}
+
+.colorButton {
+  width: 20px;
+  height: 20px;
+  margin-left: 6px;
+
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: all .2ms ease;
+
+  &:first-of-type {
+    margin-left: 4px;
+  }
+}
+
+.colorButtonActive {
+  composes: colorButton;
+  box-shadow: 0px 4px 3px 0px rgba(37, 38, 43, 0.15) inset;
+  transition: all .2s ease;
+
+  &::after {
+    content: '';
+    width: 25px;
+    height: 25px;
+
+    position: absolute;
+    left: -3px;
+    top: -3px;
+
+    border-radius: 24px;
+    border: 0.5px solid var(--green, #44FC8E);
+
+    transition: all .2s ease;
+  }
+}
+
+//.colorButtonStroke {
+//  width: 24px;
+//  height: 24px;
+//
+//  position: absolute;
+//  left: 2px;
+//  top: -2px;
+//
+//  border-radius: 24px;
+//  border: 0.5px solid var(--green, #44FC8E);
+//}
+
+.image {
+  width: 100%;
+  height: max-content;
+  border-radius: 4px;
+}
+
+.lightZone {
+  margin-top: 20px;
+  width: 100%;
+  height: max-content;
+}
+
+.line {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  height: 1px;
+
+  border-radius: 5px;
+  background-color: var(--color-light-gray);
+}
+
+.botBlob {
+  width: 747px;
+  height: 663px;
+
+  position: absolute;
+  bottom: -243px;
+  left: -463px;
+
+  filter: blur(40px);
+}
+
+@media (min-width: 400px) {
+  .main {
+  }
+
+  .itemsContainer {
+  }
+
+  .item {
+    width: 226px;
+    margin-right: 20px;
+  }
+
+  .itemFull {
+    width: 100%;
+  }
+
+  .buttonContainer {
+    margin-bottom: 40px;
+  }
+
+  .button {
+    padding: 12px 24px;
+    margin-left: 20px;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .box {
+    margin-bottom: 24px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .textTitle {
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .colorButtonContainer {
+    margin-bottom: 12px;
+  }
+
+  .colorButton {
+    width: 20px;
+    height: 20px;
+    margin-left: 6px;
+  }
+
+  .colorButtonStroke {
+    width: 24px;
+    height: 24px;
+
+    left: 2px;
+    top: -2px;
+  }
+
+  .image {
+    width: 100%;
+    //height: 127px;
+  }
+
+  .lightZone {
+    margin-top: 12px;
+    width: 100%;
+    height: max-content;
+  }
+
+  .line {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .botBlob {
+    width: 747px;
+    height: 663px;
+
+    position: absolute;
+    bottom: -243px;
+    left: -463px;
+
+    filter: blur(40px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .main {
+    //justify-content: center;
+    align-self: center;
+  }
+
+  .itemsContainer {
+    align-self: center;
+    overflow: visible;
+    overflow: scroll;
+    //cursor: auto;
+  }
+
+  .item {
+    width: 370px;
+    margin-right: 20px;
+  }
+
+  .itemFull {
+    width: 100%;
+  }
+
+  .buttonContainer {
+    margin-bottom: 80px;
+  }
+
+  .button {
+    padding: 20px 32px;
+    margin-left: 20px;
+
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .box {
+    margin-bottom: 32px;
+    //border-radius: 10px;
+  }
+
+  .boxCode {
+    min-height: 92px;
+  }
+
+  .boxSupply {
+    min-height: 92px;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .textTitle {
+    margin-bottom: 12px;
+
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .colorButtonContainer {
+    margin-bottom: 20px;
+  }
+
+  .colorButton {
+    width: 27px;
+    height: 27px;
+    margin-left: 4px;
+  }
+
+  .colorButtonActive {
+    &::after {
+      width: 32px;
+      height: 32px;
+      left: -3px;
+      top: -3px;
+    }
+  }
+
+  .colorButtonStroke {
+    width: 33px;
+    height: 33px;
+
+    left: 1px;
+    top: -3px;
+  }
+
+  .image {
+    width: 100%;
+    border-radius: 10px;
+    //height: 209px;
+  }
+
+  .lightZone {
+    margin-top: 12px;
+    width: 305px;
+    height: auto;
+  }
+
+  .line {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .botBlob {
+    width: 1288px;
+    height: 1088px;
+
+    bottom: -450px;
+    left: -755px;
+
+    filter: blur(20px);
+  }
+}
+
+@media (min-width: 1400px) {
+  .main {
+    //align-items: center;
+    //width: 1150px;
+  }
+
+  .itemsContainer {
+  }
+
+  .item {
+    width: 370px;
+    margin-right: 20px;
+  }
+
+  .itemFull {
+    width: 100%;
+  }
+
+  .buttonContainer {
+    margin-bottom: 80px;
+  }
+
+  .button {
+    padding: 20px 32px;
+    margin-left: 20px;
+
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .box {
+    margin-bottom: 32px;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .textTitle {
+    margin-bottom: 12px;
+
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .colorButtonContainer {
+    margin-bottom: 20px;
+  }
+
+  .colorButton {
+    width: 27px;
+    height: 27px;
+    margin-left: 4px;
+  }
+
+  .colorButtonStroke {
+    width: 33px;
+    height: 33px;
+
+    left: 1px;
+    top: -3px;
+  }
+
+  .image {
+    width: 100%;
+    //height: 209px;
+  }
+
+  .lightZone {
+    margin-top: 12px;
+  }
+
+  .line {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@keyframes drag {
+  from {
+    left: 0;
+  }
+  to {
+    left: auto;
+    right: 0;
+  }
+}

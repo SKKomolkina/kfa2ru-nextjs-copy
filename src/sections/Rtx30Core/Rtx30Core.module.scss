@@ -1,0 +1,127 @@
+.core {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.textContainer {
+  position: relative;
+  margin-top: 12px;
+
+  padding: 66px 40px 12px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--color-black);
+  color: var(--color-black);
+  overflow: hidden;
+}
+
+.noise {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: url('./images/noise.svg') repeat;
+  z-index: 1;
+}
+
+.box {
+  width: 100%;
+  margin-top: 12px;
+
+  position: relative;
+  border-radius: 8px;
+  color: var(--color-white);
+  overflow: hidden;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--color-white);
+  position: relative;
+  z-index: 1;
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+.text {
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 300;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 400px) {
+  .title {
+    font-size: 32px;
+    line-height: 120%;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 60px;
+    line-height: 82px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .subtitle {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .box {
+    border-radius: 16px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .title {
+    font-size: 80px;
+    line-height: 120%;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .textContainer {
+    border-radius: 20px;
+  }
+
+  .subtitle {
+    font-size: 60px;
+    line-height: 120%;
+  }
+}

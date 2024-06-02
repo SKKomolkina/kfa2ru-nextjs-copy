@@ -1,0 +1,322 @@
+.section {
+  width: 100%;
+  margin-top: 40px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  align-self: center;
+  position: relative;
+}
+
+.imageFirst {
+  width: 280px;
+  height: 196px;
+  margin-bottom: 12px;
+}
+
+.imageSecondContainer {
+  width: 170px;
+  height: 128px;
+  margin-bottom: 12px;
+
+  border-radius: 8px;
+  position: relative;
+}
+
+.imageSecond {
+  width: 100%;
+  height: 100%;
+}
+
+.imageSecondBlur {
+  width: 73px;
+  height: 128px;
+
+  background: rgba(72, 72, 72, 0.2);
+  backdrop-filter: blur(6px);
+  border-radius: 8px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.textContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.textContainerTop {
+  composes: textContainer;
+
+  width: 170px;
+  height: 78px;
+  margin-bottom: 40px;
+}
+
+.imageThird {
+  width: 280px;
+  height: 180px;
+  margin-bottom: 16px;
+}
+
+.textContainerBot {
+  composes: textContainer;
+  width: 170px;
+  height: 73px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--color-red);
+}
+
+.text {
+  font-weight: 300;
+  font-size: 8px;
+  line-height: 11px;
+}
+
+@media (min-width: 400px) {
+  .section {
+    margin-top: 80px;
+  }
+
+  .imageFirst {
+    width: 374px;
+    height: 262px;
+    margin-bottom: 24px;
+  }
+
+  .imageSecondContainer {
+    width: 226px;
+    height: 170px;
+    margin-bottom: 16px;
+  }
+
+  .imageSecondBlur {
+    width: 98px;
+    height: 170px;
+  }
+
+  .textContainerTop {
+    width: 226px;
+    height: 72px;
+  }
+
+  .imageThird {
+    width: 374px;
+    height: 240px;
+  }
+
+  .textContainerBot {
+    width: 226px;
+    height: 104px;
+  }
+
+  .title {
+  }
+
+  .text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: 640px) {
+  .section {
+    margin-top: 120px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .imageFirst {
+    width: 368px;
+    height: 262px;
+    margin-bottom: 54px;
+  }
+
+  .imageSecondContainer {
+    margin-left: 37px;
+
+    width: 211px;
+    height: 170px;
+    margin-bottom: 0;
+  }
+
+  .imageSecondBlur {
+    width: 98px;
+    height: 170px;
+  }
+
+  .imageSecond {
+    border-radius: 16px;
+  }
+
+  .textContainerTop {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+
+    width: 192px;
+    height: 62px;
+    margin: 0;
+  }
+
+  .imageThird {
+    width: 369px;
+    height: 240px;
+    margin-bottom: 0;
+    margin-top: 60px;
+  }
+
+  .textContainerBot {
+    width: 160px;
+    height: 84px;
+    margin-left: 56px;
+    margin-bottom: 132px;
+  }
+
+  .title {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .text {
+    font-size: 8px;
+    line-height: 11px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    margin-top: 200px;
+    //width: 1020px;
+  }
+
+  .imageFirst {
+    width: 630px;
+    height: 448px;
+    margin-bottom: 72px;
+    border-radius: 16px;
+  }
+
+  .imageSecondContainer {
+    margin-left: 85px;
+
+    width: 305px;
+    height: 270px;
+    border-radius: 16px;
+  }
+
+  .imageSecondBlur {
+    width: 110px;
+    height: 270px;
+    backdrop-filter: blur(6px);
+    border-radius: 16px;
+  }
+
+  .textContainerTop {
+    top: 146px;
+    right: 131px;
+
+    width: 305px;
+    height: 78px;
+  }
+
+  .imageThird {
+    width: 630px;
+    height: auto;
+    border-radius: 16px;
+    margin-bottom: 0;
+    margin-top: 149px;
+  }
+
+  .textContainerBot {
+    width: 240px;
+    height: 110px;
+    margin-left: 84px;
+    margin-bottom: 290px;
+  }
+
+  .title {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .section {
+    margin-top: 240px;
+    //width: 1540px;
+    justify-content: space-between;
+  }
+
+  .imageFirst {
+    width: 695px;
+    height: auto;
+    margin-bottom: 216px;
+    border-radius: 20px;
+  }
+
+  .imageSecondContainer {
+    margin-left: 0;
+
+    width: 370px;
+    height: 328px;
+    border-radius: 20px;
+  }
+
+  .imageSecondBlur {
+    border-radius: 20px;
+    width: 175px;
+    height: 100%;
+  }
+
+  .textContainerTop {
+    top: 120px;
+    right: 66px;
+
+    width: 305px;
+    height: 105px;
+  }
+
+  .imageThird {
+    width: 695px;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 102px;
+  }
+
+  .textContainerBot {
+    width: 305px;
+    height: 159px;
+    margin-left: 0;
+    margin-bottom: 90px;
+    margin-right: 66px;
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 38px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}

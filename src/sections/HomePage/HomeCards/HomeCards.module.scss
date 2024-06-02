@@ -1,0 +1,400 @@
+.HomeCards {
+  width: 100%;
+  margin-top: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.card {
+  width: 100%;
+  //height: 400px;
+  height: 100%;
+  padding: 8px 12px;
+  border-radius: 4px;
+
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+
+  color: var(--color-white);
+  background: linear-gradient(106.39deg, #44FC8E 0%, #4916DD 100%);
+  box-shadow: 0px 1.6479px 12.3593px rgba(20, 8, 40, 0.3);
+  //border-radius: 9px;
+
+  overflow: hidden;
+}
+
+.noise {
+  width: 700px;
+
+  position: absolute;
+  top: -2px;
+  left: -47px;
+
+  z-index: 1;
+}
+
+.button {
+  position: absolute;
+  left: 102px;
+  bottom: 8px;
+
+  padding: 2px 16px 3px 16px;
+
+  font-weight: var(--font-weight-light);
+  font-size: var(--text-xxs-font-size);
+  line-height: var(--text-xxs-line-height);
+  color: var(--color-blue);
+  background: var(--color-white);
+
+  border-radius: 12px;
+  cursor: pointer;
+
+  z-index: 4;
+}
+
+.text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.titleContainer {
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.title {
+  width: 147px;
+  font-weight: var(--font-weight-light);
+  font-size: var(--text-xxs-font-size);
+  line-height: var(--text-xxs-line-height);
+}
+
+.line {
+  margin-top: 8px;
+}
+
+.box {
+  width: 100%;
+  height: 412px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiperContainer {
+  width: 100%;
+  //height: 577px;
+  height: 412px;
+
+  overflow: hidden;
+  position: relative;
+
+  & > div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+}
+
+.top {
+  position: absolute;
+  top: 0;
+  width: 80% !important;
+}
+
+.slide {
+  width: 280px;
+  height: 400px !important;
+}
+
+.parallax {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  min-width: 100vw;
+  margin-left: -50vw;
+  height: 100%;
+  z-index: 999;
+}
+
+@media (min-width: 400px) {
+  .HomeCards {
+    margin-top: 120px;
+  }
+
+  .card {
+    width: 100%;
+    //height: 323px;
+    padding: 15px;
+
+    //align-items: flex-end;
+    //justify-content: space-between;
+
+    border-radius: 8px;
+  }
+
+  .noise {
+    width: 700px;
+
+    position: absolute;
+    top: -2px;
+    left: -47px;
+
+    z-index: 1;
+  }
+
+  .button {
+    position: absolute;
+    left: 142px;
+    bottom: 16px;
+
+    padding: 1px 17px 2px 17px;
+
+    font-size: var(--text-xs-font-size);
+    line-height: var(--text-xs-line-height);
+  }
+
+  .text {
+    //max-width: 54px;
+
+    font-size: 16px;
+  }
+
+  .titleContainer {
+    margin-bottom: 80px;
+  }
+
+  .title {
+    width: 209px;
+
+    font-size: var(--text-xs-font-size);
+    line-height: var(--text-xs-line-height);
+  }
+
+  .line {
+    margin-top: 12px;
+  }
+
+  .swiperContainer {
+    height: 516px;
+  }
+
+  .slide {
+    width: 100%;
+    height: 500px !important;
+  }
+
+  .box {
+    height: 516px;
+  }
+}
+
+@media (min-width: 640px) {
+  .HomeCards {
+    margin-top: 96px;
+  }
+
+  .card {
+    //height: 295px;
+    padding: 15px;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .noise {
+    width: 800px;
+
+    position: absolute;
+    top: -2px;
+    left: -47px;
+
+    z-index: 1;
+  }
+
+  .button {
+    position: absolute;
+    left: 267px;
+    bottom: 16px;
+
+    padding: 2px 20px 3px;
+
+    font-size: 10px;
+    line-height: 120%;
+
+    border-radius: 10px;
+  }
+
+  .text {
+    max-width: 105px;
+
+    font-size: var(--text-xs-font-size);
+    line-height: var(--text-xs-line-height);
+  }
+
+  .titleContainer {
+    margin-bottom: 40px;
+  }
+
+  .title {
+    width: 143px;
+
+    font-size: var(--text-xxs-font-size);
+    line-height: var(--text-xxs-line-height);
+  }
+
+  .line {
+  }
+
+  .swiperContainer, .box {
+    height: 309px;
+  }
+
+  .slide {
+    height: 295px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .HomeCards {
+    margin-top: 200px;
+  }
+
+  .card {
+    height: 551px;
+    padding-left: 45px;
+    padding-right: 40px;
+  }
+
+  .noise {
+    width: 1200px;
+
+    top: -2px;
+    left: -47px;
+  }
+
+  .button {
+    position: absolute;
+    left: 500px;
+    bottom: 24px;
+
+    padding: 4px 32px 5px;
+
+    font-size: var(--text-s-font-size);
+    line-height: var(--text-s-line-height);
+
+    border-radius: 20px;
+  }
+
+  .text {
+    max-width: 202px;
+
+    font-size: var(--text-l-font-size);
+    line-height: var(--text-l-line-height);
+  }
+
+  .titleContainer {
+    margin-bottom: 60px;
+  }
+
+  .title {
+    width: 370px;
+
+    font-size: var(--text-m-font-size);
+    line-height: var(--text-m-line-height);
+  }
+
+  .line {
+    margin-top: 20px;
+  }
+
+  .swiperContainer, .box {
+    height: 577px;
+  }
+
+  .slide {
+    height: 550px !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .HomeCards {
+    margin-top: 300px;
+  }
+
+  .card {
+    //height: 800px;
+    //padding: 20px 45px;
+  }
+
+  .noise {
+    width: 2000px;
+
+    top: -2px;
+    left: 0;
+  }
+
+  .button {
+    left: 565px;
+    bottom: 20px;
+
+    padding: 7px 55px 8px;
+
+    font-size: 16px;
+
+    border-radius: 40px;
+  }
+
+  .text {
+    max-width: 270px;
+
+    font-size: var(--header-xs-font-size);
+    line-height: var(--header-xs-line-height);
+  }
+
+  .titleContainer {
+    margin-bottom: 80px;
+  }
+
+  .title {
+    width: 485px;
+
+    font-size: var(--text-l-font-size);
+    line-height: var(--text-l-line-height);
+  }
+
+  .line {
+    margin-top: 24px;
+  }
+}

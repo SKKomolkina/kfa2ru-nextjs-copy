@@ -1,0 +1,148 @@
+.main {
+  width: 100%;
+  margin-top: 320px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 1540px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.textContainer {
+  width: 585px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.title {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+
+  background: linear-gradient(110.69deg, #FA9B00 0%, #AE4F99 47.36%, #3C09D7 99.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.text {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.image {
+  flex-shrink: 0;
+  margin-left: 45px;
+  margin-top: 40px;
+}
+
+@media (max-width: 1700px) {
+  .main {
+    margin-top: 260px;
+  }
+
+  .container {
+    width: 1060px;
+  }
+
+  .textContainer {
+    width: 455px;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .text {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .image {
+    width: 715px;
+    height: 399px;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main {
+    margin-top: 140px;
+  }
+
+  .container {
+    width: 570px;
+  }
+
+  .textContainer {
+    width: 293px;
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .image {
+    width: 336px;
+    height: 187px;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 720px) {
+  .main {
+    margin-top: 80px;
+  }
+
+  .container {
+    width: 280px;
+    flex-direction: column;
+  }
+
+  .textContainer {
+    width: 280px;
+  }
+
+  .title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .image {
+    width: 280px;
+    height: 156px;
+    margin-top: 20px;
+  }
+}

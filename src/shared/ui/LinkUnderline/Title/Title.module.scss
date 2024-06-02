@@ -1,0 +1,31 @@
+.Title {
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: var(--font-weight-regular);
+
+  text-transform: uppercase;
+}
+
+@media (min-width: 400px) {
+  .Title {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 640px) {
+  .Title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Title {
+    font-size: var(--header-s-font-size);
+  }
+}
+
+@media (min-width: 1400px) {
+  .Title {
+    font-size: 40px;
+  }
+}

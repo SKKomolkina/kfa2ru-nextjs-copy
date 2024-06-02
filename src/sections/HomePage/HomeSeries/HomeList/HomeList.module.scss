@@ -1,0 +1,15 @@
+.HomeList {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  position: relative;
+  z-index: 1;
+}
+
+.item {
+  width: 100%;
+}

@@ -1,0 +1,168 @@
+.main {
+  margin-top: 400px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 1410px;
+  height: 728px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: row;
+
+  position: relative;
+}
+
+.image {
+  margin-right: 196px;
+  flex-shrink: 0;
+
+  position: relative;
+  z-index: 1;
+}
+
+.textContainer {
+  margin-top: 40px;
+  width: 630px;
+
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  position: relative;
+  z-index: 1;
+}
+
+.text {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.textSpan {
+  composes: text;
+
+  background: linear-gradient(110.69deg, #FA9B00 0%, #AE4F99 47.36%, #3C09D7 99.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.back {
+  position: absolute;
+  left: -408px;
+  bottom: -66px;
+}
+
+@media (max-width: 1700px) {
+  .main {
+    margin-top: 320px;
+  }
+
+  .container {
+    width: 1060px;
+    height: 523px;
+  }
+
+  .image {
+    width: 454px;
+    height: 378px;
+    margin-right: 150px;
+  }
+
+  .textContainer {
+    margin-top: 12px;
+    width: 455px;
+  }
+
+  .text {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .back {
+    width: 744px;
+    height: 512px;
+
+    left: -232px;
+    bottom: -6px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main {
+    margin-top: 160px;
+  }
+
+  .container {
+    width: 570px;
+    height: 244px;
+  }
+
+  .image {
+    width: 218px;
+    height: 182px;
+    margin-right: 75px;
+  }
+
+  .textContainer {
+    margin-top: 0;
+    width: 277px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .back {
+    width: 382px;
+    height: 264px;
+    left: -126px;
+    bottom: -8px;
+  }
+}
+
+@media (max-width: 720px) {
+  .main {
+    margin-top: 120px;
+  }
+
+  .container {
+    width: 280px;
+    height: 486px;
+
+    flex-direction: column-reverse;
+  }
+
+  .image {
+    width: 218px;
+    height: 182px;
+    margin-top: 60px;
+    margin-right: 0;
+    margin-left: 62px;
+  }
+
+  .textContainer {
+    margin-top: 0;
+    width: 280px;
+  }
+
+  .back {
+    width: 340px;
+    height: 234px;
+    left: -50px;
+    bottom: 4px;
+  }
+}

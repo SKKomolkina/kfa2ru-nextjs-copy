@@ -1,0 +1,169 @@
+.section {
+  width: 100%;
+  margin-bottom: 302px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.text {
+  font-family: 'Manrope', sans-serif;
+  margin-top: 12px;
+  margin-left: 37px;
+
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 120%;
+
+  position: relative;
+  z-index: 2;
+}
+
+.image {
+  width: 367px;
+  height: 279px;
+
+  position: absolute;
+  left: -83px;
+  top: 184px;
+  z-index: 1;
+}
+
+.blur {
+  width: 821px;
+  height: 571px;
+
+  position: absolute;
+  right: -132px;
+  top: 65px;
+}
+
+@media (min-width: 400px) {
+  .section {
+    margin-bottom: 508px;
+  }
+
+  .text {
+    margin-top: 12px;
+    margin-left: 49px;
+
+    font-size: 16px;
+  }
+
+  .image {
+    width: 582px;
+    height: 442px;
+
+    left: -208px;
+    top: 159px;
+  }
+
+  .blur {
+    width: 1076px;
+    height: 753px;
+
+    right: -184px;
+    top: 24px;
+  }
+}
+
+@media (min-width: 720px) {
+  .section {
+    margin-bottom: 418px;
+  }
+
+  .text {
+    margin-top: 12px;
+    margin-left: 53px;
+
+    font-size: 16px;
+  }
+
+  .image {
+    width: 474px;
+    height: 360px;
+
+    left: 142px;
+    top: 116px;
+  }
+
+  .blur {
+    width: 1015px;
+    height: 710px;
+
+    right: 0;
+    top: -73px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    margin-bottom: 780px;
+
+    & > h2 {
+      font-size: 60px;
+    }
+  }
+
+  .text {
+    margin-top: 24px;
+    margin-left: 65px;
+
+    font-size: 16px;
+    width: 565px;
+  }
+
+  .image {
+    width: 1020px;
+    height: 777px;
+
+    left: 130px;
+    top: 132px;
+  }
+
+  .blur {
+    width: 1746px;
+    height: 1221px;
+
+    right: 65px;
+    top: -102px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .section {
+    margin-bottom: 798px;
+
+    & > h2 {
+      font-size: 80px;
+    }
+  }
+
+  .text {
+    margin-top: 32px;
+    margin-left: 130px;
+
+    font-size: 16px;
+    width: 565px;
+  }
+
+  .image {
+    width: 1020px;
+    height: 777px;
+
+    left: 426px;
+    top: 132px;
+  }
+
+  .blur {
+    width: 1922px;
+    height: 1342px;
+
+    right: 368px;
+    top: -11px;
+  }
+}

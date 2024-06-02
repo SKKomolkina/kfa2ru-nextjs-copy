@@ -1,0 +1,50 @@
+.tag {
+  position: absolute;
+
+  padding: 2px 12px 3px;
+  border-radius: 100px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.blueTag {
+  composes: tag;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.redTag {
+  composes: tag;
+  color: var(--color-black);
+  background-color: var(--color-red);
+}
+
+.yellowTag {
+  composes: tag;
+  color: var(--color-black);
+  background-color: var(--color-yellow);
+}
+
+@media (min-width: 640px) {
+  .tag {
+    padding: 4px 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tag {
+    padding: 8px 24px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+//@media (min-width: 1700px) {
+//  .tag {
+//    padding: 16px 40px;
+//    font-size: 32px;
+//    line-height: 120%;
+//  }
+//}

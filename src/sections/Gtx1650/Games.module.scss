@@ -1,0 +1,252 @@
+.section {
+  width: 100%;
+  margin-top: 165px;
+
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  height: 290px;
+}
+
+.line {
+  position: absolute;
+  height: 83px;
+  z-index: 1;
+}
+
+.top {
+  composes: line;
+  top: 0;
+  width: 1461px;
+
+  background: url("./games/top.png") repeat-x;
+  animation: slide 48s linear infinite;
+}
+
+.mid {
+  composes: line;
+  bottom: 103px;
+  width: 1752px;
+
+  background: url("./games/mid.png") repeat-x;
+  animation: slideMid 52s linear infinite;
+}
+
+.bot {
+  composes: line;
+  bottom: 0;
+  width: 1461px;
+
+  background: url("./games/bot.png") repeat-x;
+  animation: slide 48s linear infinite;
+}
+
+.back {
+  position: absolute;
+  left: -292px;
+  bottom: -74px;
+
+  width: 719px;
+  height: 393px;
+}
+
+@media(min-width: 640px) {
+  .section {
+    margin-top: 240px;
+  }
+
+  .container {
+    height: 339px;
+  }
+
+  .line {
+    height: 97px;
+  }
+
+  .top {
+    width: 1761px;
+
+    background: url("./games/top640.png") repeat-x;
+    animation: slide640 48s linear infinite;
+  }
+
+  .mid {
+    composes: line;
+    bottom: 121px;
+    width: 2112px;
+
+    background: url("./games/mid640.png") repeat-x;
+    animation: slideMid640 52s linear infinite;
+  }
+
+  .bot {
+    width: 1761px;
+
+    background: url("./games/bot640.png") repeat-x;
+    animation: slide640 48s linear infinite;
+  }
+
+  .back {
+    left: -178px;
+    bottom: -74px;
+
+    width: 888px;
+    height: 486px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .section {
+    margin-top: 407px;
+  }
+
+  .container {
+    height: 483px;
+  }
+
+  .line {
+    height: 145px;
+  }
+
+  .top {
+    width: 3210px;
+
+    background: url("./games/top1200.png") repeat-x;
+    animation: slide640 48s linear infinite;
+  }
+
+  .mid {
+    bottom: 169px;
+    width: 3894px;
+
+    background: url("./games/mid1200.png") repeat-x;
+    animation: slideMid640 52s linear infinite;
+  }
+
+  .bot {
+    width: 3210px;
+
+    background: url("./games/bot1200.png") repeat-x;
+    animation: slide640 48s linear infinite;
+  }
+
+  .back {
+    left: -241px;
+    bottom: -175px;
+
+    width: 1542px;
+    height: 844px;
+  }
+}
+
+@media(min-width: 1700px) {
+  .container {
+    height: 597px;
+  }
+
+  .line {
+    height: 183px;
+  }
+
+  .mid {
+    bottom: 207px;
+    width: 3895px;
+    background: url("./games/mid1700.png") repeat-x;
+    animation-name: slideMid1700;
+    animation-duration: 60s;
+  }
+
+  .top {
+    width: 3258px;
+    background: url("./games/top1700.png") repeat-x;
+    animation-name: slide1700;
+    animation-duration: 58s;
+  }
+
+  .bot {
+    width: 3258px;
+    background: url("./games/bot1700.png") repeat-x;
+    animation-name: slide1700;
+    animation-duration: 58s;
+  }
+
+  .back {
+    width: 1816px;
+    height: 994px;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-718px);
+  }
+}
+
+@keyframes slideMid {
+  0% {
+    transform: translate(-864px);
+  }
+  100% {
+    transform: translate(100px);
+  }
+}
+
+@keyframes slide640 {
+  0% {
+    transform: translate(-100px);
+  }
+  100% {
+    transform: translate(-864px);
+  }
+}
+
+@keyframes slideMid640 {
+  0% {
+    transform: translate(-1040px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes slide1200 {
+  0% {
+    transform: translate(-100px);
+  }
+  100% {
+    transform: translate(-1604px);
+  }
+}
+
+@keyframes slideMid1200 {
+  0% {
+    transform: translate(-1927px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes slide1700 {
+  0% {
+    transform: translate(-300px);
+  }
+  100% {
+    transform: translate(-1604px);
+  }
+}
+
+@keyframes slideMid1700 {
+  0% {
+    transform: translate(-1927px);
+  }
+  100% {
+    transform: translate(300px);
+  }
+}

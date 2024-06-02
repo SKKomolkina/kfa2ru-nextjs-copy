@@ -1,0 +1,598 @@
+.Footer {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 24px;
+
+  background-color: #B3B3B3;
+  border-radius: .5px;
+}
+
+.nav {
+  width: 100%;
+  margin-bottom: 40px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.navLink {
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 300;
+  margin-right: 16px;
+
+  &:last-of-type {
+    margin-right: 0;
+
+    & > a {
+      & > svg {
+        display: none;
+      }
+    }
+  }
+}
+
+.navLinkActive {
+  composes: navLink;
+  font-weight: 500;
+}
+
+.list {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  margin-left: 20px;
+
+  &:first-of-type {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+
+  &:nth-of-type(4) {
+    margin-left: 0;
+  }
+}
+
+.textList {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.itemLink {
+  margin-bottom: 8px;
+  cursor: pointer;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.about {
+  width: 152px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 100%;
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.logoImage {
+  width: 79px;
+  height: 16px;
+}
+
+.copyList {
+  width: 158px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.copyItem {
+  margin-bottom: 4px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.copyText {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.langContainer {
+  margin-top: 80px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.langImage {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.langText {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+}
+
+.arr {
+  width: auto;
+  height: 100%;
+  margin-left: 16px;
+}
+
+.arrDark {
+  composes: arr;
+    & > path {
+      stroke: #FFFFFF;
+    }
+}
+
+@media(min-width: 400px) {
+  .Footer {
+  }
+
+  .line {
+    margin-bottom: 32px;
+  }
+
+  .nav {
+    margin-bottom: 40px;
+  }
+
+  .list {
+  }
+
+  .item {
+    margin-left: 40px;
+
+    &:first-of-type {
+      margin-left: 0;
+      margin-bottom: 40px;
+    }
+
+    &:nth-of-type(4) {
+      margin-left: 0;
+    }
+  }
+
+  .textList {
+  }
+
+  .title {
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .itemLink {
+    margin-bottom: 8px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .about {
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    width: 100%;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .logoImage {
+    width: 79px;
+    height: 16px;
+  }
+
+  .copyList {
+    width: 158px;
+  }
+
+  .copyItem {
+    margin-bottom: 4px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .copyText {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .langImage {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+
+  .langText {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media(min-width: 640px) {
+  .Footer {
+  }
+
+  .line {
+    margin-bottom: 32px;
+  }
+
+  .nav {
+    margin-bottom: 42px;
+  }
+
+  .list {
+    justify-content: space-between;
+  }
+
+  .item {
+    margin-left: 0;
+
+    &:first-of-type {
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+
+    &:nth-of-type(4) {
+      margin-left: 0;
+    }
+  }
+
+  .textList {
+  }
+
+  .title {
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .itemLink {
+    margin-bottom: 8px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .about {
+    width: 255px;
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+
+  .logo {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .logoImage {
+    width: 59px;
+    height: 12px;
+  }
+
+  .copyList {
+    width: 100%;
+  }
+
+  .copyItem {
+    margin-bottom: 4px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .copyText {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .langContainer {
+    margin-top: 92px;
+  }
+
+  .langImage {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+
+  .langText {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .Footer {
+  }
+
+  .line {
+    margin-bottom: 40px;
+  }
+
+  .nav {
+    margin-bottom: 42px;
+    width: max-content;
+  }
+
+  .navLink {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .list {
+    width: 630px;
+  }
+
+  .item {
+  }
+
+  .textList {
+  }
+
+  .title {
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .itemLink {
+    margin-bottom: 8px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .about {
+    width: 50%;
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+
+  .logo {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .logoImage {
+    width: 59px;
+    height: 12px;
+  }
+
+  .copyList {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .copyItem {
+    margin-bottom: 4px;
+    margin-right: 12px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+      margin-right: 0;
+    }
+  }
+
+  .copyText {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .langContainer {
+    margin-top: 92px;
+  }
+
+  .langImage {
+    width: 22px;
+    height: 22px;
+    margin-right: 12px;
+  }
+
+  .langText {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media(min-width: 1400px) {
+  .Footer {
+  }
+
+  .line {
+    margin-bottom: 40px;
+  }
+
+  .nav {
+    margin-bottom: 0;
+    width: max-content;
+    min-width: 40%;
+  }
+
+  .navLink {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .list {
+    width: 694px;
+  }
+
+  .item {
+  }
+
+  .textList {
+  }
+
+  .title {
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .itemLink {
+    margin-bottom: 8px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .about {
+    width: 50%;
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+
+  .logo {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .logoImage {
+    width: 109px;
+    height: 22px;
+  }
+
+  .copyList {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .copyItem {
+    margin-bottom: 4px;
+    margin-right: 12px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+      margin-right: 0;
+    }
+  }
+
+  .copyText {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .langContainer {
+    margin-top: 98px;
+  }
+
+  .langImage {
+    width: 22px;
+    height: 22px;
+    margin-right: 12px;
+  }
+
+  .langText {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.textDark {
+  composes: text;
+  //color: var(--color-gray);
+}

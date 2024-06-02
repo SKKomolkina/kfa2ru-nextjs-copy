@@ -1,0 +1,383 @@
+.section {
+  width: 100%;
+  margin-top: 80px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.titleContainer {
+  width: 100%;
+  margin-top: 0;
+  padding: 42px 95px 12px 16px;
+  background: var(--color-black);
+}
+
+.blur {
+  position: absolute;
+  width: 995px;
+  height: 995px;
+}
+
+.blurTop {
+  composes: blur;
+  left: -320px;
+  top: -124px;
+}
+
+.imageContainerTop, .imageContainerBot {
+  height: 280px;
+  padding: 16px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: var(--color-black);
+}
+
+.blurMid {
+  composes: blur;
+  left: -320px;
+  top: -206px;
+}
+
+.imageTop {
+  width: 475px;
+  height: 354px;
+
+  position: absolute;
+  top: 32px;
+  right: 8px;
+}
+
+.imageBot {
+  width: 405px;
+  height: 364px;
+
+  position: absolute;
+  top: 24px;
+  right: 8px;
+}
+
+.blurBot {
+  composes: blur;
+  left: -427px;
+  top: -500px;
+}
+
+@media (min-width: 400px) {
+  .titleContainer {
+    padding: 32px 134px 12px 16px;
+  }
+
+  .blur {
+    width: 1012px;
+    height: 1012px;
+  }
+
+  .blurTop {
+    left: -320px;
+    top: -124px;
+  }
+
+  .blurMid {
+    composes: blur;
+    left: -320px;
+    top: -206px;
+  }
+
+  .imageTop {
+    width: 475px;
+    height: 354px;
+
+    position: absolute;
+    top: 24px;
+    right: 8px;
+  }
+
+  .imageBot {
+    width: 440px;
+    height: 396px;
+
+    top: 16px;
+    right: 8px;
+  }
+
+  .blurBot {
+    left: -427px;
+    top: -500px;
+  }
+}
+
+@media (min-width: 640px) {
+  .section {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    row-gap: 16px;
+    column-gap: 14px;
+
+    & > div {
+      margin: 0;
+    }
+  }
+
+  .imageContainerTop {
+    height: 320px;
+  }
+
+  .imageContainerTop, .imageContainerBot {
+    padding: 16px 24px;
+  }
+
+  .textContainerTop {
+    padding: 30px 12px 12px 12px;
+  }
+
+  .textContainerBot {
+    padding: 52px 12px 12px 12px;
+  }
+
+  .imageContainerTop {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  .imageContainerBot {
+    width: 406px;
+    grid-column: 1/2;
+    grid-row: 3/5;
+  }
+
+  .titleContainer {
+    padding: 64px 170px 18px 24px;
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .blur {
+    width: 1130px;
+    height: 1130px;
+  }
+
+  .blurTop {
+    left: -162px;
+    top: -183px;
+  }
+
+  .blurMid {
+    left: -196px;
+    top: -336px;
+  }
+
+  .imageTop {
+    width: 669px;
+    height: 498px;
+
+    top: 16px;
+    right: 16px;
+  }
+
+  .imageBot {
+    width: 461px;
+    height: 415px;
+
+    top: 16px;
+    right: 16px;
+  }
+
+  .blurBot {
+    left: -288px;
+    top: -532px;
+  }
+}
+
+@media (min-width: 720px) {
+  .section {
+    margin-top: 100px;
+    gap: 16px;
+  }
+
+  .textContainerTop {
+    padding: 30px 12px 12px 12px;
+  }
+
+  .textContainerBot {
+    padding: 64px 12px 12px 12px;
+  }
+
+  .imageContainerBot {
+    width: 453px;
+  }
+
+  .titleContainer {
+    padding: 60px 170px 12px 24px;
+  }
+
+  .blur {
+    width: 1130px;
+    height: 1130px;
+  }
+
+  .blurTop {
+    left: -162px;
+    top: -183px;
+  }
+
+  .blurMid {
+    left: -196px;
+    top: -336px;
+  }
+
+  .imageTop {
+    width: 743px;
+    height: 553px;
+
+    top: 16px;
+    right: 16px;
+  }
+
+  .imageBot {
+    width: 523px;
+    height: 471px;
+
+    top: 16px;
+    right: 16px;
+  }
+
+  .blurBot {
+    left: -288px;
+    top: -532px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .textContainerTop {
+    padding: 72px 20px 20px 20px;
+  }
+
+  .textContainerBot {
+    padding: 186px 20px 20px 20px;
+  }
+
+  .imageContainerBot {
+    width: 760px;
+    height: 540px;
+  }
+
+  .imageContainerTop {
+    height: 540px;
+  }
+
+  .titleContainer {
+    padding: 108px 333px 20px 45px;
+  }
+
+  .imageContainerTop, .imageContainerBot {
+    padding: 32px 45px;
+  }
+
+  .blur {
+    width: 2068px;
+    height: 2068px;
+  }
+
+  .blurTop {
+    left: -298px;
+    top: -400px;
+  }
+
+  .blurMid {
+    left: -370px;
+    top: -588px;
+  }
+
+  .imageTop {
+    width: 1282px;
+    height: 955px;
+
+    top: 32px;
+    right: 45px;
+  }
+
+  .imageBot {
+    width: 864px;
+    height: 777px;
+
+    top: 32px;
+    right: 45px;
+  }
+
+  .blurBot {
+    left: -306px;
+    top: -968px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .section {
+    gap: 20px;
+    margin-top: 200px;
+  }
+
+  .textContainerTop {
+    padding: 116px 44px 32px 32px;
+    & > p {
+      font-size: 24px;
+      line-height: 33px;
+    }
+  }
+
+  .textContainerBot {
+    padding: 265px 43px 32px 32px;
+    & > p {
+      font-size: 24px;
+      line-height: 33px;
+    }
+  }
+
+  .imageContainerTop {
+    height: 800px;
+  }
+
+  .imageContainerBot {
+    width: 1085px;
+    height: 800px;
+  }
+
+  .blur {
+    width: 2281px;
+    height: 2281px;
+  }
+
+  .blurTop {
+    left: -52px;
+    top: -419px;
+  }
+
+  .blurMid {
+    left: -61px;
+    top: -648px;
+  }
+
+  .imageTop {
+    width: 1835px;
+    height: 1363px;
+    top: 53px;
+    right: 77px;
+  }
+
+  .imageBot {
+    width: 1255px;
+    height: 1129px;
+    top: 32px;
+    right: 48px;
+  }
+
+  .blurBot {
+    left: -594px;
+    top: -968px;
+  }
+}

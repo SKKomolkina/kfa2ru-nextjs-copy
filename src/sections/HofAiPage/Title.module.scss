@@ -1,0 +1,29 @@
+.section {
+  padding: 271px 16px 24px 16px;
+  background: linear-gradient(100deg, #6C65BA 0%, #B6C0FF 100%);
+  color: var(--color-white);
+}
+
+@media(min-width: 400px) {
+  .section {
+    padding: 302px 24px 32px;
+  }
+}
+
+@media(min-width: 640px) {
+  .section {
+    padding: 149px 158px 24px 24px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .section {
+    padding: 136px 520px 40px 45px;
+  }
+}
+
+@media(min-width: 1400px) {
+  .section {
+    padding: 134px 475px 50px 64px;
+  }
+}

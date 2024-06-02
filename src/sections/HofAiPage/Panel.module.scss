@@ -1,0 +1,193 @@
+.box1 {
+  padding: 343px 22px 24px 16px;
+  overflow: hidden;
+  background: linear-gradient(100deg, #6C65BA 0%, #B6C0FF 100%);
+  color: var(--color-white);
+}
+
+.box2 {
+  padding: 65px 16px 24px 16px;
+}
+
+.box3 {
+  padding: 46px 16px 24px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 12px;
+}
+
+.vector {
+  position: absolute;
+  left: 69px;
+  top: -109px;
+
+  width: 437px;
+  height: 437px;
+
+  border-radius: 437px;
+  background: #FFF;
+}
+
+.image {
+  width: 562px;
+  height: 314px;
+
+  position: absolute;
+  left: -10px;
+  top: 18px;
+}
+
+@media(min-width: 400px) {
+  .box1 {
+    padding: 363px 108px 24px 24px;
+  }
+
+  .box2 {
+    padding: 65px 24px 24px 24px;
+  }
+
+  .box3 {
+    padding: 65px 24px 24px 24px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .vector {
+    left: 69px;
+    top: -89px;
+
+    width: 437px;
+    height: 437px;
+
+    border-radius: 437px;
+  }
+
+  .image {
+    width: 562px;
+    height: 314px;
+
+    left: -10px;
+    top: 29px;
+  }
+}
+
+@media(min-width: 640px) {
+  .box1 {
+    padding: 183px 350px 24px 24px;
+  }
+
+  .box2 {
+    padding: 65px 37px 43px 24px;
+    max-width: 49%;
+  }
+
+  .box3 {
+    padding: 65px 45px 24px 24px;
+    max-width: 49%;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .vector {
+    left: 352px;
+    top: -59px;
+
+    width: 437px;
+    height: 437px;
+
+    border-radius: 437px;
+  }
+
+  .image {
+    width: 562px;
+    height: 314px;
+
+    left: 247px;
+    top: 6px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .box1 {
+    padding: 172px 605px 40px 45px;
+  }
+
+  .box2 {
+    padding: 130px 215px 40px 45px;
+    max-width: 49%;
+  }
+
+  .box3 {
+    padding: 130px 195px 40px 45px;
+    max-width: 49%;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .vector {
+    left: 650px;
+    top: -130px;
+
+    width: 656px;
+    height: 656px;
+
+    border-radius: 656px;
+  }
+
+  .image {
+    width: 837px;
+    height: 473px;
+
+    left: 520px;
+    top: -26px;
+  }
+}
+
+@media(min-width: 1400px) {
+  .box1 {
+    padding: 222px 715px 50px 65px;
+  }
+
+  .box2 {
+    padding: 160px 175px 50px 65px;
+  }
+
+  .box3 {
+    padding: 160px 175px 50px 65px;
+  }
+
+  .subtitle {
+    font-size: 32px;
+  }
+
+  .vector {
+    left: 650px;
+    top: -110px;
+
+    width: 864px;
+    height: 864px;
+
+    border-radius: 864px;
+  }
+
+  .image {
+    width: 1025px;
+    height: 579px;
+
+    left: 500px;
+    top: -20px;
+  }
+}

@@ -1,0 +1,64 @@
+.slider {
+  width: 100%;
+  height: 44px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  align-self: center;
+  position: relative;
+  z-index: 4;
+}
+
+.back {
+  position: absolute;
+  left: -20%;
+  top: 0;
+
+  width: 1864px;
+  height: 100%;
+
+  background: url('./line.svg') repeat-x;
+  animation: slide 36s linear infinite;
+}
+
+@media (min-width: 640px) {
+  .slider {
+    height: 55px;
+  }
+
+  .back {
+    width: 2320px;
+    background: url('./line640.svg') repeat-x;
+    animation: slide 42s linear infinite;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider {
+    height: 82px;
+    margin-top: 160px;
+    margin-bottom: 160px;
+  }
+
+  .back {
+    width: 3400px;
+    background: url('./line1200.svg') repeat-x;
+    animation: slide 52s linear infinite;
+  }
+}
+
+@media (min-width: 1400px) {
+  .slider {
+    margin-top: 240px;
+    margin-bottom: 240px;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-932px);
+  }
+}

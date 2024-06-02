@@ -1,0 +1,73 @@
+.section {
+  width: 100%;
+  margin-top: 80px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.button {
+  cursor: pointer;
+  z-index: 1;
+
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  width: 31px;
+  height: 31px;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.buttonPlay {
+  composes: button;
+  opacity: 1;
+  visibility: visible;
+  transition: visibility .4s ease-in-out, opacity .2s ease-in-out;
+}
+
+.buttonStop {
+  composes: button;
+  opacity: 1;
+  visibility: visible;
+  transition: visibility .4s ease-in-out, opacity .2s ease-in-out;
+}
+
+@media(min-width: 640px) {
+  .section {
+    margin-top: 100px;
+  }
+
+  .button {
+    width: 24px;
+    height: 24px;
+
+    top: 16px;
+    right: 16px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .section {
+    margin-top: 120px;
+  }
+
+  .button {
+    width: 44px;
+    height: 44px;
+
+    top: 24px;
+    right: 24px;
+  }
+}

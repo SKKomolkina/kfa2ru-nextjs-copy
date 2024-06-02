@@ -1,0 +1,310 @@
+.section {
+  width: 100%;
+  height: 918px;
+  margin-bottom: 100px;
+
+  position: relative;
+}
+
+.image {
+  width: 554px;
+  height: 918px;
+
+  position: absolute;
+  top: 0;
+  left: -132px;
+}
+
+.text {
+  font-size: 10px;
+  line-height: 14px;
+  width: 134px;
+  position: absolute;
+}
+
+.text1 {
+  composes: text;
+  left: 0;
+  top: 64px;
+}
+
+.text2 {
+  composes: text;
+  left: 0;
+  top: 166px;
+}
+
+.text3 {
+  composes: text;
+  left: 0;
+  top: 306px;
+}
+
+.text4 {
+  composes: text;
+  right: 0;
+  bottom: 304px;
+}
+
+.text5 {
+  composes: text;
+  right: 0;
+  bottom: 155px;
+}
+
+@media(min-width: 400px) {
+  .section {
+    height: 934px;
+  }
+
+  .image {
+    width: 732px;
+    height: 995px;
+    left: -175px;
+  }
+
+  .text {
+    font-size: 10px;
+    line-height: 14px;
+    width: 177px;
+    position: absolute;
+  }
+
+  .text1 {
+    composes: text;
+    left: 0;
+    top: 64px;
+  }
+
+  .text2 {
+    composes: text;
+    left: 0;
+    top: 216px;
+  }
+
+  .text3 {
+    composes: text;
+    left: 0;
+    top: 306px;
+  }
+
+  .text4 {
+    composes: text;
+    right: 0;
+    bottom: 270px;
+  }
+
+  .text5 {
+    composes: text;
+    right: 0;
+    bottom: 106px;
+  }
+}
+
+@media(min-width: 640px) {
+  .section {
+    height: 462px;
+    margin-bottom: 140px;
+  }
+
+  .image {
+    width: 616px;
+    height: 462px;
+    left: 0;
+  }
+
+  .text {
+    font-size: 10px;
+    line-height: 14px;
+    width: 195px;
+  }
+
+  .text1 {
+    composes: text;
+    left: 0;
+    top: 74px;
+    width: 132px;
+  }
+
+  .text2 {
+    composes: text;
+    left: 0;
+    top: 198px;
+  }
+
+  .text3 {
+    composes: text;
+    left: 0;
+    top: 270px;
+  }
+
+  .text4 {
+    composes: text;
+    right: 0;
+    bottom: 274px;
+    width: 180px;
+  }
+
+  .text5 {
+    composes: text;
+    right: 0;
+    bottom: 164px;
+    width: 180px;
+  }
+}
+
+//@media(min-width: 720px) {
+//  .section {
+//    height: 555px;
+//    margin-bottom: 140px;
+//  }
+//
+//  .image {
+//    width: 100%;
+//    height: 555px;
+//    left: 0;
+//  }
+//
+//  .text {
+//    font-size: 12px;
+//    line-height: 16px;
+//    width: 200px;
+//  }
+//
+//  .text1 {
+//    composes: text;
+//    left: 0;
+//    top: 74px;
+//    width: 132px;
+//  }
+//
+//  .text2 {
+//    composes: text;
+//    left: 0;
+//    top: 232px;
+//  }
+//
+//  .text3 {
+//    composes: text;
+//    left: 0;
+//    top: 370px;
+//  }
+//
+//  .text4 {
+//    composes: text;
+//    right: 0;
+//    bottom: 326px;
+//    width: 197px;
+//  }
+//
+//  .text5 {
+//    composes: text;
+//    right: 0;
+//    bottom: 192px;
+//    width: 194px;
+//  }
+//}
+
+@media(min-width: 1200px) {
+  .section {
+    height: 860px;
+    margin-bottom: 180px;
+  }
+
+  .image {
+    width: 100%;
+    height: 860px;
+    left: 0;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 22px;
+    width: 316px;
+  }
+
+  .text1 {
+    composes: text;
+    left: 0;
+    top: 112px;
+    width: 174px;
+  }
+
+  .text2 {
+    composes: text;
+    left: 0;
+    top: 386px;
+  }
+
+  .text3 {
+    composes: text;
+    left: 0;
+    top: 632px;
+  }
+
+  .text4 {
+    composes: text;
+    right: 0;
+    bottom: 502px;
+    width: 330px;
+  }
+
+  .text5 {
+    composes: text;
+    right: 0;
+    bottom: 300px;
+    width: 330px;
+  }
+}
+
+@media(min-width: 1400px) {
+  .section {
+    height: 1008px;
+    margin-bottom: 240px;
+  }
+
+  .image {
+    width: 100%;
+    height: 1008px;
+    left: 0;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 22px;
+    width: 316px;
+  }
+
+  .text1 {
+    composes: text;
+    left: 0;
+    top: 196px;
+    width: 174px;
+  }
+
+  .text2 {
+    composes: text;
+    left: 0;
+    top: 466px;
+  }
+
+  .text3 {
+    composes: text;
+    left: 0;
+    top: 710px;
+  }
+
+  .text4 {
+    composes: text;
+    right: 0;
+    bottom: 588px;
+    width: 366px;
+  }
+
+  .text5 {
+    composes: text;
+    right: 0;
+    bottom: 350px;
+    width: 366px;
+  }
+}

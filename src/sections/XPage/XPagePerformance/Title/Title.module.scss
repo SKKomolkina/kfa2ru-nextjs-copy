@@ -1,0 +1,197 @@
+.titleContainer {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  position: relative;
+  z-index: 3;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--color-white);
+}
+
+.titleRight {
+  composes: title;
+  margin-left: 22px;
+}
+
+.imageContainer {
+  width: 166px;
+  height: 24px;
+  margin-bottom: 4px;
+
+  border: 1px solid #44FC8E;
+  border-radius: 100px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  width: 166px;
+  height: 92px;
+
+  position: absolute;
+  left: 0;
+  top: -22px;
+}
+
+.imageContainerSmall {
+  composes: imageContainer;
+  width: 105px;
+  height: 24px;
+
+  display: none;
+}
+
+.imageSmall {
+  width: 105px;
+  height: 52px;
+
+  position: absolute;
+  left: 0;
+  top: -1px;
+}
+
+@media (min-width: 400px) {
+  .titleContainer {
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .titleRight {
+    composes: title;
+    margin-left: 0;
+  }
+
+  .imageContainer {
+    width: 256px;
+    margin-bottom: 12px;
+  }
+
+  .image {
+    width: 256px;
+    height: 142px;
+
+    left: 0;
+    top: -37px;
+  }
+
+  .imageContainerSmall {
+    width: 105px;
+    display: block;
+  }
+
+  .imageSmall {
+    width: 105px;
+    height: 52px;
+  }
+}
+
+@media (min-width: 640px) {
+  .titleContainer {
+    //width: 542px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .imageContainer {
+    width: 410px;
+    height: 40px;
+  }
+
+  .image {
+    width: 410px;
+    height: 226px;
+
+    top: -60px;
+  }
+
+  .imageContainerSmall {
+    width: 176px;
+  }
+
+  .imageSmall {
+    width: 176px;
+    height: auto;
+    top: -7px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .titleContainer {
+    width: 1020px;
+  }
+
+  .title {
+    font-size: 56px;
+  }
+
+  .imageContainer {
+    width: 695px;
+    height: 60px;
+  }
+
+  .image {
+    width: 695px;
+    height: 384px;
+
+    top: -106px;
+  }
+
+  .imageContainerSmall {
+    width: 260px;
+  }
+
+  .imageSmall {
+    width: 260px;
+    height: 130px;
+    top: 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  .titleContainer {
+    //width: 1540px;
+    width: 1150px;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  .imageContainer {
+    margin-bottom: 20px;
+    width: 781px;
+    height: 73px;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+
+    top: -165px;
+  }
+
+  .imageContainerSmall {
+    width: 325px;
+  }
+
+  .imageSmall {
+    width: 100%;
+    height: auto;
+    top: -18;
+  }
+}

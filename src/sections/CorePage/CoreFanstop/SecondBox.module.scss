@@ -1,0 +1,187 @@
+.section {
+  width: 100%;
+  height: 278px;
+  margin-top: 32px;
+
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.text {
+  max-width: 182px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.textSpan {
+  composes: text;
+  color: var(--color-yellow);
+}
+
+.image {
+  position: absolute;
+  right: -186px;
+  top: 78px;
+
+  width: 469px;
+  height: 353px;
+
+  z-index: 2;
+}
+
+.widthBox {
+  width: 100%;
+  height: 130px;
+
+  background: #464646;
+  border-radius: 8px;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.heightBox {
+  height: 210px;
+  width: 73px;
+
+  background: #464646;
+  border-radius: 8px;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media (min-width: 400px) {
+  .section {
+    height: 249px;
+    margin-top: 40px;
+  }
+
+  .text {
+    max-width: 177px;
+  }
+
+  .image {
+    right: -92px;
+    top: 38px;
+
+    width: 469px;
+    height: 353px;
+  }
+
+  .widthBox {
+    width: 100%;
+    height: 130px;
+  }
+
+  .heightBox {
+    height: 210px;
+    width: 177px;
+  }
+}
+
+@media (min-width: 640px) {
+  .section {
+    height: 347px;
+    margin-top: 24px;
+  }
+
+  .text {
+    max-width: 210px;
+    margin-top: 22px;
+    margin-right: 37px;
+  }
+
+  .image {
+    right: -194px;
+    top: 8px;
+
+    width: 805px;
+    height: 615px;
+  }
+
+  .widthBox {
+    width: 100%;
+    height: 213px;
+  }
+
+  .heightBox {
+    height: 100%;
+    width: 316px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    height: 618px;
+    margin-top: 40px;
+  }
+
+  .text {
+    max-width: 410px;
+    font-size: 24px;
+    line-height: 33px;
+    margin-top: 32px;
+    margin-right: 45px;
+  }
+
+  .image {
+    right: -374px;
+    top: -12px;
+
+    width: 1500px;
+    height: 1075px;
+  }
+
+  .widthBox {
+    width: 100%;
+    height: 380px;
+    border-radius: 16px;
+  }
+
+  .heightBox {
+    height: 100%;
+    width: 632px;
+    border-radius: 16px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .section {
+    height: 618px;
+    margin-top: 60px;
+  }
+
+  .text {
+    max-width: 410px;
+    font-size: 23px;
+    line-height: 120%;
+    margin-top: 40px;
+    margin-right: 170px;
+  }
+
+  .image {
+    right: -146px;
+    top: 45px;
+    width: 1486px;
+    height: auto;
+  }
+
+  .widthBox {
+    height: 380px;
+    border-radius: 20px;
+  }
+
+  .heightBox {
+    width: 630px;
+    border-radius: 20px;
+  }
+}

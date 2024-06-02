@@ -1,0 +1,19 @@
+.main {
+  width: 100%;
+  margin-top: 20px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.boxClassName {
+  background-color: transparent !important;
+}
+
+@media(min-width: 1200px) {
+  .main {
+    margin-top: 60px;
+  }
+}

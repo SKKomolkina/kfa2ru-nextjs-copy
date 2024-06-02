@@ -1,0 +1,316 @@
+.section {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 1540px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.title {
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 107%;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  margin: 4px 0 0;
+
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 107%;
+  text-transform: uppercase;
+}
+
+.list {
+  margin: 120px 0 0;
+  padding: 0;
+  list-style-type: none;
+
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.item {
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.titleContainer {
+  width: 260px;
+
+  position: relative;
+}
+
+.textContainer {
+  width: 1150px;
+}
+
+.itemTitle {
+  margin: 0;
+  margin-bottom: 24px;
+
+  word-wrap: initial;
+
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 107%;
+  text-transform: uppercase;
+}
+
+.itemText {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 107%;
+}
+
+.line {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  height: 1px;
+  background-color: #0A0A0A;
+}
+
+.underline {
+  position: absolute;
+  left: 122px;
+  bottom: -8px;
+}
+
+.underlineMid {
+  composes: underline;
+}
+
+.underlineBot {
+  composes: underline;
+  left: 50px;
+  bottom: -8px;
+}
+
+.ellipse {
+  position: absolute;
+  right: -88px;
+  bottom: -144px;
+}
+
+@media (max-width: 1700px) {
+  .container {
+    width: 1150px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    margin: 12px 0 0;
+    font-size: 40px;
+  }
+
+  .list {
+    margin: 80px 0 0;
+  }
+
+  .item {
+  }
+
+  .titleContainer {
+    width: 260px;
+  }
+
+  .textContainer {
+    width: 825px;
+  }
+
+  .itemTitle {
+    font-size: 40px;
+  }
+
+  .itemText {
+    font-size: 32px;
+  }
+
+  .line {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .underline {
+    position: absolute;
+    left: 122px;
+    bottom: -8px;
+  }
+
+  .underlineBot {
+    composes: underline;
+    left: 50px;
+    bottom: -8px;
+  }
+
+  .ellipse {
+    width: 490px;
+
+    right: -68px;
+    bottom: -176px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 570px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    margin: 4px 0 0;
+    font-size: 24px;
+  }
+
+  .list {
+    margin: 40px 0 0;
+  }
+
+  .item {
+  }
+
+  .titleContainer {
+    width: 160px;
+  }
+
+  .textContainer {
+    width: 394px;
+  }
+
+  .itemTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .itemText {
+    font-size: 16px;
+  }
+
+  .line {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .underline {
+    width: 120px;
+    height: 9px;
+
+    left: 36px;
+    bottom: -8px;
+  }
+
+  .underlineBot {
+    composes: underline;
+    left: 2px;
+    bottom: -8px;
+  }
+
+  .ellipse {
+    width: 370px;
+
+    right: -114px;
+    bottom: -150px;
+  }
+}
+
+@media (max-width: 720px) {
+
+  .container {
+    width: 280px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .subtitle {
+    margin: 8px 0 0;
+    font-size: 16px;
+  }
+
+  .list {
+    margin: 23px 0 0;
+  }
+
+  .item {
+    flex-direction: column;
+  }
+
+  .titleContainer {
+    width: 100%;
+  }
+
+  .textContainer {
+    width: 100%;
+  }
+
+  .itemTitle {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+
+  .itemText {
+    font-size: 12px;
+  }
+
+  .line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .underline {
+    width: 48px;
+
+    left: 138px;
+    bottom: 6px;
+  }
+
+  .underlineMid {
+    left: 80px;
+  }
+
+  .underlineBot {
+    composes: underline;
+    left: 16px;
+    bottom: 6px;
+  }
+
+  .ellipse {
+    width: 370px;
+
+    right: -114px;
+    bottom: -150px;
+  }
+}

@@ -1,0 +1,305 @@
+.section {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.textContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.subtitle {
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+
+  position: relative;
+  z-index: 1;
+}
+
+.backContainer {
+  height: 180px;
+}
+
+.backImage {
+  position: absolute;
+  top: -52px;
+  left: -129px;
+
+  width: 644px;
+  height: 315px;
+}
+
+.imageContainer {
+  height: 400px;
+  padding: 12px 32px 12px 12px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.image {
+  position: absolute;
+  top: -78px;
+  left: -109px;
+
+  width: 594px;
+  height: 557px;
+}
+
+.blur {
+  position: absolute;
+  top: -904px;
+  left: -481px;
+
+  width: 1560px;
+  height: 1349px;
+}
+
+@media (min-width: 400px) {
+  .textContainer {
+    padding: 90px 49px 16px 16px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .backContainer {
+  }
+
+  .backImage {
+    top: -55px;
+    left: -81px;
+
+    width: 644px;
+    height: 315px;
+  }
+
+  .imageContainer {
+    height: 500px;
+    padding: 16px 74px 16px 16px;
+  }
+
+  .image {
+    top: -104px;
+    left: -125px;
+
+    width: 754px;
+    height: 707px;
+  }
+
+  .blur {
+    position: absolute;
+    top: -904px;
+    left: -481px;
+
+    width: 1560px;
+    height: 1349px;
+  }
+}
+
+@media (min-width: 640px) {
+  .section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .textContainer {
+    width: 247px;
+    max-height: 180px;
+    padding: 90px 26px 12px 12px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .backContainer {
+    width: 353px;
+    height: 180px;
+  }
+
+  .backImage {
+    top: -52px;
+    left: -83px;
+
+    width: 630px;
+    height: 308px;
+  }
+
+  .imageContainer {
+    height: 280px;
+    padding: 16px 363px 16px 16px;
+  }
+
+  .image {
+    top: -205px;
+    left: 0;
+
+    width: 754px;
+    height: 707px;
+  }
+
+  .blur {
+    left: -382px;
+  }
+}
+
+@media (min-width: 720px) {
+  .textContainer {
+    width: 277px;
+    max-height: 200px;
+    min-height: 200px;
+    padding: 114px 20px 12px 12px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .backContainer {
+    width: 395px;
+    height: 200px;
+  }
+
+  .backImage {
+    top: -68px;
+    left: -112px;
+
+    width: 750px;
+    height: 366px;
+  }
+
+  .imageContainer {
+    height: 320px;
+    padding: 24px 379px 24px 24px;
+  }
+
+  .image {
+    top: -240px;
+    left: 12px;
+
+    width: 853.32px;
+    height: 800px;
+  }
+
+  .blur {
+    left: -331px;
+    top: -824px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .textContainer {
+    width: 435px;
+    max-height: 320px;
+    min-height: 320px;
+    padding: 199px 32px 20px 20px;
+  }
+
+  .subtitle {
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .backContainer {
+    width: 695px;
+    height: 320px;
+  }
+
+  .backImage {
+    top: -100px;
+    left: -142px;
+
+    width: 1165px;
+    height: 568px;
+  }
+
+  .imageContainer {
+    height: 560px;
+    padding: 32px 732px 32px 32px;
+  }
+
+  .image {
+    top: -353px;
+    left: 0;
+
+    width: 1396px;
+    height: 1309px;
+  }
+
+  .blur {
+    width: 2158.362px;
+    height: 1866.342px;
+
+    left: -530px;
+    top: -910px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .textContainer {
+    width: 630px;
+    max-height: 500px;
+    min-height: 500px;
+    padding: 310px 69px 42px 32px;
+  }
+
+  .subtitle {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .backContainer {
+    width: 1020px;
+    height: 500px;
+  }
+
+  .backImage {
+    top: -185px;
+    left: -166px;
+
+    width: 1914px;
+    height: 934px;
+  }
+
+  .imageContainer {
+    height: 800px;
+    padding: 45px 1150px 60px 45px;
+  }
+
+  .image {
+    top: -420px;
+    left: -11px;
+
+    width: 1876.805px;
+    height: 1759.532px;
+  }
+
+  .blur {
+    width: 2581px;
+    height: 2524px;
+
+    left: -462px;
+    top: -1016px;
+  }
+}

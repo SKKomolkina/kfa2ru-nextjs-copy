@@ -1,0 +1,295 @@
+.title {
+  margin-bottom: 16px;
+
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+
+  border-radius: 8px;
+  background: var(--color-light-gray);
+
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+
+  transition: background .2s ease-in;
+}
+
+.boxHover {
+  composes: box;
+  background: var(--gradient, linear-gradient(135deg, #44FC8E 0%, #4916DD 100%));
+  color: var(--color-white);
+  transition: background .2s ease-in-out;
+}
+
+.subtitleContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.subtitleContainerReverse {
+  composes: subtitleContainer;
+  align-self: flex-end;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  & > p {
+    text-align: right;
+  }
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: color .2s ease-in;
+}
+
+.text {
+  margin-top: 2px;
+  font-size: 8px;
+  font-weight: 300;
+  transition: color .2s ease-in;
+}
+
+.tagContainer {
+  max-width: 156px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 2px 12px 3px 12px;
+  border-radius: 20px;
+  transition: all .3s ease-in;
+
+  &:first-of-type {
+    margin-right: 2px;
+    margin-bottom: 4px;
+  }
+}
+
+.green {
+  border: 1px solid var(--color-green);
+}
+
+.blue {
+  border: 1px solid var(--color-blue);
+}
+
+.tagHover {
+  composes: tag;
+  border-color: var(--color-white);
+  transition: all .2s ease-in-out;
+}
+
+.tagText {
+  font-size: 8px;
+  font-weight: 300;
+  transition: color .2s ease-in;
+}
+
+.tagTextHover {
+  composes: tagText;
+  color: var(--color-white);
+  transition: color .3s ease-in-out;
+}
+
+.buttonContainer {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.button {
+  width: 16px;
+  height: 16px;
+  transition: all .2s ease-in;
+}
+
+.buttonHover {
+  composes: button;
+
+  & > path {
+    stroke: var(--color-white);
+    transition: all .2s ease-in-out;
+  }
+}
+
+@media (min-width: 400px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .box {
+    padding: 16px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+  .tagContainer {
+    max-width: 240px;
+  }
+
+  .tag {
+    padding: 4px 20px;
+    border-radius: 20px;
+
+    &:first-of-type {
+    }
+  }
+
+  .tagText {
+    font-size: 12px;
+  }
+
+  .button {
+  }
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .box {
+    padding: 12px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 8px;
+  }
+
+  .tagContainer {
+    max-width: 160px;
+  }
+
+  .tag {
+    padding: 2px 12px 3px 12px;
+
+    &:first-of-type {
+      margin-right: 4px;
+    }
+  }
+
+  .tagText {
+    font-size: 8px;
+  }
+
+  .button {
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  .box {
+    padding: 24px 45px;
+    border-radius: 16px;
+  }
+
+  .subtitle {
+    font-size: 40px;
+  }
+
+  .text {
+    margin-top: 8px;
+    font-size: 16px;
+  }
+
+  .tagContainer {
+    max-width: 250px;
+  }
+
+  .tag {
+    padding: 2px 12px 3px 12px;
+
+    &:first-of-type {
+      margin-right: 4px;
+    }
+  }
+
+  .tagText {
+    font-size: 12px;
+  }
+
+  .button {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+//@media (min-width: 1700px) {
+//  .title {
+//    font-size: 60px;
+//  }
+//
+//  .box {
+//    padding: 32px 45px;
+//    border-radius: 20px;
+//  }
+//
+//  .subtitle {
+//    font-size: 60px;
+//  }
+//
+//  .text {
+//    margin-top: 2px;
+//    font-size: 20px;
+//  }
+//
+//  .tagContainer {
+//    max-width: 300px;
+//  }
+//
+//  .tag {
+//    padding: 4px 20px;
+//    border-radius: 20px;
+//
+//    &:first-of-type {
+//      margin-right: 8px;
+//    }
+//  }
+//
+//  .tagText {
+//    font-size: 16px;
+//  }
+//
+//  .button {
+//    width: 30px;
+//    height: 30px;
+//  }
+//}

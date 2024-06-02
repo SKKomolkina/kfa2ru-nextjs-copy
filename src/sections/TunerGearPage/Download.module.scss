@@ -1,0 +1,285 @@
+.section {
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 40px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 120%;
+  margin-bottom: 40px;
+
+  text-transform: uppercase;
+}
+
+.boxContainer {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.arrow {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 16px;
+  height: 16px;
+
+  animation: hoverRotate .3s ease forwards;
+}
+
+.box {
+  width: 100%;
+  background: rgba(134, 134, 134, 0.2);
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 12px;
+
+  position: relative;
+  cursor: pointer;
+
+  &:last-of-type {
+    //margin-bottom: 0;
+  }
+
+  &:hover {
+    & > .arrow {
+      animation: hoverRotateBack .3s ease forwards;
+    }
+  }
+}
+
+.boxTitle {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.text {
+  font-size: 10px;
+  line-height: 120%;
+  font-weight: 300;
+}
+
+.version {
+  margin-top: 7px;
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  max-width: 155px;
+  font-size: 12px;
+  line-height: 120%;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.subtitleSpan {
+  font-weight: 500;
+}
+
+.topContainer, .midContainer, .botContainer {
+  composes: box;
+}
+
+@media (min-width: 400px) {
+  .section {
+    margin-top: 16px;
+    margin-bottom: 40px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .boxContainer {
+  }
+
+  .boxTitle {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+  .version {
+    margin-top: 7px;
+    margin-bottom: 40px;
+  }
+
+  .subtitle {
+    max-width: 210px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 640px) {
+  .section {
+    margin-top: 20px;
+
+    flex-direction: row;
+  }
+
+  .title {
+    margin-right: 82px;
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+  .boxContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .boxTitle {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+  .version {
+    margin-top: 7px;
+    margin-bottom: 40px;
+  }
+
+  .subtitle {
+    max-width: 210px;
+    font-size: 12px;
+  }
+
+  .midContainer, .botContainer {
+    width: 48%;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    margin-top: 40px;
+
+    flex-direction: row;
+  }
+
+  .title {
+    margin-right: 176px;
+    font-size: 40px;
+  }
+
+  .boxTitle {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .version {
+    margin-top: 8px;
+    margin-bottom: 60px;
+  }
+
+  .subtitle {
+    max-width: 210px;
+    font-size: 20px;
+  }
+
+  .arrow {
+    width: 31px;
+    height: 31px;
+    top: 25px;
+    right: 32px;
+  }
+
+  .box {
+    border-radius: 8px;
+    padding: 25px 32px;
+  }
+
+  .midContainer, .botContainer {
+    width: 48%;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  .section {
+    margin-top: 80px;
+  }
+
+  .version {
+    margin-top: 8px;
+    margin-bottom: 60px;
+  }
+
+  .subtitle {
+    max-width: 210px;
+    font-size: 20px;
+  }
+
+  .arrow {
+    width: 31px;
+    height: 31px;
+    top: 25px;
+    right: 32px;
+  }
+
+  .box {
+    border-radius: 8px;
+    padding: 25px 32px;
+  }
+
+  .midContainer, .botContainer {
+    width: 49%;
+    margin-bottom: 0;
+  }
+}
+
+@keyframes hoverRotate {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes hoverRotateBack {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes rotateBack {
+  from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}

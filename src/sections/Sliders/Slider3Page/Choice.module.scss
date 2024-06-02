@@ -1,0 +1,166 @@
+.main {
+  width: 100%;
+  margin-top: 400px;
+  margin-bottom: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 1540px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+
+  position: relative;
+}
+
+.textContainer {
+  width: 630px;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.text {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 47px;
+
+  &:first-of-type {
+    margin-bottom: 32px;
+  }
+}
+
+.textSpan {
+  composes: text;
+  margin: 0;
+
+  background: linear-gradient(110.69deg, #01FFFF 0%, #4CBC18 99.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.image {
+  position: relative;
+  z-index: 1;
+}
+
+.gradient {
+  width: 762px;
+
+  position: absolute;
+  left: -48px;
+  bottom: -60px;
+}
+
+@media (max-width: 1700px) {
+  .main {
+    margin-top: 260px;
+  }
+
+  .container {
+    width: 1040px;
+  }
+
+  .textContainer {
+    width: 500px;
+  }
+
+  .text {
+    font-size: 32px;
+    line-height: 38px;
+
+    &:first-of-type {
+      margin-bottom: 32px;
+    }
+  }
+
+  .image {
+    width: 410px;
+    height: 437px;
+  }
+
+  .gradient {
+    width: 422px;
+    height: 555px;
+
+    left: 4px;
+    bottom: -42px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main {
+    margin-top: 160px;
+  }
+
+  .container {
+    width: 570px;
+  }
+
+  .textContainer {
+    width: 277px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 19px;
+
+    &:first-of-type {
+      margin-bottom: 20px;
+    }
+  }
+
+  .image {
+    width: 218px;
+    height: 232px;
+  }
+
+  .gradient {
+    width: 232px;
+    height: 306px;
+
+    left: 0;
+    bottom: -42px;
+  }
+}
+
+@media (max-width: 720px) {
+  .main {
+    margin-top: 120px;
+  }
+
+  .container {
+    width: 280px;
+    flex-direction: column-reverse;
+  }
+
+  .textContainer {
+    width: 280px;
+  }
+
+  .image {
+    margin-top: 40px;
+    align-self: flex-end;
+    width: 243px;
+    height: 259px;
+  }
+
+  .gradient {
+    width: 258px;
+    height: 340px;
+
+    left: 38px;
+    bottom: -42px;
+  }
+}

@@ -1,0 +1,421 @@
+.section {
+  height: 733px;
+  width: 100%;
+  padding-top: 180px;
+  padding-bottom: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  color: var(--color-white);
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  height: 100%;
+  min-width: 100vw;
+  left: 50%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: -50vw;
+
+  background-color: var(--color-black);
+  border-radius: 16px;
+}
+
+.textBack {
+  opacity: 0;
+  font-size: 60px;
+  color: #343434;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.titleContainer {
+  width: 240px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  position: relative;
+  z-index: 2;
+}
+
+.text {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.switchButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.switchButton {
+  margin-right: 16px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: inherit;
+  cursor: pointer;
+  transition: all .1s linear;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.switchButtonActive {
+  composes: switchButton;
+  color: var(--color-green);
+  transition: all .1s ease-out;
+}
+
+.colorButtonContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
+
+  position: relative;
+  z-index: 2;
+}
+
+.colorButton {
+  width: 61px;
+  margin-right: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  cursor: pointer;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.colorButtonText {
+  margin-top: 8px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--color-white);
+}
+
+.colorButtonLine {
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background-color: var(--color-gray);
+
+  transition: all .1s ease-out;
+}
+
+.colorButtonLineActive {
+  composes: colorButtonLine;
+  background-color: var(--color-green);
+  height: 8px;
+
+  transition: all .1s linear;
+}
+
+.imagesContainer {
+  position: absolute;
+  top: 224px;
+  left: auto;
+  right: auto;
+
+  transition: all .1s linear;
+
+  z-index: 1;
+}
+
+.imagesContainerHidden {
+  composes: imagesContainer;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+
+  transition: all .1s ease-out;
+}
+
+.image {
+  width: auto;
+  height: 390px;
+
+  transition: all .1s linear;
+}
+
+.image60 {
+  composes: image;
+  height: 449px;
+}
+
+.imageHidden {
+  composes: image;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+
+  transition: all .1s ease-out;
+}
+
+.textAbsolute {
+  position: absolute;
+  left: -47px;
+  top: 366px;
+
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 69px;
+  color: #343434;
+
+  display: none;
+}
+
+@media (min-width: 400px) {
+  .section {
+    height: 880px;
+    padding-top: 240px;
+    padding-bottom: 80px;
+  }
+
+  .background {
+  }
+
+  .titleContainer {
+    width: 290px;
+  }
+
+  .text {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .switchButtonContainer {
+  }
+
+  .switchButton {
+    font-size: 16px;
+    line-height: 18px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .colorButton {
+    width: 78px;
+    margin-right: 20px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .colorButtonText {
+  }
+
+  .colorButtonLine {
+  }
+
+  .colorButtonLineActive {
+  }
+
+  .imagesContainer {
+    top: 328px;
+    //left: -260px;
+  }
+
+  .imagesContainerHidden {
+  }
+
+  .image {
+    width: auto;
+    height: 402px;
+  }
+
+  .image60 {
+    height: 497px;
+  }
+
+  .imageHidden {
+  }
+}
+
+@media (min-width: 640px) {
+  .section {
+    height: 714px;
+    padding-top: 160px;
+    padding-bottom: 60px;
+  }
+
+  .background {
+    border-radius: 20px;
+  }
+
+  .textBack {
+    opacity: 1;
+    top: 368px;
+  }
+
+  .titleContainer {
+    width: 290px;
+  }
+
+  .text {
+    margin-bottom: 8px;
+  }
+
+  .switchButton {
+    font-size: 16px;
+    line-height: 18px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .colorButton {
+    width: 90px;
+    margin-right: 16px;
+  }
+
+  .colorButtonText {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .colorButtonLine {
+  }
+
+  .colorButtonLineActive {
+  }
+
+  .imagesContainer {
+    top: 240px;
+  }
+
+  .imagesContainerHidden {
+  }
+
+  .image {
+    width: auto;
+    height: 349px;
+  }
+
+  .image60 {
+    width: auto;
+    height: 366px;
+  }
+
+  .imageHidden {
+  }
+
+  .textAbsolute {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    height: 1138px;
+    padding-top: 200px;
+    padding-bottom: 120px;
+  }
+
+  .textBack {
+    font-size: 110px;
+    top: 514px;
+  }
+
+  .background {
+    border-radius: 40px;
+  }
+
+  .titleContainer {
+    width: 380px;
+  }
+
+  .text {
+    margin-bottom: 12px;
+    font-size: 32px;
+    line-height: 37px;
+  }
+
+  .switchButton {
+    margin-right: 20px;
+
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .colorButton {
+    width: 110px;
+    margin-right: 20px;
+  }
+
+  .colorButtonText {
+    margin-top: 12px;
+
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .colorButtonLine {
+  }
+
+  .colorButtonLineActive {
+  }
+
+  .imagesContainer {
+    top: 278px;
+  }
+
+  .imagesContainerHidden {
+  }
+
+  .image {
+    width: auto;
+    height: 648px;
+  }
+
+  .image60 {
+    width: auto;
+    height: 617px;
+  }
+
+  .imageHidden {
+  }
+
+  .textAbsolute {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+  }
+}
+
+@media(min-width: 1400px) {
+  .textBack {
+    font-size: 130px;
+  }
+}

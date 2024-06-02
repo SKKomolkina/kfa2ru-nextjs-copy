@@ -1,0 +1,570 @@
+.section {
+  width: 100%;
+  margin-top: 60px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.top {
+  composes: container;
+  height: 104px;
+  padding: 26px 38.108px 12px 12px;
+
+  background: var(--30, linear-gradient(135deg, #44FC8E 0%, #0577B7 100%));
+}
+
+.textContainer {
+  composes: container;
+  padding: 23px 38px 12px 12px;
+
+  border: 0.5px solid var(--color-black);
+}
+
+.text {
+  font-size: 10px;
+}
+
+.imageContainerTop {
+  composes: container;
+  height: 271px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-black);
+}
+
+.imageContainerBot {
+  composes: container;
+  height: 135px;
+
+  border: 0.5px solid var(--color-black);
+}
+
+.textContainerBlack {
+  composes: container;
+  padding: 40px 36px 12px 12px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+
+  background-color: var(--color-black);
+}
+
+.textWhite {
+  color: var(--color-white);
+  font-size: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.fanStopContainer {
+  composes: container;
+  height: 174px;
+  padding: 80px 74px 12px 12px;
+
+  background-color: var(--color-black);
+}
+
+.title {
+  margin-bottom: 4px;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.subtitle {
+  width: 218px;
+  height: 34px;
+}
+
+.lineTop {
+  position: absolute;
+  top: -90px;
+  right: -190px;
+
+  width: 619px;
+  height: 641px;
+}
+
+.imageTop {
+  width: 256px;
+  height: 191px;
+
+  position: relative;
+  z-index: 1;
+}
+
+.imageBot {
+  position: absolute;
+  top: -13px;
+  left: -21px;
+
+  width: 372px;
+  height: 209px;
+}
+
+.lineBot {
+  width: 619px;
+  height: 641px;
+
+  position: absolute;
+  bottom: -13px;
+  left: -149px;
+}
+
+.blendFan {
+  position: absolute;
+  bottom: 90px;
+  left: -72px;
+
+  width: 497px;
+  height: 211px;
+  transform: rotate(-8.6deg);
+}
+
+.blendBot {
+  position: absolute;
+  left: -262px;
+  bottom: 95px;
+
+  width: 592px;
+  height: 251px;
+}
+
+@media (min-width: 400px) {
+  .section {
+  }
+
+  .container {
+  }
+
+  .top {
+    height: 140px;
+    padding: 43px 68px 16px 16px;
+  }
+
+  .textContainer {
+    height: 140px;
+    padding: 60px 31px 16px 16px;
+
+    border: 0.5px solid var(--color-black);
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+  .imageContainerTop {
+    height: 375px;
+  }
+
+  .imageContainerBot {
+    height: 180px;
+  }
+
+  .textContainerBlack {
+    padding: 60px 43px 16px 16px;
+  }
+
+  .textWhite {
+    font-size: 12px;
+  }
+
+  .fanStopContainer {
+    height: 235px;
+    padding: 120px 29px 16px 16px;
+  }
+
+  .title {
+    margin-bottom: 12px;
+
+    font-size: 20px;
+  }
+
+  .subtitle {
+    width: 274px;
+    height: 42px;
+  }
+
+  .lineTop {
+    top: -167px;
+    right: -386px;
+
+    width: 931px;
+    height: 963px;
+  }
+
+  .imageTop {
+    width: 342px;
+    height: 255px;
+  }
+
+  .imageBot {
+    top: -16px;
+    left: -39px;
+
+    width: 518px;
+    height: 291px;
+  }
+
+  .lineBot {
+    width: 931px;
+    height: 963px;
+
+    bottom: -93px;
+    left: -171px;
+  }
+
+  .blendFan {
+    bottom: 110px;
+    left: -72px;
+
+    width: 592px;
+    height: 251px;
+  }
+}
+
+@media (min-width: 640px) {
+  .section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .container {
+  }
+
+  .top {
+    width: 60%;
+    height: 140px;
+    padding: 43px 49px 16px 16px;
+  }
+
+  .textContainer {
+    width: 37%;
+    height: 140px;
+    padding: 28px 26px 16px 16px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    &:last-of-type {
+      width: 48.5%;
+      height: 211px;
+    }
+  }
+
+  .text {
+  }
+
+  .imageContainerTop {
+    height: 300px;
+  }
+
+  .imageContainerBot {
+    width: 60%;
+  }
+
+  .textContainerBlack {
+    width: 37%;
+    height: 180px;
+    padding: 84px 20px 16px 16px;
+  }
+
+  .textWhite {
+  }
+
+  .fanStopContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    height: 211px;
+    width: 48.5%;
+    padding: 80px 16px 16px;
+  }
+
+  .title {
+    position: relative;
+    z-index: 1;
+  }
+
+  .subtitle {
+    width: 274px;
+    height: 42px;
+  }
+
+  .lineTop {
+    top: -222px;
+    right: -278px;
+
+    width: 719px;
+    height: 744px;
+  }
+
+  .imageTop {
+    width: 526px;
+    height: 249px;
+  }
+
+  .imageBot {
+    top: -14px;
+    left: -19px;
+
+    width: 463px;
+    height: 260px;
+  }
+
+  .lineBot {
+    width: 719px;
+    height: 744px;
+
+    bottom: -26px;
+    left: -206px;
+  }
+
+  .blendFan {
+    bottom: 95px;
+    left: 54px;
+
+    width: 592px;
+    height: 251px;
+    transform: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    margin-top: 100px;
+  }
+
+  .container {
+    border-radius: 20px;
+  }
+
+  .top {
+    height: 280px;
+    padding: 134px 240px 24px 24px;
+  }
+
+  .textContainer {
+    width: 38.5%;
+    height: 280px;
+    padding: 138px 57px 32px 32px;
+
+    &:last-of-type {
+      width: 60%;
+      height: 280px;
+    }
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .imageContainerTop {
+    height: 560px;
+  }
+
+  .imageContainerBot {
+    width: 60%;
+    height: 320px;
+  }
+
+  .textContainerBlack {
+    width: 38.5%;
+    height: 320px;
+    padding: 200px 24px 32px 32px;
+  }
+
+  .textWhite {
+    font-size: 16px;
+  }
+
+  .fanStopContainer {
+    height: 280px;
+    width: 38.5%;
+    padding: 120px 65px 32px 32px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    width: 409px;
+    height: 63px;
+  }
+
+  .lineTop {
+    top: -442px;
+    right: -516px;
+
+    width: 1292px;
+    height: 1338px;
+  }
+
+  .imageTop {
+    width: 930px;
+    height: 439px;
+  }
+
+  .imageBot {
+    top: -25px;
+    left: -47px;
+
+    width: 908px;
+    height: 511px;
+  }
+
+  .lineBot {
+    width: 1292px;
+    height: 1338px;
+
+    bottom: -0;
+    left: -327px;
+  }
+
+  .blendFan {
+    bottom: 77px;
+    left: 108px;
+
+    width: 881px;
+    height: 374px;
+  }
+
+  .blendBot {
+    width: 881px;
+    height: 374px;
+
+    left: -347px;
+    bottom: 77px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .section {
+    margin-top: 120px;
+  }
+
+  .container {
+    margin-bottom: 20px;
+  }
+
+  .top {
+    height: 437px;
+    padding: 193px 258px 40px 42px;
+  }
+
+  .textContainer {
+    width: 39%;
+    height: 437px;
+    padding: 232px 65px 40px 47px;
+
+    &:last-of-type {
+      width: 49.5%;
+      height: 338px;
+      padding-bottom: 32px;
+    }
+  }
+
+  .text {
+    font-size: 24px;
+  }
+
+  .imageContainerTop {
+    height: 845px;
+  }
+
+  .imageContainerBot {
+    width: 60%;
+    height: 480px;
+  }
+
+  .textContainerBlack {
+    width: 39%;
+    height: 480px;
+    padding: 308px 65px 45px 40px;
+  }
+
+  .textWhite {
+    font-size: 24px;
+  }
+
+  .fanStopContainer {
+    height: 338px;
+    width: 49.5%;
+    padding: 120px 110px 32px 32px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    width: 682px;
+    height: 105px;
+  }
+
+  .lineTop {
+    top: -347px;
+    right: -676px;
+
+    width: 1482px;
+    height: 1534px;
+  }
+
+  .imageTop {
+    width: 1451px;
+    height: 685px;
+  }
+
+  .imageBot {
+    top: -48px;
+    left: -142px;
+
+    width: 1426px;
+    height: 802px;
+  }
+
+  .lineBot {
+    width: 1482px;
+    height: 1534px;
+
+    bottom: 158px;
+    left: -155px;
+  }
+
+  .blendFan {
+    bottom: 110px;
+    left: 262px;
+
+    width: 1233px;
+    height: 524px;
+  }
+
+  .blendBot {
+    width: 1233px;
+    height: 524px;
+
+    left: -517px;
+    bottom: 110px;
+  }
+}

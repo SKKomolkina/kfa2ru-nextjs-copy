@@ -1,0 +1,214 @@
+.section {
+  width: 100%;
+  margin-top: 40px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  position: relative;
+  color: var(--color-gray);
+}
+
+.lineContainer {
+  width: 100%;
+  margin-bottom: 24px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.lineHorizontal {
+  margin-bottom: 5px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-black);
+}
+
+.line {
+  height: 8px;
+  width: 1px;
+  background-color: var(--color-black);
+}
+
+.num {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.numMar {
+  composes: num;
+  margin-left: 14px;
+}
+
+.text {
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 300;
+}
+
+.textAbsolute {
+  position: absolute;
+  top: -98px;
+  right: 0;
+
+  max-width: 95px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.item {
+  width: 100%;
+  margin-bottom: 2px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.span {
+  width: 6px;
+  height: 6px;
+  border-radius: 20px;
+  margin-right: 4px;
+  flex-shrink: 0;
+}
+
+.spanBlue {
+  composes: span;
+  background-color: #1F56DB;
+}
+
+.spanBlack {
+  composes: span;
+  background: var(--color-gray);
+}
+
+.spanGray {
+  composes: span;
+  background: var(--color-light-gray);
+}
+
+@media (min-width: 400px) {
+  .section {
+    margin-top: 32px;
+  }
+
+  .lineContainer {
+  }
+
+  .textAbsolute {
+    top: -86px;
+
+    max-width: 157px;
+  }
+}
+
+@media (min-width: 640px) {
+  .lineContainer {
+  }
+
+  .textAbsolute {
+    top: -86px;
+
+    max-width: 157px;
+  }
+
+  .item {
+    margin-bottom: 4px;
+  }
+}
+
+@media (min-width: 720px) {
+  .section {
+    margin-top: 40px;
+  }
+
+  .lineContainer {
+  }
+
+  .textAbsolute {
+    top: -102px;
+
+    max-width: 187px;
+  }
+
+  .item {
+    margin-bottom: 4px;
+  }
+
+  .text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .num {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .span {
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .lineContainer {
+  }
+
+  .textAbsolute {
+    top: -102px;
+
+    max-width: 187px;
+  }
+
+  .item {
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .section {
+    margin-top: 60px;
+  }
+
+  .lineContainer {
+    margin-bottom: 40px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .textAbsolute {
+    top: -157px;
+
+    max-width: 252px;
+  }
+
+  .num {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .item {
+    margin-bottom: 8px;
+  }
+}

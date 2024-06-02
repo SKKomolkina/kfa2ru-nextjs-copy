@@ -1,0 +1,309 @@
+.header {
+  width: 100%;
+  height: 500px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.noise {
+  background: url('./images/noise.png') repeat;
+  background-size: 320px 602px;
+  width: 1000vw;
+  height: 702px;
+  margin-left: 50%;
+
+  position: absolute;
+  left: -50vw;
+  top: -150px;
+
+  z-index: 1;
+}
+
+.shadow {
+  background: linear-gradient(#1b1b1b 0%, #1b1b1b 100%);
+  transform: rotate(90deg);
+
+  width: 414px;
+  height: 800px;
+  position: absolute;
+  left: -40px;
+  bottom: 0;
+}
+
+.tagsContainer {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  position: relative;
+  z-index: 2;
+}
+
+.tag {
+  padding: 3px 14px 4px 14px;
+  margin-bottom: 4px;
+
+  border: 0.5px solid var(--color-red);
+  border-radius: 24px;
+
+  &:last-of-type {
+    margin-left: 130px;
+  }
+}
+
+.tagText {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 11px;
+  white-space: nowrap;
+}
+
+.image {
+  width: 1355px;
+  height: 763px;
+
+  position: absolute;
+  top: -141px;
+  left: -460px;
+}
+
+.title {
+  width: 43px;
+
+  position: absolute;
+  bottom: 0;
+  left: 132px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: var(--color-white);
+
+  z-index: 3;
+}
+
+.subtitle {
+  position: absolute;
+  left: -38px;
+  bottom: 42px;
+
+  width: 220px;
+  height: 87px;
+
+  z-index: 3;
+}
+
+@media (min-width: 400px) {
+  .header {
+    height: 654px;
+  }
+
+  .noise {
+    height: 800px;
+  }
+
+  .tagsContainer {
+    width: 280px;
+  }
+
+  .tag {
+    padding: 3px 14px 4px 14px;
+    margin-bottom: 4px;
+
+    border: 0.5px solid var(--color-red);
+    border-radius: 24px;
+
+    &:last-of-type {
+      margin-left: 130px;
+    }
+  }
+
+  .tagText {
+  }
+
+  .image {
+    width: 1730px;
+    height: 974px;
+
+    top: -187px;
+    left: -612px;
+  }
+
+  .title {
+    width: 54px;
+
+    bottom: 80px;
+    left: 225px;
+
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .subtitle {
+    left: -32px;
+    bottom: 112px;
+
+    width: 329px;
+    height: 141px;
+  }
+}
+
+@media (min-width: 640px) {
+  .header {
+    height: 374px;
+  }
+
+  .noise {
+    height: 500px;
+  }
+
+  .tagsContainer {
+    width: 280px;
+  }
+
+  .tag {
+  }
+
+  .tagText {
+  }
+
+  .image {
+    width: 1466px;
+    height: 800px;
+
+    top: -132px;
+    left: -365px;
+  }
+
+  .title {
+    width: 54px;
+
+    bottom: 100px;
+    left: 211px;
+  }
+
+  .subtitle {
+    left: -49px;
+    bottom: 131px;
+
+    width: 329px;
+    height: 141px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    height: 612px;
+  }
+
+  .noise {
+    height: 800px;
+  }
+
+  .tagsContainer {
+    width: 440px;
+  }
+
+  .tag {
+    padding: 4px 24px 5px;
+    margin-bottom: 6px;
+
+    &:last-of-type {
+      margin-left: 211px;
+    }
+  }
+
+  .tagText {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .image {
+    width: 2359px;
+    height: 1287px;
+
+    top: -186px;
+    left: -452px;
+  }
+
+  .title {
+    width: 86px;
+    font-size: 32px;
+    line-height: 44px;
+
+    bottom: 160px;
+    left: 327px;
+  }
+
+  .subtitle {
+    left: -63px;
+    bottom: 218px;
+
+    width: 548px;
+    height: 244px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .header {
+    height: 904px;
+  }
+
+  .noise {
+    height: 1115px;
+    top: -190px;
+  }
+
+  .tagsContainer {
+    width: 540px;
+  }
+
+  .tag {
+    padding: 4px 24px 5px;
+    margin-bottom: 8px;
+
+    &:last-of-type {
+      margin-left: 250px;
+    }
+  }
+
+  .tagText {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .image {
+    width: auto;
+    height: 1542px;
+
+    top: -246px;
+    left: -594px;
+  }
+
+  .title {
+    width: 86px;
+    font-size: 32px;
+    line-height: 120%;
+
+    bottom: 237px;
+    left: 504px;
+  }
+
+  .subtitle {
+    left: -114px;
+    bottom: 355px;
+
+    width: 658px;
+    height: 292px;
+  }
+}

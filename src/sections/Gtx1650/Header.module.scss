@@ -1,0 +1,183 @@
+.section {
+  width: 100%;
+  height: 444px;
+  padding-bottom: 80px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.image {
+  width: 1068px;
+  height: 601px;
+
+  position: absolute;
+  left: -350px;
+  bottom: 0;
+}
+
+.blur {
+  width: 951.033px;
+  height: 529.012px;
+  background: linear-gradient(32deg, #1B1B1B 20.61%, rgba(27, 27, 27, 0.00) 53.71%);
+
+  position: absolute;
+  left: -350px;
+  bottom: 0;
+  z-index: 1;
+}
+
+.title {
+  font-size: 40px;
+  line-height: 120%;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  position: relative;
+  z-index: 2;
+}
+
+.titleBorder {
+  composes: title;
+  margin-left: 108px;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #91FF6A;
+}
+
+@media(min-width: 640px) {
+  .section {
+    height: 346px;
+    padding-bottom: 20px;
+  }
+
+  .image {
+    width: 855.38px;
+    height: 481.085px;
+
+    left: -64px;
+    bottom: 0;
+  }
+
+  .blur {
+    width: 761.278px;
+    height: 423.461px;
+
+    left: -64px;
+    bottom: 0;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  .titleBorder {
+    composes: title;
+    margin-left: 166px;
+  }
+
+  .sign {
+    width: 117px;
+    height: 28px;
+
+    left: 41px;
+    bottom: 68px;
+  }
+}
+
+@media(min-width: 720px) {
+  .section {
+    height: 326px;
+    padding-bottom: 40px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .section {
+    height: 444px;
+  }
+
+  .image {
+    width: 1323px;
+    height: 744.085px;
+
+    left: -64px;
+    bottom: 0;
+  }
+
+  .blur {
+    width: 1177.454px;
+    height: 654.959px;
+
+    left: -64px;
+    bottom: 0;
+  }
+
+  .title {
+    font-size: 100px;
+  }
+
+  .titleBorder {
+    composes: title;
+    margin-left: 266px;
+  }
+
+  .sign {
+    width: 174.951px;
+    height: 41.887px;
+
+    left: 65px;
+    bottom: 120px;
+  }
+}
+
+@media(min-width: 1400px) {
+  .section {
+    height: 654px;
+    padding-bottom: 60px;
+  }
+
+  .image {
+    width: 1618px;
+    height: 910px;
+
+    left: -97px;
+    bottom: 0;
+  }
+
+  .blur {
+    width: 1440px;
+    height: 801px;
+
+    left: -97px;
+    bottom: 0;
+  }
+
+  .title {
+    font-size: 120px;
+  }
+
+  .titleBorder {
+    composes: title;
+    margin-left: 290px;
+  }
+
+  .sign {
+    width: 206px;
+    height: 50px;
+
+    left: 54px;
+    bottom: 126px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .section {
+    height: 610px;
+  }
+}

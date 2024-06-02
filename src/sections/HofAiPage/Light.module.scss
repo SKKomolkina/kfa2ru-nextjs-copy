@@ -1,0 +1,174 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.box1 {
+  padding: 88px 16px 24px 16px;
+  overflow: hidden;
+}
+
+.box2 {
+  width: 280px;
+  height: 220px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  width: 405.763px;
+  height: 189px;
+
+  position: absolute;
+  right: 16px;
+  top: 51px;
+}
+
+.vector {
+  position: absolute;
+  display: none;
+  width: 908px;
+  height: 507px;
+}
+
+.vector1 {
+  composes: vector;
+}
+
+.vector2 {
+  composes: vector;
+}
+
+@media(min-width: 400px) {
+  .box1 {
+    padding: 45px 24px 24px 24px;
+  }
+
+  .box2 {
+    width: 374px;
+    height: 280px;
+  }
+
+  .image {
+    width: 553.898px;
+    height: 258px;
+
+    right: 24px;
+    top: 52px;
+  }
+}
+
+@media(min-width: 640px) {
+  .box1 {
+    max-width: 353px;
+    padding: 86px 37px 24px 24px;
+  }
+
+  .box2 {
+    width: 247px;
+    height: 280px;
+  }
+
+  .container {
+    margin-bottom: 0;
+    flex-direction: row-reverse;
+  }
+
+  .image {
+    width: 380px;
+    height: 177px;
+
+    right: 2px;
+    top: 52px;
+  }
+
+  .vector {
+    display: block;
+  }
+
+  .vector1 {
+    left: -191px;
+    bottom: -15px;
+  }
+
+  .vector2 {
+    right: -101px;
+    bottom: -15px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .box1 {
+    max-width: 630px;
+    padding: 142px 151px 40px 45px;
+  }
+
+  .box2 {
+    width: 500px;
+    height: 340px;
+  }
+
+  .image {
+    width: 594px;
+    height: 277px;
+
+    right: 65px;
+    top: 32px;
+  }
+
+  .vector {
+    width: 1241px;
+    height: 692px;
+  }
+
+  .vector1 {
+    left: -54px;
+    bottom: -22px;
+  }
+
+  .vector2 {
+    right: -37px;
+    bottom: -22px;
+  }
+}
+
+@media(min-width: 1400px) {
+  .box1 {
+    max-width: 760px;
+    padding: 170px 96px 50px 65px;
+  }
+
+  .box2 {
+    width: 500px;
+    height: 400px;
+  }
+
+  .image {
+    width: 680px;
+    height: 316.702px;
+
+    right: 45px;
+    top: 51px;
+  }
+
+  .vector {
+    width: 1356.5px;
+    height: 756.633px;
+  }
+
+  .vector1 {
+    left: -60px;
+    bottom: 41px;
+  }
+
+  .vector2 {
+    right: -17px;
+    bottom: 41px;
+  }
+}

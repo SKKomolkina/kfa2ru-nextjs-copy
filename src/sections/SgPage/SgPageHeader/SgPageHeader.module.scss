@@ -1,0 +1,361 @@
+.section {
+  //margin-top: 152px;
+  margin-bottom: 240px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 1670px;
+}
+
+.container {
+  width: 100%;
+  height: 812px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  position: relative;
+}
+
+.imageContainer {
+  margin-top: 160px;
+  margin-left: 250px;
+
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.image {
+  position: relative;
+  z-index: 2;
+}
+
+.imageNoise {
+  position: absolute;
+  top: -14px;
+  right: -42px;
+
+  z-index: 2;
+  filter: drop-shadow(0px 0px 20px rgba(252, 244, 255, 0.5));
+}
+
+.backEllipse {
+  position: absolute;
+  bottom: 262px;
+  left: -374px;
+
+  width: 1100px;
+  height: 748px;
+
+  background: radial-gradient(50% 50% at 50% 50%, rgba(146, 96, 251, 0.4) 0%, rgba(146, 96, 251, 0) 100%);
+  filter: blur(30px);
+  transform: matrix(-0.79, -0.6, -0.62, 0.8, 0, 0);
+}
+
+.detail {
+  position: absolute;
+
+  width: 20px;
+  background-color: #FFFFFF;
+}
+
+.leftTopDetail {
+  composes: detail;
+  top: 160px;
+  left: 88px;
+
+  height: 20px;
+}
+
+.leftDetail {
+  composes: detail;
+  top: 180px;
+  left: 108px;
+
+  height: 268px;
+}
+
+.rightDetail {
+  composes: detail;
+
+  right: 0;
+  bottom: 204px;
+
+  width: 128px;
+  height: 20px;
+}
+
+.textContainer {
+  position: absolute;
+  right: 44px;
+  bottom: 32px;
+
+  width: 475px;
+  height: 150px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.text {
+  margin: 0;
+  width: 410px;
+
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  line-height: 160%;
+}
+
+.textLine {
+  margin-top: -6px;
+  align-self: flex-end;
+}
+
+@media (max-width: 1700px) {
+  .section {
+    width: 1150px;
+    //margin-top: 126px;
+    margin-bottom: 200px;
+  }
+
+  .container {
+    height: 562px;
+  }
+
+  .image {
+    width: 800px;
+    height: 350px;
+  }
+
+  .imageNoise {
+    width: 758px;
+    height: 280px;
+
+    top: 6px;
+    right: 12px;
+  }
+
+  .imageContainer {
+    margin-top: 112px;
+    margin-left: 173px;
+  }
+
+  .backEllipse {
+    bottom: 198px;
+    left: -464px;
+
+    width: 820px;
+    height: 558px;
+  }
+
+  .detail {
+    width: 12px;
+  }
+
+  .leftTopDetail {
+    top: 144px;
+    left: 65px;
+
+    height: 12px;
+  }
+
+  .leftDetail {
+    top: 158px;
+    left: 77px;
+
+    height: 160px;
+  }
+
+  .rightDetail {
+    bottom: 192px;
+
+    width: 80px;
+    height: 12px;
+  }
+
+  .textContainer {
+    position: absolute;
+    right: 45px;
+    bottom: 19px;
+
+    width: 280px;
+    height: 112px;
+  }
+
+  .text {
+    width: 260px;
+
+    font-size: 8px;
+    line-height: 160%;
+  }
+
+  .textLine {
+    margin-top: 0;
+    width: 195px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section {
+    width: 688px;
+    //margin-top: 120px;
+    margin-bottom: 80px;
+  }
+
+  .container {
+    height: 336px;
+  }
+
+  .image {
+    width: 454px;
+    height: 200px;
+  }
+
+  .imageNoise {
+    width: 445px;
+    height: 164px;
+
+    top: 2px;
+    right: 0px;
+  }
+
+  .imageContainer {
+    margin-top: 60px;
+    margin-left: 101px;
+  }
+
+  .backEllipse {
+    bottom: 158px;
+    left: -294px;
+
+    width: 628px;
+    height: 428px;
+  }
+
+  .detail {
+    width: 6px;
+  }
+
+  .leftTopDetail {
+    top: 100px;
+    left: 47px;
+
+    height: 6px;
+  }
+
+  .leftDetail {
+    top: 106px;
+    left: 53px;
+
+    height: 80px;
+  }
+
+  .rightDetail {
+    bottom: 90px;
+
+    width: 43px;
+    height: 6px;
+  }
+
+  .textContainer {
+    right: 12px;
+    bottom: 20px;
+
+    width: 207px;
+    height: 57px;
+  }
+
+  .text {
+    width: 160px;
+
+    font-size: 4px;
+    line-height: 160%;
+  }
+
+  .textLine {
+    margin-top: 0;
+    width: 148px;
+  }
+}
+
+@media (max-width: 720px) {
+  .section {
+    width: 280px;
+    //margin-top: 120px;
+    margin-bottom: 60px;
+  }
+
+  .container {
+    width: 280px;
+    height: 440px;
+  }
+
+  .image {
+    width: 330px;
+    height: 146px;
+
+    margin-left: -94px;
+    margin-top: 94px;
+
+    transform: rotate(-90deg);
+  }
+
+  .imageNoise {
+    width: 325px;
+    height: 120px;
+
+    transform: rotate(-90deg);
+
+    top: 104px;
+    right: 16px;
+  }
+
+  .imageContainer {
+    margin-top: 50px;
+    margin-left: 74px;
+    width: 280px;
+    height: 440px;
+  }
+
+  .backEllipse {
+    bottom: 264px;
+    left: -172px;
+
+    width: 340px;
+    height: 270px;
+  }
+
+  .leftTopDetail {
+    top: 94px;
+    left: 244px;
+  }
+
+  .leftDetail {
+    top: 100px;
+    left: 250px;
+
+    height: 80px;
+  }
+
+  .rightDetail {
+    bottom: 111px;
+    right: auto;
+    left: 0;
+
+    width: 43px;
+    height: 6px;
+  }
+
+  .textContainer {
+    display: none;
+  }
+}

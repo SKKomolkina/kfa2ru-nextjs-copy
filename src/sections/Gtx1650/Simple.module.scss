@@ -1,0 +1,158 @@
+.section {
+  width: 100%;
+  margin-top: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.title {
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  margin-bottom: 5px;
+
+  position: relative;
+  z-index: 1;
+}
+
+.text {
+  width: 172px;
+  margin-bottom: 32px;
+
+  font-size: 12px;
+  line-height: 120%;
+  font-weight: 300;
+
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.image {
+  width: 255px;
+  height: 158px;
+  margin-left: 14px;
+}
+
+.stroke {
+  width: 97px;
+  height: 28px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media(min-width: 400px) {
+  .section {
+    margin-top: 120px;
+  }
+
+  .title {
+    font-size: 24px;
+
+    margin-bottom: 8px;
+  }
+
+  .text {
+    width: 172px;
+    margin-bottom: 28px;
+
+    font-size: 12px;
+  }
+
+  .image {
+    width: 345px;
+    height: 214px;
+    margin-left: 36px;
+  }
+
+  .stroke {
+    width: 97px;
+    height: 28px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media(min-width: 640px) {
+  .section {
+    margin-top: 160px;
+  }
+
+  .title {
+    font-size: 32px;
+
+    margin-bottom: 8px;
+  }
+
+  .text {
+    width: 291px;
+    margin-bottom: 18px;
+
+    font-size: 16px;
+  }
+
+  .image {
+    width: 526px;
+    height: 326px;
+    margin-left: 58px;
+  }
+
+  .stroke {
+    width: 134px;
+    height: 39px;
+
+    position: absolute;
+    top: 0;
+    right: 54px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .section {
+    margin-top: 260px;
+  }
+
+  .title {
+    font-size: 40px;
+
+    margin-bottom: 16px;
+  }
+
+  .text {
+    width: 291px;
+    margin-bottom: 22px;
+
+    font-size: 20px;
+  }
+
+  .image {
+    width: 865px;
+    height: 536.494px;
+    margin-left: 156px;
+  }
+
+  .stroke {
+    width: 226.212px;
+    height: 69.093px;
+
+    top: 0;
+    right: 225px;
+  }
+}
+
+@media(min-width: 1400px) {
+  .stroke {
+    right: 290px;
+  }
+}

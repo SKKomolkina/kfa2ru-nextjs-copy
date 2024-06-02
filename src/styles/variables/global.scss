@@ -1,0 +1,74 @@
+#__next {
+}
+
+:root {
+  --color-gradient: linear-gradient(106.39deg, #44FC8E 0%, #4916DD 100%);
+  --color-gradient-rotate: rotate(-90deg);
+
+  --color-blue: #4916DD;
+  --color-green: #44FC8E;
+  --color-light-blue: #657CCC33;
+  --color-black: #1B1B1B;
+  --color-gray: #5E5E5E;
+  --color-light-gray: #D8D8D8;
+  --color-transparent-gray: #86868633;
+  --color-white: #FFFFFF;
+  --color-red:  #FF6914;
+  --color-yellow: #FFC531;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --header-xl-font-size: 100px;
+  --header-xl-line-height: 136px;
+  --header-xl: var(--header-xl-font-size) / var(--header-xl-line-height);
+
+  --header-l-font-size: 80px;
+  --header-l-line-height: 110px;
+  --header-l: var(--header-l-font-size) / var(--header-l-line-height);
+
+  --header-m-font-size: 60px;
+  --header-m-line-height: 82px;
+  --header-m: var(--header-m-font-size) / var(--header-m-line-height);
+
+  --header-s-font-size: 40px;
+  --header-s-line-height: 48px;
+  --header-s: var(--header-s-font-size) / var(--header-s-line-height);
+
+  --header-xs-font-size: 32px;
+  --header-xs-line-height: 44px;
+  --header-xs: var(--header-xs-font-size) / var(--header-xs-line-height);
+
+  --header-xxs-font-size: 24px;
+  --header-xxs-line-height: 33px;
+  --header-xxs: var(--header-xxs-font-size) / var(--header-xxs-line-height);
+
+  --text-l-font-size: 24px;
+  --text-l-line-height: 33px;
+  --text-l: var(--text-l-font-size) / var(--text-l-line-height);
+
+  --text-m-font-size: 20px;
+  --text-m-line-height: 120%;
+  --text-m: var(--text-m-font-size) / var(--text-m-line-height);
+
+  --text-s-font-size: 16px;
+  --text-s-line-height: 22px;
+  --text-s: var(--text-s-font-size) / var(--text-s-line-height);
+
+  --text-xs-font-size: 12px;
+  --text-xs-line-height: 16px;
+  --text-xs: var(--text-xs-font-size) / var(--text-xs-line-height);
+
+  --text-xxs-font-size: 8px;
+  --text-xxs-line-height: 11px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}

@@ -1,0 +1,42 @@
+.Title {
+  font-size: var(--header-xxs-font-size);
+  line-height: var(--header-xxs-line-height);
+  font-weight: var(--font-weight-light);
+
+  text-transform: uppercase;
+}
+
+@media (min-width: 400px) {
+  .Title {
+    font-size: var(--header-xs-font-size);
+    line-height: var(--header-xs-line-height);
+  }
+}
+
+@media (min-width: 640px) {
+  .Title {
+    font-size: var(--header-xxs-font-size);
+    line-height: var(--header-xxs-line-height);
+  }
+}
+
+//@media (min-width: 720px) {
+//  .Title {
+//    font-size: var(--header-xs-font-size);
+//    line-height: var(--header-xs-line-height);
+//  }
+//}
+
+@media (min-width: 1200px) {
+  .Title {
+    font-size: var(--header-s-font-size);
+    line-height: var(--header-s-line-height);
+  }
+}
+
+@media (min-width: 1400px) {
+  .Title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}

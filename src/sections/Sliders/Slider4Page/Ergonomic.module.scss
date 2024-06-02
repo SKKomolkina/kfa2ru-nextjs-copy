@@ -1,0 +1,167 @@
+.section {
+  width: 100%;
+  //margin-bottom: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.container {
+  width: 1450px;
+  height: 1013px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  margin-top: 160px;
+}
+
+.dark {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -50vw;
+
+  min-width: 100vw;
+  height: 976px;
+
+  background: linear-gradient(180deg, #171117 14.58%, rgba(23, 17, 23, 0) 100%);
+  transform: rotate(-180deg);
+}
+
+.textContainer {
+  width: 890px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  color: #FFFFFF;
+}
+
+.title {
+  margin: 0 0 24px;
+
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+}
+
+.text {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+@media (max-width: 1700px) {
+  .section {
+    //margin-bottom: 260px;
+  }
+
+  .container {
+    width: 1040px;
+    height: 742px;
+  }
+
+  .image {
+    margin-top: 100px;
+    height: 501px;
+  }
+
+  .dark {
+    height: 543px;
+  }
+
+  .textContainer {
+    width: 760px;
+  }
+
+  .title {
+    margin: 0 0 20px;
+
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .text {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section {
+    //margin-bottom: 154px;
+  }
+
+  .container {
+    width: 570px;
+    height: 452px;
+  }
+
+  .image {
+    margin-top: 62px;
+    height: 274px;
+  }
+
+  .dark {
+    height: 394px;
+  }
+
+  .textContainer {
+    width: 454px;
+  }
+
+  .title {
+    margin: 0 0 32px;
+
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 720px) {
+  .section {
+    //margin-bottom: 120px;
+  }
+
+  .container {
+    width: 280px;
+    height: 330px;
+  }
+
+  .image {
+    margin-top: 40px;
+    height: 135px;
+  }
+
+  .dark {
+    height: 136px;
+  }
+
+  .textContainer {
+    width: 280px;
+  }
+
+  .title {
+    margin: 0 0 12px;
+  }
+}

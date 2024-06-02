@@ -1,0 +1,160 @@
+.section {
+  width: 100%;
+  margin-bottom: 400px;
+  margin-top: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.container {
+  width: 1540px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.textContainer {
+  width: 650px;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  color: #FFFFFF;
+  position: relative;
+  z-index: 1;
+}
+
+.text {
+  margin: 0 0 32px;
+
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.textSpan {
+  composes: text;
+
+  text-transform: uppercase;
+  background: linear-gradient(97.86deg, #FFC58E -9.78%, #FFB8B8 26.53%, #FF7070 67.08%, #FF3B3B 106.43%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.image {
+
+}
+
+.dark {
+  min-width: 100vw;
+  height: 399px;
+
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -50vw;
+
+  background: linear-gradient(180deg, #171117 14.58%, rgba(23, 17, 23, 0) 100%);
+  transform: rotate(-180deg);
+}
+
+@media (max-width: 1700px) {
+  .section {
+    margin-top: 235px;
+    margin-bottom: 260px;
+  }
+
+  .container {
+    width: 1060px;
+  }
+
+  .textContainer {
+    width: 455px;
+  }
+
+  .text {
+    margin: 0 0 32px;
+
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .image {
+    width: 521px;
+    height: 558px;
+  }
+
+  .dark {
+    height: 290px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section {
+    margin-top: 160px;
+    margin-bottom: 160px;
+  }
+
+  .container {
+    width: 570px;
+  }
+
+  .textContainer {
+    width: 277px;
+  }
+
+  .text {
+    margin: 0 0 20px;
+
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .image {
+    width: 277px;
+    height: 296px;
+  }
+
+  .dark {
+    height: 114px;
+  }
+}
+
+@media (max-width: 720px) {
+  .section {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+  .container {
+    width: 280px;
+    flex-direction: column;
+  }
+
+  .textContainer {
+    width: 280px;
+  }
+
+  .text {
+    margin: 0 0 38px;
+  }
+
+  .image {
+    width: 208px;
+    height: 223px;
+    align-self: flex-end;
+  }
+
+  .dark {
+    height: 75px;
+  }
+}

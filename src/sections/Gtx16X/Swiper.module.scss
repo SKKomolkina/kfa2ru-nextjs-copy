@@ -1,0 +1,791 @@
+.section {
+  width: 100%;
+  padding-top: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  color: #FFFFFF;
+  background-color: #0A0A0A;
+  overflow: hidden;
+
+  position: relative;
+}
+
+.container {
+  width: 1150px;
+  height: 947px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.titleContainer {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.titleItem {
+  position: relative;
+}
+
+.title {
+  margin: 0;
+
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 108%;
+
+  text-transform: uppercase;
+
+  position: relative;
+  z-index: 1;
+  transition: font-weight .2ms ease;
+}
+
+.titleSpan {
+  composes: title;
+
+  font-weight: 700;
+
+  transition: font-weight .4ms linear;
+}
+
+.stroke {
+  opacity: 1;
+  position: absolute;
+  right: 0;
+  top: -62px;
+  transition: opacity .2s linear;
+}
+
+.strokeHidden {
+  display: none;
+  opacity: 0;
+  transition: all .2s linear;
+}
+
+.swiper {
+  margin-top: 120px;
+
+  width: 1150px;
+  height: 648px;
+  position: relative;
+  overflow: hidden;
+}
+
+.imagesContainer {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  width: 100%;
+  height: 648px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  position: absolute;
+  z-index: 2;
+  //left: -1560px;
+  //left: 0;
+
+  & > div {
+    width: 100%;
+
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column !important;
+  }
+}
+
+.item {
+  width: 1150px;
+  position: relative;
+  z-index: 2;
+  //height: 728px;
+  //margin-bottom: 20px;
+}
+
+.image {
+  width: 100%;
+  opacity: 0.2;
+  transition: opacity .2s ease;
+}
+
+.imageActive {
+  margin-bottom: 20px;
+  width: 100%;
+  opacity: 1;
+  transition: opacity .4s linear;
+}
+
+.back {
+  position: absolute;
+  right: 3px;
+  bottom: 187px;
+  z-index: 1;
+
+  background-color: #0A0A0A;
+  width: 385px;
+  height: 590px;
+}
+
+.line {
+  position: absolute;
+  right: -290px;
+  bottom: 212px;
+  z-index: 0;
+}
+
+.dota {
+  position: absolute;
+  left: -290px;
+  bottom: 198px;
+
+  transition: opacity .2s linear;
+  opacity: 1;
+}
+
+.gta {
+  position: absolute;
+  left: -290px;
+  bottom: 198px;
+
+  transition: opacity .2s linear;
+  opacity: 1;
+}
+
+.elden {
+  position: absolute;
+  left: -290px;
+  bottom: 198px;
+
+  transition: opacity .2s linear;
+  opacity: 1;
+  z-index: 3;
+}
+
+.stray {
+  position: absolute;
+  left: -290px;
+  bottom: 198px;
+
+  transition: opacity .2s linear;
+  opacity: 1;
+}
+
+.rdr {
+  position: absolute;
+  left: -290px;
+  bottom: 198px;
+
+  transition: opacity .2s linear;
+  opacity: 1;
+}
+
+.assas {
+  position: absolute;
+  left: -290px;
+  bottom: 198px;
+
+  transition: opacity .2s linear;
+  opacity: 1;
+
+  z-index: 3;
+}
+
+.signHidden {
+  position: absolute;
+  left: -290px;
+  bottom: 198px;
+
+  opacity: 0;
+  //display: none;
+  transition: opacity .2s linear;
+}
+
+.text {
+  margin: 40px 0 0;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 108%;
+}
+
+.textSpan {
+  composes: text;
+  font-weight: 400;
+}
+
+@media (max-width: 1760px) {
+  .dota {
+    width: 220px;
+    height: 120px;
+
+    left: -236px;
+    bottom: 198px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+  }
+
+  .gta {
+    width: 220px;
+    height: 120px;
+
+    left: -236px;
+    bottom: 198px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+  }
+
+  .elden {
+    width: 220px;
+    height: 96px;
+
+    left: -236px;
+    bottom: 198px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+    z-index: 3;
+  }
+
+  .stray {
+    width: 220px;
+    height: 120px;
+
+    left: -236px;
+    bottom: 198px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+  }
+
+  .rdr {
+    width: 220px;
+    height: 120px;
+
+    left: -236px;
+    bottom: 198px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+  }
+
+  .assas {
+    width: 260px;
+    height: 157px;
+
+    left: -238px;
+    bottom: 198px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+
+    z-index: 3;
+  }
+
+  .signHidden {
+    width: 220px;
+    height: 120px;
+
+    left: -236px;
+    bottom: 198px;
+
+    opacity: 0;
+    //display: none;
+    transition: opacity .2s linear;
+  }
+}
+
+@media (max-width: 1700px) {
+  .section {
+    padding-top: 200px;
+  }
+
+  .container {
+    width: 760px;
+    height: 645px;
+  }
+
+  .titleContainer {
+  }
+
+  .titleItem {
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .stroke {
+    width: 106px;
+    height: 73px;
+    top: -31px;
+  }
+
+  .swiper {
+    margin-top: 40px;
+
+    width: 760px;
+    height: 488px;
+  }
+
+  .imagesContainer {
+    width: 100%;
+    height: 488px;
+
+    & > div {
+      width: 100%;
+
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column !important;
+    }
+  }
+
+  .item {
+    width: 760px;
+    position: relative;
+    z-index: 2;
+    //height: 728px;
+    //margin-bottom: 20px;
+  }
+
+  .image {
+    width: 100%;
+    height: 427px;
+    opacity: 0.2;
+    transition: opacity .2s ease;
+  }
+
+  .imageActive {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 427px;
+    opacity: 1;
+    transition: opacity .4s linear;
+  }
+
+  .back {
+    bottom: 162px;
+    width: 385px;
+    height: 412px;
+  }
+
+  .line {
+    width: 435px;
+    height: 440px;
+
+    right: -210px;
+    bottom: 199px;
+  }
+
+  .dota {
+    width: 175px;
+    height: 96px;
+
+    left: -200px;
+    bottom: 174px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+  }
+
+  .gta {
+    width: 175px;
+    height: 96px;
+
+    left: -200px;
+    bottom: 174px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+  }
+
+  .elden {
+    width: 175px;
+    height: 78px;
+
+    left: -200px;
+    bottom: 174px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+    z-index: 3;
+  }
+
+  .stray {
+    width: 175px;
+    height: 95px;
+
+    left: -200px;
+    bottom: 174px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+  }
+
+  .rdr {
+    width: 175px;
+    height: 95px;
+
+    left: -200px;
+    bottom: 174px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+  }
+
+  .assas {
+    width: 224px;
+    height: 135px;
+
+    left: -202px;
+    bottom: 174px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+
+    z-index: 3;
+  }
+
+  .signHidden {
+    width: 175px;
+    left: -200px;
+    bottom: 174px;
+
+    opacity: 0;
+    //display: none;
+    transition: opacity .2s linear;
+  }
+
+  .text {
+    margin-top: 32px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section {
+    padding-top: 110px;
+  }
+
+  .container {
+    width: 570px;
+    height: 573px;
+  }
+
+  .titleContainer {
+  }
+
+  .titleItem {
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .stroke {
+    width: 96px;
+    height: 66px;
+
+    top: -31px;
+  }
+
+  .swiper {
+    margin-top: 40px;
+
+    width: 570px;
+    height: 366px;
+  }
+
+  .imagesContainer {
+    height: 366px;
+
+    & > div {
+      width: 100%;
+    }
+  }
+
+  .item {
+    width: 570px;
+  }
+
+  .image {
+    height: 320px;
+  }
+
+  .imageActive {
+    height: 320px;
+  }
+
+  .back {
+    bottom: 199px;
+
+    width: 385px;
+    height: 314px;
+  }
+
+  .line {
+    width: 327px;
+    height: 331px;
+
+    right: -119px;
+    bottom: 230px;
+  }
+
+  .dota {
+    width: 234px;
+    height: 79px;
+    left: 350px;
+    bottom: 38px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+  }
+
+  .gta {
+    width: 234px;
+    height: 79px;
+    left: 350px;
+    bottom: 38px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+  }
+
+  .elden {
+    width: 234px;
+    height: 79px;
+    left: 350px;
+    bottom: 38px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+    z-index: 3;
+  }
+
+  .stray {
+    width: 234px;
+    height: 79px;
+    left: 350px;
+    bottom: 38px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+  }
+
+  .rdr {
+    width: 234px;
+    height: 79px;
+    left: 350px;
+    bottom: 38px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+  }
+
+  .assas {
+    width: 257px;
+    height: 121px;
+
+    left: 350px;
+    bottom: -5px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+
+    z-index: 3;
+  }
+
+  .signHidden {
+    width: 234px;
+    height: 120px;
+    left: 350px;
+    bottom: 38px;
+
+    opacity: 0;
+    //display: none;
+    transition: opacity .2s linear;
+  }
+
+  .text {
+    width: 277px;
+    margin-top: 20px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 720px) {
+  .section {
+    padding-top: 112px;
+  }
+
+  .container {
+    width: 280px;
+    height: 375px;
+  }
+
+  .titleContainer {
+    flex-direction: column;
+  }
+
+  .titleItem {
+    margin-bottom: 8px;
+
+    &:first-of-type {
+      align-self: flex-start;
+    }
+    &:nth-of-type(2) {
+      align-self: center;
+    }
+    &:last-of-type {
+      align-self: flex-end;
+    }
+  }
+
+  .title {
+    font-size: 12px;
+  }
+
+  .stroke {
+    width: 48px;
+    height: 33px;
+    top: -15px;
+  }
+
+  .swiper {
+    margin-top: 20px;
+
+    width: 280px;
+    height: 180px;
+  }
+
+  .imagesContainer {
+    height: 180px;
+  }
+
+  .imageActive, .image {
+    height: 158px;
+  }
+
+  .item {
+    width: 280px;
+  }
+
+  .back {
+    bottom: 136px;
+    width: 214px;
+    height: 155px;
+    right: 0;
+  }
+
+  .line {
+    width: 206px;
+    height: 208px;
+
+    right: -109px;
+    bottom: 126px;
+  }
+
+  .dota {
+    width: 146px;
+    height: 49px;
+    left: 135px;
+    bottom: 38px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+  }
+
+  .gta {
+    width: 146px;
+    height: 49px;
+
+    left: 135px;
+    bottom: 38px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+  }
+
+  .elden {
+    width: 146px;
+    height: 49px;
+
+    left: 135px;
+    bottom: 38px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+    z-index: 3;
+  }
+
+  .stray {
+    width: 146px;
+    height: 49px;
+
+    left: 135px;
+    bottom: 38px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+  }
+
+  .rdr {
+    width: 146px;
+    height: 49px;
+
+    left: 135px;
+    bottom: 38px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+  }
+
+  .assas {
+    width: 146px;
+    height: 69px;
+
+    left: 135px;
+    bottom: 17px;
+
+    transition: opacity .2s linear;
+    opacity: 1;
+
+    z-index: 3;
+  }
+
+  .signHidden {
+    width: 146px;
+    height: 60px;
+    left: 135px;
+    bottom: 38px;
+
+    opacity: 0;
+    //display: none;
+    transition: opacity .2s linear;
+  }
+
+  .text {
+    width: 98px;
+    margin-top: 24px;
+    font-size: 8px;
+  }
+}

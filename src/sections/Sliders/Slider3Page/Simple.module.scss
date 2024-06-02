@@ -1,0 +1,149 @@
+.main {
+  width: 100%;
+  margin-top: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.container {
+  width: 1540px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.textContainer {
+  margin-top: 80px;
+  width: 650px;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.text {
+  margin: 0 0 24px;
+
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.textSpan {
+  composes: text;
+  margin: 0;
+
+  text-transform: uppercase;
+  background: linear-gradient(110.69deg, #01FFFF 0%, #4CBC18 99.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.dark {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+
+  margin-left: -50vw;
+  min-width: 100vw;
+  height: 618px;
+
+  background: linear-gradient(180deg, #171117 14.58%, rgba(23, 17, 23, 0) 100%);
+  transform: rotate(-180deg);
+}
+
+@media (max-width: 1700px) {
+  .main {
+    margin-top: 300px;
+  }
+
+  .container {
+    width: 1060px;
+  }
+
+  .textContainer {
+    margin-top: 0;
+    width: 455px;
+  }
+
+  .text {
+    margin: 0 0 32px;
+
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .dark {
+    height: 290px;
+  }
+
+  .image {
+    width: 522px;
+    height: 567px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main {
+    margin-top: 160px;
+  }
+
+  .container {
+    width: 570px;
+  }
+
+  .textContainer {
+    margin-top: 52px;
+    width: 277px;
+  }
+
+  .text {
+    margin: 0 0 20px;
+
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .dark {
+    height: 112px;
+  }
+
+  .image {
+    width: 250px;
+    height: 271px;
+  }
+}
+
+@media (max-width: 720px) {
+  .main {
+    margin-top: 120px;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 280px;
+  }
+
+  .textContainer {
+    margin-top: 0;
+    width: 280px;
+  }
+
+  .text {
+    margin: 0 0 40px;
+  }
+
+  .image {
+    width: 243px;
+    height: 264px;
+    align-self: flex-end;
+  }
+}

@@ -1,0 +1,188 @@
+.section {
+  width: 100%;
+  height: 301px;
+  padding-bottom: 24px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.text {
+  font-size: 32px;
+  line-height: 120%;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  position: relative;
+  z-index: 2;
+}
+
+.textRight {
+  composes: text;
+  text-align: right;
+  align-self: flex-end;
+}
+
+.textBorder {
+  composes: text;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: .5px #FFFFFF;
+  z-index: 4;
+}
+
+.textRightBorder {
+  composes: textRight;
+
+  position: absolute;
+  right: 0;
+  bottom: 24px;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: .5px #FFFFFF;
+  z-index: 4;
+}
+
+.image {
+  position: absolute;
+  width: 417px;
+  height: 272px;
+
+  bottom: 10px;
+  right: -14px;
+
+  z-index: 3;
+}
+
+.lines {
+  width: 453px;
+  height: 254.122px;
+
+  position: absolute;
+  right: -61px;
+  top: 0;
+}
+
+@media(min-width: 400px) {
+  .section {
+    height: 371px;
+    padding-bottom: 42px;
+    margin-top: 160px;
+    margin-bottom: 160px;
+  }
+
+  .text {
+    font-size: 40px;
+  }
+
+  .textRightBorder {
+    bottom: 42px;
+  }
+
+  .image {
+    width: 522px;
+    height: 342px;
+
+    bottom: 4px;
+    right: 22px;
+  }
+
+  .lines {
+    width: 526.739px;
+    height: 295.488px;
+    flex-shrink: 0;
+
+    right: -53px;
+    top: 0;
+  }
+}
+
+@media(min-width: 640px) {
+  .section {
+    height: 466px;
+    padding-bottom: 0;
+    margin-top: 180px;
+    margin-bottom: 180px;
+  }
+
+  .text {
+    font-size: 80px;
+  }
+
+  .textRightBorder {
+    -webkit-text-stroke: 1px #FFFFFF;
+    bottom: 0;
+  }
+
+  .textBorder {
+    -webkit-text-stroke: 1px #FFFFFF;
+  }
+
+  .image {
+    width: 542px;
+    height: 353px;
+
+    bottom: 58px;
+    right: 90px;
+  }
+
+  .lines {
+    width: 616px;
+    height: 345.561px;
+
+    right: 0;
+    top: 32px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .section {
+    height: 677px;
+    padding-bottom: 0;
+    margin-top: 240px;
+    margin-bottom: 280px;
+  }
+
+  .text {
+    font-size: 120px;
+  }
+
+  .image {
+    width: 910px;
+    height: 593px;
+
+    bottom: 44px;
+    right: 164px;
+  }
+
+  .lines {
+    width: 1088px;
+    height: 610.341px;
+
+    right: 0;
+    top: 26px;
+  }
+}
+
+@media(min-width: 1400px) {
+  .image {
+    bottom: 70px;
+    right: 142px;
+  }
+
+  .lines {
+    right: 84px;
+    top: -29px;
+  }
+}

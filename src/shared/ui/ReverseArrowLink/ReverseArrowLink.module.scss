@@ -1,0 +1,20 @@
+.ReverseArrowLink {
+  cursor: pointer;
+}
+
+.ReverseArrow {
+  width: 100%;
+  height: 100%;
+
+  & > path {
+    stroke-width: 1px;
+  }
+}
+
+@media (min-width: 640px) {
+  .ReverseArrow {
+    & > path {
+      stroke-width: 2px;
+    }
+  }
+}

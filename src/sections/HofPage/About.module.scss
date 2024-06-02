@@ -1,0 +1,152 @@
+.main {
+  width: 100%;
+  margin-top: 240px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  position: relative;
+  z-index: 1;
+  color: var(--color-black);
+  font-family: 'Manrope', sans-serif;
+}
+
+.container {
+  width: 955px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.text {
+  margin: 0 0 24px;
+
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 55px;
+  text-transform: uppercase;
+}
+
+.textSpan {
+  composes: text;
+  text-decoration-line: underline;
+}
+
+.button {
+  padding: 8px 33px;
+  margin: 0;
+
+  background: #4916DD;
+  border: none;
+  cursor: pointer;
+  border-radius: 21px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #FFFFFF;
+  transition: background .1s linear;
+
+  &:hover {
+    background: #855FF1;
+    transition: background .1s ease;
+  }
+
+  &:active {
+    background: #3C10BB;
+    transition: background .1s ease;
+  }
+}
+
+.buttonText {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+@media (max-width: 1700px) {
+  .main {
+    margin-top: 120px;
+  }
+
+  .container {
+    width: 695px;
+  }
+
+  .text {
+    margin-bottom: 16px;
+
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .button {
+    padding: 5px 28px;
+  }
+
+  .buttonText {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main {
+  }
+
+  .container {
+    width: 394px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .button {
+    padding: 2px 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .main {
+    margin-top: 60px;
+  }
+
+  .container {
+    width: 243px;
+  }
+
+  .text {
+    margin-bottom: 12px;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .buttonText {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.buttonColor {
+  composes: button;
+
+  background: #4EA58E;
+
+  &:hover {
+    background: #839F98;
+  }
+
+  &:active {
+    background: #295F50;
+  }
+}

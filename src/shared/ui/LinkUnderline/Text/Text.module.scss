@@ -1,0 +1,27 @@
+.Text {
+  font-weight: var(--font-weight-light);
+  font-size: var(--text-xs-font-size);
+  line-height: var(--text-xs-line-height);
+}
+
+@media (min-width: 640px) {
+  .Text {
+    font-size: var(--text-xxs-font-size);
+    line-height: var(--text-xxs-line-height);
+  }
+}
+
+@media (min-width: 1200px) {
+  .Text {
+    font-size: var(--text-s-font-size);
+    line-height: var(--text-s-line-height);
+  }
+}
+
+@media (min-width: 1400px) {
+  .Text {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 12px;
+  }
+}

@@ -1,0 +1,89 @@
+.XPage {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  position: relative;
+  color: var(--color-white);
+  font-weight: 400;
+}
+
+.color {
+  color: var(--color-white);
+}
+
+.backgroundPurple {
+  position: absolute;
+  left: 50%;
+  top: -178px;
+
+  margin-left: -50vw;
+  width: 100vw;
+  height: 610px;
+
+  background-color: var(--color-blue);
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+@media (min-width: 400px) {
+  .backgroundPurple {
+    height: 783px;
+    top: -227px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 120%;
+  }
+}
+
+@media (min-width: 640px) {
+  .backgroundPurple {
+    height: 560px;
+    top: -220px;
+  }
+
+  .text {
+    font-size: 24px;
+    line-height: 120%;
+  }
+}
+
+//@media (min-width: 720px){
+//  .text {
+//    font-size: 32px;
+//    line-height: 120%;
+//  }
+//}
+
+@media (min-width: 1200px) {
+  .backgroundPurple {
+    height: 1044px;
+    top: -357px;
+  }
+
+  .text {
+    font-size: 56px;
+    line-height: 120%;
+  }
+}
+
+//@media (min-width: 1700px) {
+//  .backgroundPurple {
+//    height: 1271px;
+//    top: -301px;
+//  }
+//
+//  .text {
+//    font-size: 80px;
+//    line-height: 120%;
+//  }
+//}

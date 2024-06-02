@@ -1,0 +1,201 @@
+.page {
+  width: 100%;
+  margin-top: 160px;
+  margin-bottom: 160px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+
+  position: relative;
+}
+
+.image {
+  width: 231px;
+  height: 103px;
+  margin-bottom: 24px;
+
+  filter: drop-shadow(0px 0px 20px rgba(160, 227, 128, 0.80));
+}
+
+.title {
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 600;
+
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.text {
+  font-size: 12px;
+  line-height: 120%;
+  font-weight: 300;
+
+  text-align: center;
+}
+
+.boxClassName {
+  background-color: transparent !important;
+}
+
+.topBlur {
+  position: absolute;
+  top: -277px;
+  left: 125px;
+
+  width: 300.355px;
+  height: 230.575px;
+}
+
+.botBlur {
+  position: absolute;
+  top: 334px;
+  right: -210px;
+
+  width: 1150px;
+  height: 1025px;
+}
+
+@media(min-width: 400px) {
+  .page {
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+
+  .image {
+    width: 316px;
+    height: 141px;
+    margin-bottom: 32px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+  .topBlur {
+    top: -358px;
+    left: 134px;
+
+    width: 486px;
+    height: 373px;
+  }
+
+  .botBlur {
+    top: 460px;
+    right: -152px;
+
+    width: 1233px;
+    height: 1099px;
+  }
+}
+
+@media(min-width: 640px) {
+  .page {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+  .image {
+    width: 438px;
+    height: 197px;
+    margin-bottom: 32px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .text {
+    font-size: 12px;
+    width: 316px;
+  }
+
+  .topBlur {
+    top: -315px;
+    left: 282px;
+
+    width: 526px;
+    height: 405px;
+
+    filter: blur(30px);
+  }
+
+  .botBlur {
+    top: 460px;
+    right: 167px;
+
+    width: 803px;
+    height: 716px;
+
+    filter: blur(30px);
+  }
+}
+
+@media(min-width: 1200px) {
+  .page {
+    margin-top: 160px;
+    margin-bottom: 160px;
+  }
+
+  .image {
+    width: 715px;
+    height: 325px;
+    margin-bottom: 56px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .text {
+    font-size: 16px;
+    width: 500px;
+  }
+
+  .topBlur {
+    top: -405px;
+    left: 748px;
+
+    width: 717px;
+    height: 550px;
+
+    filter: blur(70px);
+  }
+
+  .botBlur {
+    top: 677px;
+    right: 556px;
+
+    width: 951px;
+    height: 847px;
+
+    filter: blur(70px);
+  }
+}
+
+@media(min-width: 1700px) {
+  .page {
+    width: 715px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+
+  .image {
+    margin-bottom: 60px;
+  }
+
+  .botBlur {
+    top: 670px;
+    right: 379px;
+    width: 1409px;
+    height: 1540px;
+  }
+}

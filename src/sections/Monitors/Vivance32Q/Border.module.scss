@@ -1,0 +1,166 @@
+.section {
+  width: 100%;
+  margin-top: 32px;
+  background: rgba(166, 166, 166, 0.20);
+
+  padding-top: 40px;
+
+  overflow: hidden;
+
+  & > p {
+    margin-top: 24px;
+    width: 256px;
+    margin-left: 12px;
+  }
+
+  & > h3 {
+    margin-left: 12px;
+  }
+}
+
+.imageContainer {
+  margin-top: 62px;
+  height: 232px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  border-radius: 4px;
+}
+
+.image {
+  width: 314px;
+  height: auto;
+  border-radius: 4px;
+
+  position: absolute;
+  bottom: 0;
+  right: -34px;
+}
+
+@media (min-width: 400px) {
+  .section {
+    margin-top: 40px;
+
+    & > p {
+      width: 334px;
+      margin-left: 20px;
+    }
+
+    & > h3 {
+      margin-left: 20px;
+    }
+  }
+
+  .image {
+    width: 374px;
+    right: 0;
+  }
+}
+
+@media(min-width: 640px) {
+  .section {
+    margin-top: 32px;
+
+    padding-top: 0;
+    padding-bottom: 32px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    & > p {
+      margin-top: 20px;
+      width: 568px;
+      margin-left: 24px;
+    }
+
+    & > h3 {
+      margin-left: 24px;
+    }
+  }
+
+  .imageContainer {
+    height: 310px;
+    margin-top: 0;
+    margin-bottom: 60px;
+
+    order: -1;
+    flex-shrink: 0;
+  }
+
+  .image {
+    width: 780px;
+
+    bottom: 0;
+    left: auto;
+    right: 0;
+  }
+}
+
+@media(min-width: 1200px) {
+  .section {
+    margin-top: 60px;
+
+    padding-top: 195px;
+    padding-bottom: 78px;
+
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    & > p {
+      margin-top: 40px;
+      width: 568px;
+      margin-left: 585px;
+
+      &:last-of-type {
+        margin-top: 29px;
+      }
+    }
+
+    & > h3 {
+      margin-left: 585px;
+    }
+  }
+
+  .imageContainer {
+    height: 700px;
+    width: 520px;
+    margin-top: 0;
+    margin-bottom: 60px;
+
+    order: -1;
+    flex-shrink: 0;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .image {
+    width: 878px;
+
+    bottom: 0;
+    top: 0;
+    left: auto;
+    right: -24px;
+  }
+}
+
+@media(min-width: 1400px) {
+  .section {
+    margin-top: 100px;
+    padding-top: 272px;
+    padding-right: 96px;
+    padding-bottom: 95px;
+  }
+
+  .imageContainer {
+    height: 100%;
+  }
+
+  .image {
+    height: 100%;
+  }
+}

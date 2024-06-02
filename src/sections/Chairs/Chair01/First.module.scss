@@ -1,0 +1,170 @@
+.section {
+  width: 100%;
+  height: 274px;
+  margin-bottom: 80px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.textContainer {
+  width: 183px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.line {
+  width: 58px;
+  height: 2px;
+  margin-bottom: 16px;
+
+  background: linear-gradient(135deg, #28AEFF 0%, #B860FF 49.48%, #FFDC25 100%);
+}
+
+.image {
+  position: absolute;
+  right: 98px;
+  bottom: 0;
+
+  width: 280px;
+  height: 224px;
+}
+
+.blur {
+  position: absolute;
+  left: -50vw;
+  bottom: 0;
+  margin-left: 50%;
+
+  min-width: 100vw;
+  height: 112px;
+
+  background: linear-gradient(0deg, #1B1B1B 21.35%, rgba(27, 27, 27, 0.00) 100%);
+}
+
+@media(min-width: 400px) {
+  .section {
+    height: 315px;
+    margin-bottom: 80px;
+  }
+
+  .textContainer {
+    width: 197px;
+  }
+
+  .line {
+    width: 58px;
+    height: 2px;
+    margin-bottom: 16px;
+  }
+
+  .image {
+    right: 120px;
+
+    width: 394px;
+    height: 315px;
+  }
+
+  .blur {
+    height: 146px;
+  }
+}
+
+@media(min-width: 640px) {
+  .section {
+    height: 491px;
+    margin-bottom: 40px;
+  }
+
+  .textContainer {
+    width: 234px;
+    margin-top: 137px;
+  }
+
+  .line {
+    width: 58px;
+    height: 2px;
+    margin-bottom: 24px;
+  }
+
+  .image {
+    right: 129px;
+
+    width: 613px;
+    height: 490px;
+  }
+
+  .blur {
+    height: 159px;
+  }
+}
+
+//@media(min-width: 720px) {
+//  .section {
+//    margin-bottom: 60px;
+//  }
+//}
+
+@media(min-width: 1200px) {
+  .section {
+    height: 660px;
+    margin-bottom: 80px;
+  }
+
+  .textContainer {
+    width: 326px;
+    margin-top: 120px;
+  }
+
+  .line {
+    width: 58px;
+    height: 2px;
+    margin-bottom: 40px;
+  }
+
+  .image {
+    right: 261px;
+
+    width: 825px;
+    height: 660px;
+  }
+
+  .blur {
+    height: 257px;
+  }
+}
+
+@media(min-width: 1400px) {
+  .section {
+    height: 728px;
+  }
+
+  .textContainer {
+    width: 390px;
+    margin-top: 160px;
+  }
+
+  .line {
+    width: 58px;
+    height: 2px;
+    margin-bottom: 40px;
+  }
+
+  .image {
+    right: 325px;
+
+    width: 910px;
+    height: 728px;
+  }
+
+  .blur {
+    height: 257px;
+  }
+}

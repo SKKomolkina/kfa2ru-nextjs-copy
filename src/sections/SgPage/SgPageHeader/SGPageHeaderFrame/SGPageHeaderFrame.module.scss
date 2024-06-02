@@ -1,0 +1,215 @@
+.frameContainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.frame {
+  position: absolute;
+
+  z-index: 3;
+}
+
+.frameBorder {
+  composes: frame;
+  left: 0;
+  top: 0;
+
+  bottom: 0;
+
+  & > path {
+    stroke-width: 2px;
+  }
+}
+
+.frameTop {
+  composes: frame;
+  top: 0;
+  right: 0;
+
+  z-index: 7;
+
+  & > path {
+    stroke-width: 2px;
+  }
+}
+
+.frameBot {
+  composes: frame;
+  left: 0;
+  bottom: 0;
+
+  z-index: 5;
+
+  & > path {
+    stroke-width: 2px;
+  }
+}
+
+.frameLines {
+  composes: frame;
+  bottom: 0;
+  left: 0;
+
+  z-index: 3;
+}
+
+.group {
+  composes: frame;
+  top: 28px;
+  left: 325px;
+
+  z-index: 2;
+}
+
+@media (max-width: 1700px) {
+  .frameContainer {
+  }
+
+  .frame {
+  }
+
+  .frameBorder {
+    width: 1150px;
+    height: 561px;
+
+    & > path {
+      stroke-width: 2px;
+    }
+  }
+
+  .frameTop {
+    width: 123px;
+    height: 132px;
+
+    & > path {
+      stroke-width: 2px;
+    }
+  }
+
+  .frameBot {
+    width: 90px;
+    height: 90px;
+
+    & > path {
+      stroke-width: 2px;
+    }
+  }
+
+  .frameLines {
+    width: 1148px;
+    height: 560px;
+  }
+
+  .group {
+    width: 632px;
+    height: 384px;
+
+    top: 17px;
+    left: 222px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .frameContainer {
+  }
+
+  .frame {
+  }
+
+  .frameBorder {
+    width: 688px;
+    height: 336px;
+
+    & > path {
+      stroke-width: 2px;
+    }
+  }
+
+  .frameTop {
+    width: 74px;
+    height: 74px;
+
+    & > path {
+      stroke-width: 2px;
+    }
+  }
+
+  .frameBot {
+    width: 54px;
+    height: 54px;
+
+    & > path {
+      stroke-width: 2px;
+    }
+  }
+
+  .frameLines {
+    width: 688px;
+    height: 336px;
+  }
+
+  .group {
+    width: 378px;
+    height: 228px;
+
+    top: 10px;
+    left: 133px;
+  }
+}
+
+@media (max-width: 720px) {
+  .frameContainer {
+    width: 280px;
+    height: 440px;
+  }
+
+  .frame {
+  }
+
+  .frameBorder {
+    width: 280px;
+    height: 440px;
+
+    & > path {
+
+    }
+  }
+
+  .frameTop {
+    width: 49px;
+    height: 49px;
+
+    & > path {
+      stroke-width: 2px;
+    }
+  }
+
+  .frameBot {
+    width: 49px;
+    height: 49px;
+
+    & > path {
+      stroke-width: 2px;
+    }
+  }
+
+  .frameLines {
+    width: 280px;
+    height: 378px;
+
+    top: auto;
+    bottom: 0;
+  }
+
+  .group {
+    width: 280px;
+    height: 170px;
+
+    top: 0;
+    left: 0;
+  }
+}

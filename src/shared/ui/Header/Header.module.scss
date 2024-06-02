@@ -1,0 +1,134 @@
+.Header {
+  width: 100%;
+  min-height: min-content;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  position: relative;
+  top: 0;
+  z-index: 3;
+
+  flex-shrink: 0;
+}
+
+.Burger {
+  width: 20px;
+  height: 12px;
+
+  position: relative;
+  cursor: pointer;
+}
+
+.navigation {
+  display: none;
+
+  min-width: 605px;
+  padding: 4px 30px 5px;
+  background: rgba(27, 27, 27, 0.1);
+  border-radius: 60px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.navigationReverseColor {
+  composes: navigation;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-white);
+}
+
+.navigationItem {
+  cursor: pointer;
+
+  position: relative;
+  z-index: 5;
+}
+
+.itemHoverLine {
+  width: 25%;
+  height: 100%;
+
+  background: var(--color-green);
+  transition: left .4s ease;
+  border-radius: 60px;
+
+  position: absolute;
+  left: -25%;
+  top: 0;
+}
+
+.itemHoverLine1 {
+  composes: itemHoverLine;
+  left: 0;
+  //animation: hide 6s linear forwards;
+  transition: left .4s ease;
+}
+
+.itemHoverLine2 {
+  composes: itemHoverLine;
+  left: 25%;
+  //animation: hide 6s linear forwards;
+  transition: left .4s ease;
+}
+
+.itemHoverLine3 {
+  composes: itemHoverLine;
+  left: 50%;
+  //animation: hide 6s linear forwards;
+  transition: left .4s ease;
+}
+
+.itemHoverLine4 {
+  composes: itemHoverLine;
+  left: 75%;
+  //animation: hide 6s linear forwards;
+  transition: left .4s ease;
+}
+
+.text {
+  font-weight: var(--font-weight-light);
+  font-size: var(--text-s-font-size);
+  line-height: var(--text-s-line-height);
+  text-align: center;
+}
+
+.textDark {
+  composes: text;
+  color: #1B1B1B;
+}
+
+@media (min-width: 1200px) {
+  .Burger {
+    width: 23px;
+    height: 14px;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1400px) {
+  .Burger {
+    width: 24px;
+    height: 16px;
+  }
+}
+
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

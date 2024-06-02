@@ -1,0 +1,44 @@
+.HomePage {
+  width: 100%;
+  margin-top: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.aboutPage {
+  background: transparent;
+  color: #1B1B1B;
+}
+
+.blur {
+  position: absolute;
+  bottom: -1000px;
+  left: -895px;
+}
+
+.button {
+  background: #FFFFFF;
+}
+
+@media (min-width: 400px) {
+  .HomePage {
+
+  }
+}
+
+@media (min-width: 640px) {
+  .HomePage {
+
+  }
+}
+
+@media (min-width: 1400px) {
+  .HomePage {
+    margin-top: 100px;
+  }
+}

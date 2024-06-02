@@ -1,0 +1,288 @@
+.section {
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.qr {
+  width: 73px;
+  height: 73px;
+  margin-bottom: 24px;
+
+  position: relative;
+  z-index: 1;
+}
+
+.buttonsContainer {
+  width: 70%;
+  margin-top: 40px;
+  margin-bottom: 80px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.button {
+  margin-right: 4px;
+  padding: 10px 17px;
+
+  border-radius: 24px;
+  border: 0.412px solid var(--color-white);
+
+  font-size: 9px;
+  line-height: 13px;
+  font-weight: 300;
+
+  cursor: pointer;
+  color: var( --color-white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  position: relative;
+  z-index: 1;
+
+  &:first-of-type {
+    margin-bottom: 4px;
+  }
+}
+
+.icon {
+  margin-right: 4px;
+  max-width: 9px;
+  max-height: 9px;
+}
+
+.image {
+  width: 236px;
+  height: 267px;
+
+  align-self: center;
+
+  position: relative;
+  z-index: 1;
+
+  background: url("./download/320.png") no-repeat center top;
+  background-size: cover;
+}
+
+.blur {
+  position: absolute;
+  top: -303px;
+  left: -373px;
+
+  width: 1394.143px;
+  height: 1556.388px;
+}
+
+@media(min-width: 400px) {
+  .section {
+    margin-top: 100px;
+  }
+
+  .qr {
+    width: 78px;
+    height: 78px;
+    margin-bottom: 25px;
+  }
+
+  .buttonsContainer {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  .button {
+    margin-right: 4px;
+    padding: 10px 17px;
+
+    font-size: 9px;
+    line-height: 13px;
+
+    &:first-of-type {
+      margin-bottom: 0;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .icon {
+    margin-right: 5px;
+    max-width: 9px;
+    max-height: 9px;
+  }
+
+  .image {
+    width: 316px;
+    height: 357px;
+  }
+
+  .blur {
+    top: -303px;
+    left: -373px;
+
+    width: 1394.143px;
+    height: 1556.388px;
+  }
+}
+
+@media(min-width: 640px) {
+  .section {
+  }
+
+  .qr {
+    width: 59px;
+    height: 59px;
+    margin-bottom: 25px;
+  }
+
+  .buttonsContainer {
+    width: 206px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .button {
+    margin-right: 4px;
+    padding: 10px 17px;
+
+    font-size: 9px;
+    line-height: 13px;
+
+    &:first-of-type {
+      margin-bottom: 8px;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .icon {
+    margin-right: 5px;
+    max-width: 9px;
+    max-height: 9px;
+  }
+
+  .image {
+    width: 267px;
+    height: 301px;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    background: url("./download/640.png") no-repeat center top;
+    background-size: cover;
+  }
+
+  .blur {
+    top: -366px;
+    left: -134px;
+
+    width: 1394.143px;
+    height: 1556.388px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .section {
+    margin-top: 200px;
+  }
+
+  .qr {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 40px;
+  }
+
+  .buttonsContainer {
+    width: 340px;
+    margin-top: 40px;
+  }
+
+  .button {
+    margin-right: 8px;
+    padding: 17px 28px;
+
+    font-size: 16px;
+    line-height: 120%;
+
+    border-radius: 40px;
+
+    &:first-of-type {
+      margin-bottom: 12px;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .icon {
+    margin-right: 8px;
+    max-width: 15px;
+    max-height: 18px;
+  }
+
+  .image {
+    width: 475px;
+    height: 539px;
+
+    right: 0;
+    top: 0;
+
+    background: url("./download/1200.png") no-repeat center top;
+    background-size: cover;
+  }
+
+  .blur {
+    top: -549px;
+    left: -145px;
+
+    width: 1918.618px;
+    height: 2141.9px;
+  }
+}
+
+@media(min-width: 1400px) {
+  .section {
+    margin-top: 240px;
+    margin-bottom: 120px;
+  }
+
+  .qr {
+    width: 130px;
+    height: 130px;
+  }
+
+  .image {
+    width: 585px;
+    height: 664px;
+
+    background: url("./download/1700.png") no-repeat center top;
+    top: -31px;
+  }
+
+  .blur {
+    width: 2296.455px;
+    height: 2563.708px;
+
+    top: -661px;
+    left: -373px;
+  }
+}

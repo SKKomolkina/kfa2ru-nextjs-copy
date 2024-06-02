@@ -1,0 +1,291 @@
+.HomeAbout {
+  margin-top: 80px;
+  width: 100%;
+
+  position: relative;
+  z-index: 4;
+}
+
+.HomeAboutBox {
+  width: 100%;
+  padding: 32px 24px 40px 24px;
+
+  background: var(--color-light-blue);
+  border-radius: 4px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.titleContainer {
+  width: 215px;
+  margin-bottom: 12px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.blackText {
+  font-size: var(--header-xs-font-size);
+  line-height: var(--header-xs-line-height);
+  font-weight: var(--font-weight-light);
+
+  color: var(--color-black);
+  text-transform: uppercase;
+}
+
+.whiteText {
+  composes: blackText;
+  color: var(--color-white);
+}
+
+.blackTextRight {
+  composes: blackText;
+
+  margin-top: -12px;
+  align-self: flex-end;
+}
+
+.whiteTextRight {
+  composes: blackTextRight;
+  color: var(--color-white);
+}
+
+.gradientText {
+  composes: blackText;
+
+  background: linear-gradient(106.39deg, #44FC8E 0%, #4916DD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.gradientButton {
+  position: absolute;
+  left: 36px;
+  top: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  z-index: 3;
+}
+
+.gradientButtonLine {
+  width: 37px;
+  height: 37px;
+}
+
+.text {
+  width: 146px;
+
+  align-self: flex-end;
+
+  font-size: var(--text-xxs-font-size);
+  line-height: var(--text-xxs-line-height);
+}
+
+@media (min-width: 400px) {
+  .HomeAbout {
+    margin-top: 120px;
+  }
+
+  .HomeAboutBox {
+    padding: 40px 29px;
+  }
+
+  .blackText {
+    font-size: var(--header-s-font-size);
+    line-height: var(--header-s-line-height);
+  }
+
+  .blackTextRight {
+    margin-top: 6px;
+  }
+
+  .titleContainer {
+    width: 316px;
+    margin-bottom: 35px;
+  }
+
+  .gradientButton {
+    top: 58px;
+    left: 99px;
+  }
+
+  .gradientButtonLine {
+    width: 49px;
+    height: 49px;
+  }
+
+  .text {
+    width: 217px;
+
+    font-size: var(--text-xs-font-size);
+    line-height: var(--text-xs-line-height);
+  }
+}
+
+@media (min-width: 640px) {
+  .HomeAbout {
+    margin-top: 100px;
+  }
+
+  .HomeAboutBox {
+    padding: 32px 37px;
+
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .titleContainer {
+    width: 304px;
+    margin-bottom: 0;
+  }
+
+  .blackText {
+    font-size: var(--header-xs-font-size);
+    line-height: var(--header-xs-line-height);
+  }
+
+  .blackTextRight {
+    margin-top: 0;
+  }
+
+  .gradientButton {
+    top: 46px;
+    left: 104px;
+  }
+
+  .text {
+    width: 158px;
+    font-size: var(--text-xxs-font-size);
+    line-height: var(--text-xxs-line-height);
+
+    align-self: flex-start;
+  }
+
+  .gradientButtonLine {
+    width: 53px;
+    height: 53px;
+  }
+}
+
+//@media (min-width: 720px) {
+//  .HomeAboutBox {
+//    padding: 32px 59px;
+//  }
+//
+//  .titleContainer {
+//    width: 338px;
+//  }
+//
+//  .blackText {
+//    font-size: var(--header-s-font-size);
+//    line-height: var(--header-s-line-height);
+//  }
+//
+//  .blackTextRight {
+//    margin-top: 11px;
+//  }
+//
+//  .gradientButton {
+//    top: 61px;
+//    left: 117px;
+//  }
+//
+//  .text {
+//    width: 176px;
+//  }
+//
+//  .gradientButtonLine {
+//    width: 59px;
+//    height: 59px;
+//  }
+//}
+
+@media (min-width: 1200px) {
+  .HomeAbout {
+    margin-top: 160px;
+  }
+
+  .HomeAboutBox {
+    padding: 60px 65px;
+
+    border-radius: 16px;
+  }
+
+  .titleContainer {
+    width: 504px;
+  }
+
+  .blackText {
+    font-size: var(--header-m-font-size);
+    line-height: var(--header-m-line-height);
+  }
+
+  .blackTextRight {
+    margin-top: 0;
+  }
+
+  .gradientButton {
+    top: 94px;
+    left: 162px;
+
+    width: 65px;
+    height: 65px;
+  }
+
+  .gradientButtonLine {
+    width: 65px;
+    height: auto;
+  }
+
+  .text {
+    width: 305px;
+
+    font-size: var(--text-s-font-size);
+    line-height: var(--text-s-line-height);
+  }
+}
+
+@media (min-width: 1400px) {
+  .HomeAboutBox {
+    padding: 100px 130px 100px 129px;
+    border-radius: 20px;
+  }
+
+  .titleContainer {
+    width: 503px;
+  }
+
+  .blackText {
+    font-size: 60px;
+    line-height: 120%;
+  }
+
+  .gradientButton {
+    left: 162px;
+    top: 80px;
+  }
+
+  .text {
+    width: 370px;
+
+    font-size: 16px;
+    line-height: 120%;
+  }
+}

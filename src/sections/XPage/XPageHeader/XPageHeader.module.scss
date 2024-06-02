@@ -1,0 +1,337 @@
+.header {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  left: -70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 1;
+}
+
+.image {
+  width: 418px;
+  height: 310px;
+
+  z-index: 2;
+}
+
+.lineWrapper {
+  width: 100%;
+
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.line {
+  margin-right: 12px;
+  width: 16px;
+  height: 1px;
+  flex-shrink: 0;
+  background-color: var(--color-green);
+}
+
+.lineText {
+  margin-right: 12px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 9px;
+
+  white-space: nowrap;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.textContainer {
+  width: 190px;
+  font-size: 10px;
+  line-height: 130%;
+  z-index: 1;
+}
+
+.title {
+  margin-top: 220px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 131.6%;
+
+  align-self: flex-end;
+}
+
+.arrowWrapper {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+
+  width: 37px;
+  height: 68px;
+
+  border: 1px solid var(--color-light-gray);
+  border-radius: 89px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  height: 40px;
+}
+
+.textBack {
+  position: absolute;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  bottom: 84px;
+  z-index: 0;
+}
+
+.textTop {
+  margin-bottom: 14px;
+}
+
+@media(min-width: 400px) {
+  .imageContainer {
+    top: 80px;
+    left: -65px;
+  }
+
+  .textBack {
+    bottom: 118px;
+  }
+
+  .image {
+    width: 502px;
+    height: 373px;
+  }
+
+  .lineWrapper {
+    margin-bottom: 60px;
+    display: flex;
+  }
+
+  .line {
+    width: 16px;
+    height: 1px;
+  }
+
+  .lineText {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 9px;
+  }
+
+  .textContainer {
+    width: 324px;
+    font-size: 16px;
+  }
+
+  .title {
+    margin-top: 233px;
+    font-size: 50px;
+  }
+
+  .arrowWrapper {
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+
+    width: 50px;
+    height: 90px;
+  }
+
+  .arrow {
+    height: 52px;
+  }
+}
+
+@media(min-width: 640px) {
+  .imageContainer {
+    top: -10px;
+    left: 105px;
+  }
+
+  .textBack {
+    bottom: 72px;
+    left: -300px;
+  }
+
+  .image {
+    width: 369px;
+    height: 273px;
+  }
+
+  .lineWrapper {
+    margin-bottom: 32px;
+    justify-content: space-between;
+  }
+
+  .line {
+    width: 12px;
+  }
+
+  .lineText {
+    font-size: 6px;
+    line-height: 7px;
+  }
+
+  .textContainer {
+    width: 220px;
+    font-size: 10px;
+  }
+
+  .title {
+    margin-top: 110px;
+    font-size: 60px;
+  }
+
+  .arrowWrapper {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+
+    width: 38px;
+    height: 68px;
+  }
+
+  .arrow {
+    height: 40px;
+  }
+
+  .textTop {
+    display: none;
+  }
+
+  .textBot {
+    height: 80px;
+    width: auto;
+  }
+}
+
+@media(min-width: 1200px) {
+  .imageContainer {
+    top: -20px;
+    left: 195px;
+  }
+
+  .textBack {
+    bottom: 205px;
+    left: -484px;
+  }
+
+  .textBot {
+    height: 170px;
+  }
+
+  .image {
+    width: 760px;
+    height: 562px;
+  }
+
+  .lineWrapper {
+    margin-bottom: 60px;
+  }
+
+  .line {
+    width: 61px;
+    margin-right: 25px;
+  }
+
+  .lineText {
+    margin-right: 25px;
+    font-size: 8px;
+    line-height: 9px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .textContainer {
+    width: 455px;
+    font-size: 16px;
+  }
+
+  .title {
+    margin-top: 230px;
+    font-size: 110px;
+  }
+
+  .arrowWrapper {
+    width: 65px;
+    height: 120px;
+  }
+
+  .arrow {
+    height: 70px;
+  }
+}
+
+//@media(min-width: 1700px) {
+//  .imageContainer {
+//    top: -26px;
+//    left: 325px;
+//  }
+//
+//  .image {
+//    width: 1020px;
+//    height: 754px;
+//  }
+//
+//  .lineWrapper {
+//    margin-bottom: 120px;
+//  }
+//
+//  .line {
+//    width: 80px;
+//    margin-right: 40px;
+//  }
+//
+//  .lineText {
+//    margin-right: 40px;
+//    font-size: 12px;
+//    line-height: 14px;
+//    &:last-of-type {
+//      margin-right: 0;
+//    }
+//  }
+//
+//  .textContainer {
+//    width: 565px;
+//    font-size: 20px;
+//  }
+//
+//  .title {
+//    margin-top: 315px;
+//    font-size: 160px;
+//  }
+//
+//  .arrowWrapper {
+//    width: 110px;
+//    height: 202px;
+//  }
+//
+//  .arrow {
+//    height: 116px;
+//  }
+//}

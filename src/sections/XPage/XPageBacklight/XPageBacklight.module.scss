@@ -1,0 +1,331 @@
+.section {
+  width: 100%;
+  height: 280px;
+  margin-top: 108px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 16px;
+
+  background-color: var(--color-black);
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 3;
+
+  width: 372px;
+  height: 228px;
+}
+
+.text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-black);
+}
+
+.title {
+  position: absolute;
+  top: -28px;
+  left: 12px;
+
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 46px;
+  text-align: center;
+  color: #44FC8E;
+}
+
+.titleSpan {
+  composes: title;
+  z-index: 2;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #44FC8E;
+  color: transparent;
+}
+
+.blueContainer {
+  width: 100%;
+  height: 400px;
+
+  background-color: var(--color-blue);
+  border-radius: 8px;
+  overflow: hidden;
+
+  position: absolute;
+  bottom: -400px;
+  left: 0;
+
+  z-index: 3;
+}
+
+.imageBlue {
+  width: 675px;
+  height: 511px;
+
+  position: absolute;
+  bottom: -148px;
+  right: 12px;
+}
+
+@media(min-width: 400px) {
+  .section {
+    width: 100%;
+    height: 280px;
+    margin-top: 108px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    position: relative;
+  }
+
+  .imageContainer {
+    height: 200px;
+    margin-bottom: 24px;
+  }
+
+  .image {
+    top: 8px;
+    left: 12px;
+
+    width: 442px;
+    height: 271px;
+  }
+
+  .text {
+    width: 295px;
+    font-size: 12px;
+    line-height: 16px;
+    align-self: center;
+  }
+
+  .title {
+    position: absolute;
+    top: -37px;
+    left: 7px;
+
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  .blueContainer {
+  }
+
+  .imageBlue {
+    width: 687px;
+    height: 520px;
+
+    position: absolute;
+    bottom: -148px;
+    right: 0px;
+  }
+}
+
+@media(min-width: 640px) {
+  .section {
+    height: 160px;
+    margin-top: 163px;
+
+    flex-direction: row;
+  }
+
+  .imageContainer {
+    width: 247px;
+    height: 160px;
+    margin-bottom: 0;
+    border-radius: 12px;
+  }
+
+  .image {
+    top: 8px;
+    left: 12px;
+
+    width: 325px;
+    height: 199px;
+  }
+
+  .text {
+    width: 264px;
+    margin-left: 16px;
+    margin-bottom: 4px;
+    align-self: flex-end;
+  }
+
+  .title {
+    top: -63px;
+    left: 19px;
+
+    font-size: 90px;
+    line-height: 104px;
+  }
+
+  .blueContainer {
+    width: 511px;
+    height: 300px;
+    bottom: -316px;
+    left: auto;
+    right: 0;
+    border-radius: 12px;
+  }
+
+  .imageBlue {
+    width: 546px;
+    height: 413px;
+
+    bottom: -129px;
+    right: 12px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .section {
+    height: 280px;
+    margin-top: 278px;
+  }
+
+  .imageContainer {
+    width: 434px;
+    height: 280px;
+    border-radius: 20px;
+  }
+
+  .image {
+    top: 24px;
+    left: 20px;
+
+    width: 568px;
+    height: 350px;
+  }
+
+  .text {
+    width: 357px;
+    margin-left: 65px;
+
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .title {
+    top: -118px;
+    left: 34px;
+
+    font-size: 170px;
+    line-height: 196px;
+  }
+
+  .blueContainer {
+    width: 890px;
+    height: 500px;
+    bottom: -524px;
+    border-radius: 20px;
+  }
+
+  .imageBlue {
+    width: 990px;
+    height: 746px;
+
+    bottom: -276px;
+    right: 17px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .section {
+    //width: 1540px;
+    height: 280px;
+    margin-top: 278px;
+  }
+
+  .imageContainer {
+    width: 434px;
+    height: 280px;
+  }
+
+  .image {
+    top: 40px;
+    left: 40px;
+
+    width: 568px;
+    height: 350px;
+  }
+
+  .text {
+    width: 357px;
+    margin-left: 85px;
+    margin-bottom: 17px;
+
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .title {
+    top: -186px;
+    left: 34px;
+
+    font-size: 170px;
+    line-height: 288px;
+  }
+
+  .blueContainer {
+    width: 890px;
+    height: 500px;
+    bottom: -540px;
+  }
+
+  .imageBlue {
+    width: 990px;
+    height: 746px;
+
+    bottom: -277px;
+    right: 54px;
+  }
+}
+
+@media(min-width: 1400px) {
+  .imageContainer {
+    width: 500px;
+    height: 320px;
+  }
+
+  .text {
+    margin-bottom: 29px;
+  }
+
+  .title {
+    font-size: 190px;
+  }
+
+  .section {
+    height: 320px;
+  }
+
+  .blueContainer {
+    width: 1085px;
+    height: 600px;
+    top: 354px;
+  }
+
+  .imageBlue {
+    bottom: -232px;
+  }
+}

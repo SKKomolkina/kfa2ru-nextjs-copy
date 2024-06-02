@@ -1,0 +1,163 @@
+.Item {
+  width: 100%;
+  margin-bottom: 12px;
+
+  display: grid;
+  grid-template-columns: 13% 1fr 8%;
+  align-items: end;
+}
+
+.item {
+  margin-bottom: 12px;
+  width: 100%;
+  cursor: pointer;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.number {
+  margin-top: 8px;
+
+  font-weight: var(--font-weight-light);
+  font-size: 10px;
+  line-height: 120%;
+  color: var(--color-gray);
+}
+
+.line {
+  background: #5E5E5E;
+}
+
+.textContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.arrow {
+  margin-top: 8px;
+  width: 24px;
+  height: 24px;
+
+  justify-self: end;
+
+  animation: hoverRotateBack .2s linear forwards;
+}
+
+.arrowAnimation {
+  composes: arrow;
+  animation: hoverRotate .2s linear forwards;
+}
+
+.gradient {
+  background: linear-gradient(106.39deg, #44FC8E 0%, #4916DD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+@media (min-width: 400px) {
+  .number {
+    margin-top: 24px;
+  }
+
+  .arrow {
+    margin-top: 10px;
+    width: 29px;
+    height: 29px;
+  }
+}
+
+@media (min-width: 640px) {
+  .number {
+    margin-top: 14px;
+
+    font-size: var(--text-xs-font-size);
+    //line-height: var(--text-xs-line-height);
+  }
+
+  .arrow {
+    margin-top: 4px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+//@media (min-width: 720px) {
+//  .arrow {
+//    margin-top: 6px;
+//    width: 32px;
+//    height: 32px;
+//  }
+//
+//  .number {
+//    margin-top: 20px;
+//  }
+//}
+
+@media (min-width: 1200px) {
+  .HomeItem {
+    margin-bottom: 24px;
+  }
+
+  .item {
+    margin-bottom: 24px;
+  }
+
+  .number {
+    font-size: var(--text-s-font-size);
+    line-height: var(--text-s-line-height);
+  }
+
+  .arrow {
+    width: 44px;
+    height: 44px;
+    & > svg {
+      & > path {
+        stroke-width: 1px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .Item {
+    margin-bottom: 34px;
+  }
+
+  .number {
+    margin-top: 25px;
+
+    font-size: var(--header-xs-font-size);
+    //line-height: var(--header-xs-line-height);
+  }
+
+  .arrow {
+    margin-top: 11px;
+
+    width: 65px;
+    height: 65px;
+  }
+}
+
+@keyframes hoverRotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes hoverRotateBack {
+  from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}

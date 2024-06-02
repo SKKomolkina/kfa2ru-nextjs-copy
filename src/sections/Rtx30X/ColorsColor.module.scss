@@ -1,0 +1,233 @@
+.section {
+  width: 100%;
+  height: 258px;
+  margin-bottom: 12px;
+
+  padding: 40px 12px 20px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid var(--color-black);
+  background: var(--color-black);
+}
+
+.image {
+  display: none;
+  width: 256px;
+  height: 151px;
+  opacity: 0;
+
+  transition: all .3s ease-in;
+}
+
+.imageVisible {
+  composes: image;
+  display: block;
+  opacity: 1;
+
+  transition: all .3s ease;
+}
+
+.textContainer {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.buttonsContainer {
+  width: 94px;
+
+  display: flex;
+  align-items:flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0.5px solid var(--color-white);
+}
+
+.button1 {
+  composes: button;
+  background-color: #10CF80;
+}
+
+.button2 {
+  composes: button;
+  background-color: #4710EC;
+}
+
+.button3 {
+  composes: button;
+  background-color: #FFB800;
+}
+
+.button4 {
+  composes: button;
+  background-color: #12EEEE;
+}
+
+.button5{
+  composes: button;
+  background-color: #EC1413;
+}
+
+@media (min-width: 400px) {
+  .section {
+    height: 350px;
+
+    padding: 56px 16px 24px;
+  }
+
+  .image {
+    width: 350px;
+    height: 205px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .buttonsContainer {
+    width: 134px;
+  }
+
+  .button {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: 640px) {
+  .section {
+    width: 405px;
+    height: 449px;
+    align-items: flex-end;
+
+    padding: 88px 16px 22px;
+  }
+
+  .image {
+    width: 381px;
+    height: 223px;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 120%;
+  }
+
+  .buttonsContainer {
+    width: 142px;
+  }
+
+  .button {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+//@media (min-width: 720px) {
+//  .section {
+//    width: 453px;
+//    height: 467px;
+//
+//    padding: 90px 16px 22px;
+//  }
+//
+//  .image {
+//    width: 421px;
+//    height: 247px;
+//  }
+//
+//  .title {
+//    font-size: 32px;
+//    line-height: 120%;
+//  }
+//
+//  .buttonsContainer {
+//    width: 142px;
+//  }
+//
+//  .button {
+//    width: 20px;
+//    height: 20px;
+//  }
+//}
+
+@media (min-width: 1200px) {
+  .section {
+    width: 760px;
+    height: 650px;
+
+    padding: 100px 45px 34px;
+    border-radius: 20px;
+  }
+
+  .image {
+    width: 670px;
+    height: 393px;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  .buttonsContainer {
+    width: 164px;
+  }
+
+  .button {
+    width: 25px;
+    height: 26px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .section {
+    width: 890px;
+    height: 725px;
+    margin-bottom: 20px;
+
+    padding: 72px 130px 29px 110px;
+    border-radius: 20px;
+  }
+
+  .image {
+    width: 760px;
+    height: 445px;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  .buttonsContainer {
+    width: 165px;
+  }
+
+  .button {
+    width: 25px;
+    height: 25px;
+  }
+}

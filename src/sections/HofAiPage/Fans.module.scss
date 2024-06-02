@@ -1,0 +1,163 @@
+.box1 {
+  padding: 154px 16px 24px 16px;
+  overflow: hidden;
+}
+
+.box2 {
+  width: 280px;
+  height: 220px;
+  overflow: hidden;
+}
+
+.image {
+  width: 416px;
+  height: 199px;
+
+  position: absolute;
+  left: 16px;
+  top: 26px;
+}
+
+.vector {
+  position: absolute;
+  display: none;
+  width: 908px;
+  height: 507px;
+}
+
+.vector1 {
+  composes: vector;
+}
+
+.vector2 {
+  composes: vector;
+}
+
+@media(min-width: 400px) {
+  .box1 {
+    padding: 73px 24px 24px 24px;
+  }
+
+  .box2 {
+    width: 374px;
+    height: 220px;
+  }
+
+  .image {
+    width: 463px;
+    height: 221px;
+
+    left: 24px;
+    top: 24px;
+  }
+}
+
+@media(min-width: 640px) {
+  .box1 {
+    padding: 73px 37px 24px 24px;
+    max-width: 353px;
+    min-height: 220px;
+    max-height: 220px;
+  }
+
+  .box2 {
+    width: 247px;
+    height: 220px;
+  }
+
+  .image {
+    width: 358px;
+    height: 171px;
+
+    left: 24px;
+    top: 24px;
+  }
+
+  .vector {
+    display: block;
+  }
+
+  .vector1 {
+    left: -191px;
+    top: 14px;
+  }
+
+  .vector2 {
+    right: -101px;
+    top: 14px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .box1 {
+    padding: 112px 215px 40px 45px;
+    max-width: 630px;
+    min-height: 340px;
+    max-height: 340px;
+  }
+
+  .box2 {
+    width: 500px;
+    height: 340px;
+  }
+
+  .image {
+    width: 579px;
+    height: 276px;
+
+    left: 65px;
+    top: 32px;
+  }
+
+  .vector {
+    width: 1241px;
+    height: 692px;
+  }
+
+  .vector1 {
+    left: -54px;
+    top: 10px;
+  }
+
+  .vector2 {
+    right: -37px;
+    top: 10px;
+  }
+}
+
+@media(min-width: 1400px) {
+  .box1 {
+    padding: 170px 325px 50px 65px;
+    max-width: 760px;
+    min-height: 400px;
+    max-height: 400px;
+  }
+
+  .box2 {
+    width: 500px;
+    height: 400px;
+  }
+
+  .image {
+    width: 709px;
+    height: 338px;
+
+    left: 45px;
+    top: 32px;
+  }
+
+  .vector {
+    width: 1356.5px;
+    height: 756.633px;
+  }
+
+  .vector1 {
+    left: -60px;
+    top: 20px;
+  }
+
+  .vector2 {
+    right: -17px;
+    top: 20px;
+  }
+}

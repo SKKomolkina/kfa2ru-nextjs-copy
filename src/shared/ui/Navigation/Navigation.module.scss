@@ -1,0 +1,428 @@
+.navigation {
+  width: 100%;
+  height: 100%;
+
+  color: var(--color-white);
+
+  position: relative;
+  z-index: 9999;
+}
+
+.navigationHidden {
+  composes: navigation;
+  display: none;
+  opacity: 0;
+}
+
+.container {
+  min-width: 100vw;
+  height: 95vh;
+  //min-height: 460px;
+  padding: 20px;
+  padding-bottom: 40px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+
+  background: var(--color-black);
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  opacity: 1;
+  overflow: scroll;
+  transition: top 1s ease, opacity .8s ease;
+}
+
+.containerHidden {
+  composes: container;
+  top: -200vh;
+  opacity: 0;
+
+  transition: top 1s ease, opacity .4s ease;
+}
+
+.logoContainer {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.buttonClose {
+  width: 24px;
+  height: 24px;
+
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+
+  &:hover {
+    animation: buttonClose 1s linear 1 forwards;
+  }
+}
+
+.blur {
+  position: absolute;
+  top: -96px;
+  left: -172px;
+
+  width: 460px;
+  height: 327px;
+
+  filter: blur(30px);
+}
+
+.linksContainer {
+  margin-top: 25%;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-self: flex-end;
+
+  position: relative;
+  z-index: 2;
+}
+
+.link {
+  margin-bottom: 32px;
+  cursor: pointer;
+  position: relative;
+
+  & > p {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: right;
+
+    position: relative;
+    z-index: 1;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.linkUnderline {
+  width: 100%;
+  height: 8px;
+
+  border-radius: 40px;
+  opacity: 0.7;
+  background: var(--gradient, linear-gradient(135deg, #44FC8E 0%, #4916DD 100%));
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  transition: opacity .4s ease, left .2s linear;
+}
+
+.linkUnderlineHidden {
+  composes: linkUnderline;
+  left: 200px;
+  bottom: 0;
+  opacity: 0;
+
+  transition: opacity .4s ease, left .2s linear;
+}
+
+.aboutContainer {
+  margin-top: 15%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  position: relative;
+  z-index: 2;
+}
+
+.aboutTitle {
+  margin-bottom: 16px;
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  color: var(--color-green);
+}
+
+.aboutLink {
+  margin-bottom: 12px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 400px) {
+  .navigation {
+  }
+
+  .container {
+    padding: 20px;
+    padding-bottom: 60px;
+  }
+
+  .buttonClose {
+    width: 29px;
+    height: 29px;
+  }
+
+  .blur {
+    top: -86px;
+    left: -147px;
+
+    width: 495px;
+    height: 373px;
+
+    filter: blur(20px);
+  }
+
+  .link {
+    margin-bottom: 46px;
+
+    & > p {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+
+  .linkUnderline {
+    height: 17px;
+    bottom: -4px;
+  }
+
+  .aboutTitle {
+    margin-bottom: 16px;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .aboutLink {
+    margin-bottom: 12px;
+
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 640px) {
+  .navigation {
+  }
+
+  .container {
+    padding: 24px 32px 36px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .logoContainer {
+    align-self: flex-start;
+  }
+
+  .buttonClose {
+    width: 24px;
+    height: 24px;
+  }
+
+  .blur {
+    top: -195px;
+    left: -158px;
+    width: 640px;
+    height: 483px;
+    filter: blur(15px);
+  }
+
+  .linksContainer {
+    margin-top: 110px;
+    margin-right: 4px;
+    align-items: flex-start;
+    order: 2;
+  }
+
+  .link {
+    margin-bottom: 24px;
+
+    & > p {
+      text-align: left;
+      font-size: 24px;
+      line-height: 33px;
+    }
+  }
+
+  .linkUnderline {
+    height: 8px;
+    bottom: 0;
+  }
+
+  .aboutContainer {
+    margin-top: 220px;
+    order: 1;
+  }
+
+  .aboutTitle {
+    margin-bottom: 12px;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .aboutLink {
+    margin-bottom: 8px;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navigation {
+  }
+
+  .container {
+    padding: 47px 65px 80px;
+  }
+
+  .buttonClose {
+    width: 45px;
+    height: 45px;
+  }
+
+  .blur {
+    top: -220px;
+    left: -158px;
+
+    width: 923px;
+    height: 702px;
+
+    filter: blur(15px);
+  }
+
+  .linksContainer {
+    margin-top: 312px;
+    margin-right: 26px;
+  }
+
+  .link {
+    margin-bottom: 40px;
+
+    & > p {
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+
+  .linkUnderline {
+    height: 12px;
+    bottom: 2px;
+  }
+
+  .aboutContainer {
+    margin-top: 478px;
+  }
+
+  .aboutTitle {
+    margin-bottom: 24px;
+
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .aboutLink {
+    margin-bottom: 12px;
+
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .navigation {
+  }
+
+  .container {
+    padding: 32px 125px 140px;
+  }
+
+  .buttonClose {
+    width: 62px;
+    height: 62px;
+  }
+
+  .blur {
+    top: -358px;
+    left: -279px;
+
+    width: 1415px;
+    height: 1047px;
+
+    filter: blur(10px);
+  }
+
+  .linksContainer {
+    margin-top: 470px;
+    margin-right: 36px;
+  }
+
+  .link {
+    margin-bottom: 32px;
+
+    & > p {
+      font-size: 80px;
+      line-height: 96px;
+    }
+  }
+
+  .linkUnderline {
+    height: 27px;
+    bottom: 2px;
+  }
+
+  .aboutContainer {
+    margin-top: 740px;
+  }
+
+  .aboutTitle {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .aboutLink {
+    margin-bottom: 18px;
+
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+@keyframes buttonClose {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg) scale(1.1);
+  }
+}

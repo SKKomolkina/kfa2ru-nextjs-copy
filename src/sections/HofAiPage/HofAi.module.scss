@@ -1,0 +1,288 @@
+.page {
+  width: 100%;
+  max-width: 1280px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: center;
+}
+
+.box {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  position: relative;
+  background: #E6E6E6;
+  color: var(--color-black);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.pageTitle {
+  font-size: 40px;
+  line-height: 120%;
+  font-weight: 300;
+
+  margin-bottom: 2px;
+  text-transform: uppercase;
+
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  margin-bottom: 8px;
+
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 500;
+
+  text-transform: uppercase;
+
+  position: relative;
+  z-index: 1;
+}
+
+.subtitle {
+  margin-bottom: 16px;
+
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 300;
+
+  text-transform: uppercase;
+
+  position: relative;
+  z-index: 1;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 300;
+
+  position: relative;
+  z-index: 1;
+}
+
+.subtext {
+  font-size: 12px;
+  line-height: 120%;
+  font-weight: 300;
+
+  position: relative;
+  z-index: 1;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 12px 24px;
+
+  color: var(--color-white);
+  border-radius: 60px;
+  background: var(--_1, linear-gradient(100deg, #6C65BA 0%, #B6C0FF 100%));
+
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.link {
+  color: #6C65BA;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 120%;
+
+  position: relative;
+  z-index: 1;
+
+  cursor: pointer;
+}
+
+.back {
+  background: transparent !important;
+}
+
+@media(min-width: 400px) {
+  .page {
+  }
+
+  .box {
+    margin-bottom: 16px;
+    border-radius: 8px;
+  }
+
+  .pageTitle {
+    font-size: 40px;
+    margin-bottom: 2px;
+  }
+
+  .title {
+    margin-bottom: 8px;
+
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 500;
+
+    text-transform: uppercase;
+
+    position: relative;
+    z-index: 1;
+  }
+
+  .subtitle {
+    margin-bottom: 16px;
+
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .subtext {
+    font-size: 12px;
+  }
+
+  .button {
+    margin-top: 24px;
+    padding: 12px 24px;
+  }
+
+  .link {
+    font-size: 20px;
+  }
+}
+
+@media(min-width: 640px) {
+  .page {
+  }
+
+  .box {
+    margin-bottom: 16px;
+    border-radius: 8px;
+  }
+
+  .pageTitle {
+    font-size: 40px;
+    margin-bottom: 2px;
+  }
+
+  .title {
+    margin-bottom: 8px;
+
+    font-size: 24px;
+  }
+
+  .subtitle {
+    margin-bottom: 16px;
+
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .subtext {
+    font-size: 20px;
+  }
+
+  .button {
+    margin-top: 24px;
+    padding: 12px 24px;
+  }
+
+  .link {
+    font-size: 20px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .page {
+  }
+
+  .box {
+    margin-bottom: 20px;
+    border-radius: 16px;
+  }
+
+  .pageTitle {
+    font-size: 60px;
+    margin-bottom: 0;
+  }
+
+  .title {
+    margin-bottom: 12px;
+
+    font-size: 40px;
+  }
+
+  .subtitle {
+    margin-bottom: 16px;
+
+    font-size: 32px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .subtext {
+    font-size: 20px;
+  }
+
+  .button {
+    margin-top: 24px;
+    padding: 20px 32px;
+    font-size: 20px;
+  }
+
+  .link {
+    font-size: 24px;
+  }
+}
+
+@media(min-width: 1400px) {
+  .page {
+  }
+
+  .box {
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+
+  .pageTitle {
+    font-size: 80px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    margin-bottom: 24px;
+
+    font-size: 40px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .subtext {
+    font-size: 20px;
+  }
+
+  .button {
+    margin-top: 40px;
+  }
+
+  .link {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,164 @@
+.section {
+  width: 100%;
+  margin-bottom: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 1540px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+
+  position: relative;
+}
+
+.vector {
+  position: absolute;
+  left: 56px;
+  bottom: -66px;
+}
+
+.image {
+  position: relative;
+  z-index: 1;
+}
+
+.textContainer {
+  width: 630px;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  color: #FFFFFF;
+}
+
+.text {
+  margin: 0 0 32px;
+
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.textSpan {
+  composes: text;
+
+  background: linear-gradient(97.86deg, #FFC58E -9.78%, #FFB8B8 26.53%, #FF7070 67.08%, #FF3B3B 106.43%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+@media (max-width: 1700px) {
+  .section {
+    //margin-bottom: 260px;
+  }
+
+  .container {
+    width: 1020px;
+  }
+
+  .vector {
+    width: 440px;
+    height: 580px;
+
+    left: -26px;
+    bottom: -66px;
+  }
+
+  .image {
+    width: 435px;
+    height: 346px;
+  }
+
+  .textContainer {
+    width: 500px;
+  }
+
+  .text {
+    margin: 0 0 32px;
+
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section {
+    //margin-bottom: 160px;
+  }
+
+  .container {
+    width: 570px;
+  }
+
+  .vector {
+    width: 230px;
+    height: 303px;
+
+    left: -16px;
+    bottom: -42px;
+  }
+
+  .image {
+    width: 234px;
+    height: 186px;
+  }
+
+  .textContainer {
+    width: 277px;
+  }
+
+  .text {
+    margin: 0 0 20px;
+
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 720px) {
+  .section {
+    //margin-bottom: 120px;
+  }
+
+  .container {
+    width: 280px;
+    flex-direction: column-reverse;
+  }
+
+  .vector {
+    width: 206px;
+    height: 271px;
+
+    left: 48px;
+    bottom: -24px;
+  }
+
+  .image {
+    margin-top: 40px;
+    width: 243px;
+    height: 193px;
+
+    align-self: flex-end;
+  }
+
+  .textContainer {
+    width: 280px;
+  }
+
+  .text {
+    margin: 0 0 20px;
+
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

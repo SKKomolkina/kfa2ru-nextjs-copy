@@ -1,0 +1,145 @@
+.section {
+  width: 100%;
+  padding-top: 80px;
+  //padding-bottom: 160px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  position: relative;
+  color: var(--color-black);
+  font-family: 'Manrope', sans-serif;
+}
+
+.about {
+  color: var(--color-black);
+}
+
+.buttonColor {
+  background: var(--color-white);
+}
+
+.boxColor {
+  background: rgba(134, 134, 134, 0.2);
+}
+
+.fill {
+  color: var(--color-black) !important;
+  & > path {
+    fill: var(--color-black)
+  }
+}
+
+.blur {
+  position: absolute;
+  top: 854px;
+  right: -285px;
+  width: 419px;
+  height: 326px;
+
+  opacity: 0.8;
+  filter: blur(20px);
+}
+
+.blurBot {
+  position: absolute;
+  bottom: -344px;
+  left: -444px;
+  width: 687px;
+  height: 614px;
+}
+
+@media (min-width: 720px) {
+  .section {
+    width: 100%;
+    padding-top: 240px;
+    //padding-bottom: 120px;
+  }
+
+  .blur {
+    top: 827px;
+    right: -285px;
+    width: 533px;
+    height: 458px;
+    opacity: 0.8;
+    filter: blur(30px);
+  }
+
+
+  .blurBot {
+    width: 908px;
+    height: 818px;
+    bottom: -369px;
+    left: -554px;
+  }
+}
+
+@media (min-width: 720px) {
+  .blur {
+    top: 506px;
+    right: -285px;
+    width: 533px;
+    height: 458px;
+    opacity: 0.8;
+    filter: blur(30px);
+  }
+
+  .blurBot {
+    bottom: -430px;
+  }
+}
+
+@media (min-width: 720px) {
+  .section {
+    width: 100%;
+    padding-top: 240px;
+    //padding-bottom: 160px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    width: 1150px;
+    padding-top: 546px;
+    //padding-bottom: 240px;
+  }
+
+  .blurBot {
+    width: 1141px;
+    height: 1017px;
+    bottom: -520px;
+  }
+
+  .blur {
+    width: 1014px;
+    height: 773px;
+    top: 1057px;
+    left: 587px;
+    filter: blur(10px);
+  }
+}
+
+//@media (min-width: 1700px) {
+//  .section {
+//    width: 1670px;
+//    padding-top: 560px;
+//    //padding-bottom: 320px;
+//  }
+//
+//  .blurBot {
+//    width: 1526px;
+//    height: 1359px;
+//    left: -700px;
+//    bottom: -624px;
+//  }
+//
+//  .blur {
+//    width: 1286px;
+//    height: 1000px;
+//    top: 1257px;
+//    left: 871px;
+//    filter: blur(0);
+//  }
+//}

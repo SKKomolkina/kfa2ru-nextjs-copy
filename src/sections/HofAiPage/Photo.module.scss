@@ -1,0 +1,55 @@
+.box {
+  padding: 324px 16px 24px;
+  overflow: hidden;
+  position: relative;
+  color: var(--color-white);
+  background: url('./photo/image.png') lightgray 50% / cover no-repeat;
+}
+
+.shadow {
+  width: 684px;
+  height: 480px;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(26deg, rgba(48, 47, 72, 0.90) 10.45%, rgba(54, 53, 78, 0.87) 16.11%, rgba(62, 61, 84, 0.83) 23.32%, rgba(217, 217, 217, 0.00) 59.67%);
+}
+
+@media(min-width: 400px) {
+  .box {
+    padding: 363px 24px 24px;
+  }
+
+  .shadow {
+    width: 688px;
+    height: 500px;
+  }
+}
+
+@media(min-width: 640px) {
+  .box {
+    padding: 183px 288px 24px 24px;
+    width: 100%;
+  }
+
+  .shadow {
+    left: -4px;
+    bottom: -4px;
+    width: 620px;
+    height: 336px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .box {
+    padding: 183px 708px 40px 45px;
+  }
+
+  .shadow {
+    left: 0;
+    bottom: -42px;
+    width: 1149px;
+    height: 628px;
+  }
+}

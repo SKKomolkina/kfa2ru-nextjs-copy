@@ -1,0 +1,197 @@
+.section {
+  width: 100%;
+  height: 269px;
+  margin-top: 80px;
+
+  position: relative;
+  align-self: center;
+}
+
+.image {
+  width: 280px;
+  height: 130px;
+
+  position: absolute;
+  right: 0;
+  top: 70px;
+  z-index: 2;
+}
+
+.title {
+  max-width: 310px;
+
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 104%;
+  text-transform: uppercase;
+  color: #303030;
+
+  position: absolute;
+  top: 0;
+  right: 14px;
+}
+
+.text {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 182px;
+
+  font-weight: 300;
+  font-size: 8px;
+  line-height: 11px;
+}
+
+.textSpan {
+  font-weight: 300;
+  font-size: 8px;
+  line-height: 11px;
+  color: var(--color-yellow);
+}
+
+@media (min-width: 400px) {
+  .section {
+    height: 370px;
+    margin-top: 120px;
+  }
+
+  .image {
+    width: 374px;
+    height: 174px;
+
+    right: 0;
+    top: 100px;
+  }
+
+  .title {
+    max-width: 412px;
+
+    font-size: 60px;
+
+    top: 0;
+    right: 0;
+  }
+
+  .text {
+    right: 0;
+    bottom: 0;
+    max-width: 246px;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .textSpan {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: 640px) {
+  .section {
+    height: 416px;
+    margin-top: 160px;
+  }
+
+  .image {
+    width: 616px;
+    height: 286px;
+
+    right: 0;
+    top: 130px;
+  }
+
+  .title {
+    max-width: 550px;
+
+    font-size: 80px;
+
+    top: 0;
+    right: 125px;
+  }
+
+  .text {
+    right: 38px;
+    bottom: 342px;
+    max-width: 160px;
+
+    font-size: 8px;
+    line-height: 11px;
+  }
+
+  .textSpan {
+    font-size: 8px;
+    line-height: 11px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    margin-top: 240px;
+    //width: 1150px;
+    height: 768px;
+  }
+
+  .image {
+    width: 1150px;
+    height: 536px;
+
+    top: 232px;
+  }
+
+  .title {
+    max-width: 1000px;
+
+    font-size: 140px;
+    right: 305px;
+  }
+
+  .text {
+    right: 64px;
+    bottom: 636px;
+    max-width: 325px;
+
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .textSpan {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .section {
+    //width: 1450px;
+    height: 1072px;
+  }
+
+  .image {
+    width: 1280px;
+    height: auto;
+
+    top: 353px;
+  }
+
+  .title {
+    max-width: 1643px;
+
+    font-size: 160px;
+    right: 360px;
+  }
+
+  .text {
+    right: 0;
+    bottom: 872px;
+    max-width: 325px;
+
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .textSpan {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}

@@ -1,0 +1,305 @@
+.about {
+  margin-top: 80px;
+  //margin-bottom: 80px;
+  width: 100%;
+}
+
+.aboutBox {
+  width: 100%;
+  padding: 32px 24px 40px 24px;
+
+  border-radius: 4px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.aboutBoxWhite {
+  composes: aboutBox;
+  color: #FFFFFF;
+}
+
+.titleContainer {
+  width: 215px;
+  margin-bottom: 12px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  position: relative;
+  z-index: 3;
+}
+
+.title {
+  font-size: var(--header-xs-font-size);
+  line-height: var(--header-xs-line-height);
+  font-weight: var(--font-weight-light);
+
+  text-transform: uppercase;
+}
+
+.titleRight {
+  composes: title;
+
+  margin-top: -12px;
+  align-self: flex-end;
+}
+
+.gradientText {
+  composes: title;
+
+  background: linear-gradient(106.39deg, #44FC8E 0%, #4916DD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.gradientButton {
+  width: 37px;
+  height: 37px;
+
+  position: absolute;
+  left: 36px;
+  top: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #FFFFFF;
+}
+
+.gradientButtonLine {
+  width: 16px;
+  height: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  flex-shrink: 0;
+}
+
+.text {
+  width: 146px;
+
+  align-self: flex-end;
+
+  font-size: var(--text-xxs-font-size);
+  line-height: var(--text-xxs-line-height);
+}
+
+@media (min-width: 400px) {
+  .about {
+    margin-top: 120px;
+    //margin-bottom: 60px;
+  }
+
+  .aboutBox {
+    padding: 40px 29px;
+  }
+
+  .title {
+    font-size: var(--header-s-font-size);
+    line-height: var(--header-s-line-height);
+  }
+
+  .titleRight {
+    margin-top: 6px;
+  }
+
+  .titleContainer {
+    width: 316px;
+    margin-bottom: 35px;
+  }
+
+  .gradientButton {
+    width: 49px;
+    height: 49px;
+
+    top: 54px;
+    left: 92px;
+  }
+
+  .gradientButtonLine {
+    width: 21px;
+    height: 21px;
+  }
+
+  .text {
+    width: 217px;
+
+    font-size: var(--text-xs-font-size);
+    line-height: var(--text-xs-line-height);
+  }
+}
+
+@media (min-width: 640px) {
+  .about {
+    margin-top: 100px;
+  }
+
+  .aboutBox {
+    padding: 32px 37px;
+
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .titleContainer {
+    width: 304px;
+    margin-bottom: 0;
+  }
+
+  .title {
+    font-size: var(--header-xs-font-size);
+    line-height: var(--header-xs-line-height);
+  }
+
+  .titleRight {
+    margin-top: 0;
+  }
+
+  .gradientButton {
+    width: 37px;
+    height: 37px;
+
+    top: 42px;
+    left: 121px;
+  }
+
+  .gradientButtonLine {
+    width: 16px;
+  }
+
+  .text {
+    width: 158px;
+    font-size: var(--text-xxs-font-size);
+    line-height: var(--text-xxs-line-height);
+
+    align-self: flex-start;
+  }
+}
+
+//@media (min-width: 720px) {
+//  .aboutBox {
+//    padding: 32px 59px;
+//  }
+//
+//  .titleContainer {
+//    width: 338px;
+//  }
+//
+//  .title {
+//    font-size: var(--header-s-font-size);
+//    line-height: var(--header-s-line-height);
+//  }
+//
+//  .titleRight {
+//    margin-top: 11px;
+//  }
+//
+//  .gradientButton {
+//    width: 43px;
+//    height: 43px;
+//
+//    top: 58px;
+//    left: 112px;
+//  }
+//
+//  .text {
+//    width: 176px;
+//  }
+//}
+
+@media (min-width: 1200px) {
+  .about {
+    margin-top: 160px;
+    //margin-bottom: 80px;
+  }
+
+  .aboutBox {
+    padding: 60px 65px;
+
+    border-radius: 16px;
+  }
+
+  .titleContainer {
+    width: 504px;
+  }
+
+  .title {
+    font-size: var(--header-m-font-size);
+    line-height: var(--header-m-line-height);
+  }
+
+  .titleRight {
+    margin-top: 0;
+  }
+
+  .gradientButton {
+    width: 65px;
+    height: 65px;
+
+    top: 90px;
+    left: 175px;
+  }
+
+  .gradientButtonLine {
+    width:  28px;
+    height: 28px;
+  }
+
+  .text {
+    width: 305px;
+
+    font-size: var(--text-s-font-size);
+    line-height: var(--text-s-line-height);
+  }
+}
+
+//@media (min-width: 1400px) {
+//  .aboutBox {
+//    padding: 100px 130px 100px 195px;
+//    border-radius: 20px;
+//  }
+//
+//  .titleContainer {
+//    width: 654px;
+//  }
+//
+//  .title {
+//    font-size: 80px;
+//    line-height: 96px;
+//  }
+//
+//  .gradientButton {
+//    width: 110px;
+//    height: 110px;
+//
+//    top: 102px;
+//    left: 150px;
+//  }
+//
+//  .gradientButtonLine {
+//    width: 47px;
+//    height: 48px;
+//  }
+//
+//  .text {
+//    width: 370px;
+//
+//    font-size: 16px;
+//    line-height: 20px;
+//  }
+//}

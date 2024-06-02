@@ -1,0 +1,464 @@
+.item {
+  width: 100%;
+  margin-bottom: 24px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  position: relative;
+
+  transition: all .2s linear;
+
+  & > .buttonArrow {
+    animation: hoverRotateBack .2s linear forwards;
+  }
+
+  &:hover {
+    & .buttonArrow {
+      animation: hoverRotate .2s linear forwards;
+    }
+  }
+
+  &:first-of-type {
+    margin-top: 32px;
+  }
+}
+
+.container {
+  margin-top: 8px;
+  width: 100%;
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.containerHidden {
+  composes: container;
+  visibility: hidden;
+  opacity: 0;
+
+  position: absolute;
+  top: -100vh;
+  left: 0;
+}
+
+.titleContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.num {
+  font-size: 12px;
+  font-weight: 300;
+
+  margin-right: 25px;
+}
+
+.buttonArrow {
+  margin-left: auto;
+  width: 24px;
+  height: 24px;
+
+  flex-shrink: 0;
+  justify-self: flex-end;
+
+  animation: rotateBack .2s linear forwards;
+}
+
+.buttonArrowHover {
+  composes: buttonArrow;
+  animation: rotateHover .2s ease-in-out forwards 1;
+}
+
+.buttonContainer {
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  cursor: pointer;
+
+  position: relative;
+  z-index: 2;
+}
+
+.arrow {
+  width: 32px;
+  height: 6px;
+  margin-right: 12px;
+}
+
+.buttonText {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  margin-top: 40px;
+
+  &:last-of-type {
+    margin-bottom: 24px;
+  }
+}
+
+.textMargin {
+  margin-bottom: 24px;
+}
+
+.handlerImage {
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.textSpan {
+  font-size: 12px;
+}
+
+@media(min-width: 400px) {
+  .item {
+    margin-bottom: 24px;
+
+    &:first-of-type {
+      margin-top: 32px;
+    }
+  }
+
+  .titleContainer {
+    margin-bottom: 16px;
+  }
+
+  .num {
+    margin-right: 37px;
+  }
+
+  .buttonArrow {
+    width: 29px;
+    height: 29px;
+  }
+
+  .buttonContainer {
+    margin-bottom: 24px;
+  }
+
+  .arrow {
+    width: 32px;
+    height: 6px;
+    margin-right: 12px;
+  }
+
+  .buttonText {
+  }
+
+  .step {
+    margin-top: 40px;
+
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
+  }
+
+  .textMargin {
+    margin-bottom: 24px;
+  }
+
+  .handlerImage {
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+  }
+
+  .textSpan {
+    font-size: 12px;
+  }
+}
+
+@media(min-width: 640px) {
+  .item {
+    margin-bottom: 24px;
+
+    &:first-of-type {
+      margin-top: 32px;
+    }
+  }
+
+  .titleContainer {
+    margin-bottom: 28px;
+  }
+
+  .container {
+    margin-top: 0;
+    width: 405px;
+    margin-bottom: 32px;
+    //align-self: center;
+  }
+
+  .num {
+    margin-right: 37px;
+    font-size: 16px;
+  }
+
+  .buttonArrow {
+    width: 24px;
+    height: 24px;
+  }
+
+  .buttonContainer {
+    margin-bottom: 24px;
+  }
+
+  .arrow {
+    width: 32px;
+    height: 6px;
+    margin-right: 12px;
+  }
+
+  .buttonText {
+  }
+
+  .step {
+    margin-top: 40px;
+
+    &:last-of-type {
+      margin-bottom: 32px;
+    }
+  }
+
+  .textMargin {
+    margin-bottom: 24px;
+  }
+
+  .handlerImage {
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+
+    &:last-of-type {
+      width: 75%;
+      align-self: center;
+    }
+  }
+
+  .textSpan {
+    font-size: 12px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .item {
+    margin-bottom: 40px;
+
+    &:first-of-type {
+      margin-top: 60px;
+    }
+  }
+
+  .titleContainer {
+    margin-bottom: 40px;
+  }
+
+  .container {
+    width: 760px;
+    margin-bottom: 40px;
+  }
+
+  .num {
+    margin-right: 110px;
+    font-size: 20px;
+  }
+
+  .buttonArrow {
+    width: 44px;
+    height: 44px;
+  }
+
+  .buttonContainer {
+    margin-bottom: 32px;
+  }
+
+  .arrow {
+    width: 32px;
+    height: 6px;
+    margin-right: 12px;
+  }
+
+  .buttonText {
+  }
+
+  .step {
+    margin-top: 32px;
+
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 500px 345px;
+    column-gap: 65px;
+
+    &:last-of-type {
+      margin-bottom: 32px;
+    }
+
+    & > p {
+      //grid-row: 2/-2;
+    }
+
+    & > img:nth-of-type(2) {
+      grid-row: 3/4;
+      margin-top: 32px;
+    }
+  }
+
+  .textMargin {
+    margin-bottom: 24px;
+  }
+
+  .handlerImage {
+    margin-bottom: 32px;
+    margin-top: 32px;
+
+    &:last-of-type {
+      width: 540px;
+      height: auto;
+      align-self: center;
+    }
+  }
+
+  .textSpan {
+    font-size: 16px;
+  }
+}
+
+@media(min-width: 1400px) {
+  .container {
+    width: 890px;
+  }
+}
+
+//@media(min-width: 1700px) {
+//  .item {
+//    margin-bottom: 24px;
+//
+//    &:first-of-type {
+//      margin-top: 80px;
+//    }
+//  }
+//
+//  .titleContainer {
+//    margin-bottom: 24px;
+//  }
+//
+//  .container {
+//    width: 1017px;
+//  }
+//
+//  .num {
+//    margin-right: 106px;
+//    font-size: 24px;
+//  }
+//
+//  .buttonArrow {
+//    width: 44px;
+//    height: 44px;
+//  }
+//
+//  .buttonContainer {
+//    margin-bottom: 24px;
+//  }
+//
+//  .arrow {
+//    width: 45px;
+//    height: 12px;
+//    margin-right: 20px;
+//  }
+//
+//  .buttonText {
+//    font-size: 20px;
+//  }
+//
+//  .step {
+//    margin-top: 80px;
+//    margin-bottom: 60px;
+//
+//    grid-template-columns: 565px 390px;
+//
+//    &:last-of-type {
+//      margin-bottom: 60px;
+//    }
+//
+//    & > p {
+//      //grid-row: 2/-2;
+//    }
+//  }
+//
+//  .textMargin {
+//    margin-bottom: 32px;
+//  }
+//
+//  .handlerImage {
+//    margin-bottom: 32px;
+//    margin-top: 32px;
+//
+//    &:last-of-type {
+//      width: 540px;
+//      height: auto;
+//      align-self: center;
+//    }
+//  }
+//
+//  .textSpan {
+//    font-size: 16px;
+//  }
+//}
+
+@keyframes hoverRotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes hoverRotateBack {
+  from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes rotateBack {
+  from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}

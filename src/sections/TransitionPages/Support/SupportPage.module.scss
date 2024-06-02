@@ -1,0 +1,153 @@
+.main {
+  width: 100%;
+  padding-top: 80px;
+  //padding-bottom: 60px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.boxClassName {
+  background: transparent;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 300;
+
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.blurTop {
+  width: 252.0px;
+  height: 208.2px;
+
+  position: absolute;
+  top: -127px;
+  right: -79px;
+  filter: blur(10px);
+}
+
+.blurBot {
+  width: 473.0px;
+  height: 414.4px;
+
+  position: absolute;
+  bottom: -217px;
+  left: -255px;
+}
+
+@media (min-width: 400px) {
+  .main {
+    //padding-bottom: 80px;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 120%;
+
+    margin-bottom: 66px;
+  }
+
+  .blurTop {
+    width: 374px;
+    height: 300.2px;
+    top: -172px;
+    right: -110px;
+  }
+
+  .blurBot {
+    width: 524px;
+    height: 534.4px;
+    bottom: -323px;
+    left: -255px;
+  }
+}
+
+@media (min-width: 640px) {
+  .main {
+    //padding-bottom: 120px;
+    padding-top: 78px;
+  }
+
+  .title {
+    font-size: 24px;
+
+    margin-bottom: 40px;
+  }
+
+  .blurTop {
+    width: 504px;
+    height: 406.2px;
+    top: -172px;
+    right: -140px;
+  }
+
+  .blurBot {
+    width: 596px;
+    height: 596.4px;
+    bottom: -269px;
+    left: -286px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main {
+    //padding-bottom: 80px;
+    padding-top: 200px;
+    padding-top: 80px;
+  }
+
+  .title {
+    font-size: 40px;
+
+    margin-bottom: 120px;
+  }
+
+  .blurTop {
+    width: 825px;
+    height: 673.2px;
+    top: -313px;
+    right: -348px;
+  }
+
+  .blurBot {
+    width: 707px;
+    height: 652.4px;
+    bottom: -386px;
+    left: -286px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .main {
+    //padding-bottom: 80px;
+    padding-top: 200px;
+  }
+
+  .title {
+    font-size: 60px;
+
+    margin-bottom: 130px;
+  }
+
+  .blurTop {
+    width: 1119px;
+    height: 907.2px;
+    top: -427px;
+    right: -719px;
+  }
+
+  .blurBot {
+    width: 1150px;
+    height: 1024px;
+    bottom: -641px;
+    left: -521px;
+  }
+}

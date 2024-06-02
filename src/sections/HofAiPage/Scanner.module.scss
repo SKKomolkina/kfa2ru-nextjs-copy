@@ -1,0 +1,42 @@
+.section {
+  padding: 175px 16px 24px;
+  color: var(--color-white);
+  background: url("./scanner/image.png") lightgray 50% / cover no-repeat;
+  background-size: 1462px 887px;
+  overflow: hidden;
+}
+
+.shadow {
+  width: 613px;
+  height: 641px;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  background: linear-gradient(20deg, rgba(48, 47, 72, 0.90) 12.32%, rgba(217, 217, 217, 0.00) 88.23%);
+}
+
+@media(min-width: 640px) {
+  .section {
+    padding: 190px 171px 24px 24px;
+    background: url("./scanner/image.png") lightgray 50% / cover no-repeat;
+  }
+
+  .shadow {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media(min-width: 1200px) {
+  .section {
+    padding: 392px 605px 40px 45px;
+  }
+}
+
+@media(min-width: 1400px) {
+  .section {
+    padding: 422px 527px 50px 65px;
+  }
+}
