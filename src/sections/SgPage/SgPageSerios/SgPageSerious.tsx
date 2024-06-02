@@ -1,4 +1,4 @@
-import styles from './SGPageSerious.module.scss';
+// import styles from './SGPageSerious.module.scss';
 
 import SGPageSubtitle from "../SGPageSubtitle";
 
