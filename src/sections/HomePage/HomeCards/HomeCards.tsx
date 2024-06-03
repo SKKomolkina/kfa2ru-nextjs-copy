@@ -28,12 +28,9 @@ export const HomeCards = () => {
                     direction={'vertical'}
                     speed={600}
                     parallax={true}
-                    pagination={{
-                        clickable: true,
-                    }}
                     mousewheel={true}
-                    grabCursor={true}
-                    modules={[Mousewheel, Parallax]}
+                    // grabCursor={true}
+                    modules={[Parallax, Mousewheel]}
                     className={cls.swiperContainer}>
                     <div slot="container-start" className={cls.parallax} data-swiper-parallax="-23%"/>
                     <SwiperSlide className={`${cls.slide} `}><Card1/></SwiperSlide>

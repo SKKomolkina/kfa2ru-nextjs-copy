@@ -33,7 +33,7 @@ export const HomePage = ({className}: HomeProps) => {
             <HomeUtils/>
             <HomeSlider/>
             <HomeCards/>
-            <HomeCards2/>
+            {/*<HomeCards2/>*/}
 
             <Blur/>
             <AboutUs classNameFill={true} className={cls.aboutPage}/>
